@@ -132,5 +132,11 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\01 - Saludar\01 - HelloWorldWpfCSharp.csproj">
+      <Project>{cc512f83-0515-4b06-b5b3-d208db3c78eb}</Project>
+      <Name>01 - HelloWorldWpfCSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
