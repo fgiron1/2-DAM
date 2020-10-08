@@ -9,8 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="59,53,0,0" Text="Página 1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48"/>
-        <HyperlinkButton Content="↑" Height="74" Margin="270,47,0,0" VerticalAlignment="Top" Width="72" FontSize="44" Click="HyperlinkButton_Click"/>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Center" Text="Nombre"/>
+            <TextBox HorizontalAlignment="Center" Width="200" Name="name"/>
+            <HyperlinkButton Content="Página 2" 
+                     Click="HyperlinkButton_Click"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"/>
+        </StackPanel>
 
     </Grid>
 </Page>

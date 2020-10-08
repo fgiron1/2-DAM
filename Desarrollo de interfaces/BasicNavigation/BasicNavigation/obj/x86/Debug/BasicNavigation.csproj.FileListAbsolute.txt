@@ -43,8 +43,8 @@ C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicN
 C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json
-C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\bin\x86\Debug\Page2.xbf
-C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\obj\x86\Debug\Page2.g.i.cs
-C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\obj\x86\Debug\Page2.g.cs
-C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\obj\x86\Debug\Page2.xaml
-C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\obj\x86\Debug\Page2.xbf
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\bin\x86\Debug\BlankPage1.xbf
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\obj\x86\Debug\BlankPage1.g.i.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\obj\x86\Debug\BlankPage1.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\obj\x86\Debug\BlankPage1.xaml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\obj\x86\Debug\BlankPage1.xbf

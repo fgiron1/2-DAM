@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-07T17:55:24.977</Modified>
+      <Modified>2020-10-08T18:46:28.305</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\bin\x86\Debug\BasicNavigation.exe">
       <PackagePath>entrypoint\BasicNavigation.exe</PackagePath>
-      <Modified>2020-10-07T17:55:11.187</Modified>
+      <Modified>2020-10-08T18:46:25.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,19 +86,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\bin\x86\Debug\BasicNavigation.xr.xml">
       <PackagePath>BasicNavigation.xr.xml</PackagePath>
-      <Modified>2020-10-07T17:55:09.948</Modified>
+      <Modified>2020-10-08T18:34:42.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-07T17:55:10.226</Modified>
+      <Modified>2020-10-08T18:46:25.396</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\bin\x86\Debug\Page2.xbf">
-      <PackagePath>Page2.xbf</PackagePath>
-      <Modified>2020-10-07T17:55:10.226</Modified>
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\bin\x86\Debug\BlankPage1.xbf">
+      <PackagePath>BlankPage1.xbf</PackagePath>
+      <Modified>2020-10-08T18:46:25.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-10-07T17:55:10.227</Modified>
+      <Modified>2020-10-08T18:46:25.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -106,11 +106,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-10-07T17:55:18.230</Modified>
+      <Modified>2020-10-08T17:13:25.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\BasicNavigation\BasicNavigation\bin\x86\Debug\Core\BasicNavigation.exe">
       <PackagePath>BasicNavigation.exe</PackagePath>
-      <Modified>2020-10-07T17:55:24.875</Modified>
+      <Modified>2020-10-08T18:46:28.298</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

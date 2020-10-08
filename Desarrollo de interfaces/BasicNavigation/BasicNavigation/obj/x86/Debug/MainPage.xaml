@@ -9,6 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Center" Text="Nombre"/>
+            <TextBox x:ConnectionId='2' HorizontalAlignment="Center" Width="200" Name="name"/>
+            <HyperlinkButton x:ConnectionId='3' Content="Página 2" 
+                                                  
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"/>
+        </StackPanel>
 
     </Grid>
 </Page>
