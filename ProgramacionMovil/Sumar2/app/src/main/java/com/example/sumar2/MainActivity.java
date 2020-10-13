@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Adding a string casts Editable to String type.
                 // TODO: Though, it'd be better to simply warn the user that non-numbers can't be added together
-                Integer.parseInt(n1.getText() + "");
+                Integer.parseInt(n1.getText() + "");    
             }
         });
 

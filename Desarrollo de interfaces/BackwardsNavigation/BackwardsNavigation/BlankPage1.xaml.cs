@@ -43,9 +43,28 @@ namespace BackwardsNavigation
         }
 
         
-        private void BackClick()
+        private void BackClick2(object sender, RoutedEventArgs e)
         {
-  
+            On_BackRequested();
+        }
+
+
+        //This method checks whether the frame can go back and does it (also returns true) or not, returning false
+        private bool On_BackRequested()
+        {
+            Boolean canGoBack;
+
+            if (this.Frame.CanGoBack)
+            {
+                this.Frame.GoBack();
+                canGoBack = true;
+            }
+            else
+            {
+                canGoBack = false;
+            }
+
+            return canGoBack;
         }
 
     }

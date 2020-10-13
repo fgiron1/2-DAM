@@ -16,11 +16,16 @@
 
         <CommandBar>
             <CommandBar.Content>
-                <Button x:Name ="BackButton" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="BackClick"/>
+                <Button x:Name ="BackButton" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="BackClick1"/>
             </CommandBar.Content>
 
             <AppBarButton Icon="Delete" Label="Delete"/>
             <AppBarButton Icon="Save" Label="Save"/>
         </CommandBar>
+        <TextBlock HorizontalAlignment="Left" Height="54" Margin="461,128,0,0" Grid.Row="1" Text="Página principal" TextWrapping="Wrap" VerticalAlignment="Top" Width="345"/>
+        <Button Content="Siguiente página" Height="88" Margin="321,372,0,0" Grid.Row="1" VerticalAlignment="Top" Width="207" Click="Button_Click"/>
+
+
+
     </Grid>
 </Page>

@@ -34,7 +34,7 @@ namespace BackwardsNavigation
             BackButton.IsEnabled = this.Frame.CanGoBack;
         }
 
-        public void BackClick(RoutedEventArgs e)
+        public void BackClick1(object sender, RoutedEventArgs e)
         {
             On_BackRequested();
         }
@@ -63,5 +63,9 @@ namespace BackwardsNavigation
             args.Handled = true;
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(BlankPage1));
+        }
     }
 }
