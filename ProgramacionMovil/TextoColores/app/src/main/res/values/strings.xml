@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TextoColores</string>
+    <string name="cajaTextoColor">Introduce tu texto...</string>
+    <string name="botonRojo">Rojo</string>
+    <string name="botonAzul">Azul</string>
+    <string name="botonVerde">Verde</string>
+</resources>
