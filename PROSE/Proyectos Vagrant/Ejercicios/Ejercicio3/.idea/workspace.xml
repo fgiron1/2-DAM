@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6774f603-bd26-42dc-b7b2-76886b1559f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b01673a9-2b36-4159-a352-f0c09ff933e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Ejercicio2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,51 +30,29 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
-  <component name="ProjectId" id="1j3ysQw8NGwtbWR56l0gx6H9cWT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1j6Pn4ghVxStVQq2ynSTwTZq9qS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ejercicio1" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ferna\Desktop\DAM\2-DAM\PROSE\Proyectos Vagrant\Ejercicios\Ejercicio2\class" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6774f603-bd26-42dc-b7b2-76886b1559f8" name="Default Changelist" comment="" />
-      <created>1603047276357</created>
+      <changelist id="b01673a9-2b36-4159-a352-f0c09ff933e7" name="Default Changelist" comment="" />
+      <created>1603121731751</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1603047276357</updated>
-      <workItem from="1603047277994" duration="715000" />
-      <workItem from="1603048073185" duration="1474000" />
-      <workItem from="1603120083889" duration="1636000" />
+      <updated>1603121731751</updated>
+      <workItem from="1603121732848" duration="210000" />
     </task>
     <servers />
   </component>
@@ -91,23 +69,11 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="503" y="197" key="FileChooserDialogImpl" timestamp="1603121726551">
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1603121990268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="503" y="197" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603121726551" />
-    <state x="558" y="366" key="NewPhpFileDialog" timestamp="1603047555076">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="558" y="366" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603047555076" />
-    <state x="231" y="87" key="SettingsEditor" timestamp="1603047412620">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="231" y="87" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603047412620" />
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603121990268" />
   </component>
 </project>
