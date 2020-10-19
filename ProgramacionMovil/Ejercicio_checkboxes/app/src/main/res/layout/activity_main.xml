@@ -43,21 +43,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="44dp"
         android:text="@string/checkbox4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/texto" />
 
     <TextView
         android:id="@+id/texto"
-        android:layout_width="291dp"
-        android:layout_height="79dp"
-        android:text="@string/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        android:text="@string/texto"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.078" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
