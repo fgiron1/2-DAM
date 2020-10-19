@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ejercicio_checkboxes</string>
+    <string name="checkbox1">Negrita</string>
+    <string name="checkbox2">Gigante</string>
+    <string name="checkbox3">Enana</string>
+    <string name="checkbox4">Roja</string>
+    <string name="texto">Miguelito</string>
+</resources>
