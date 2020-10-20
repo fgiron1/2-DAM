@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79edd896-17de-4872-813f-b782a88b1862" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/action/signup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class/Person.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio5/action/add_button.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio5/form/calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicio2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio2/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="79edd896-17de-4872-813f-b782a88b1862" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +64,7 @@
       <workItem from="1603122864061" duration="3150000" />
       <workItem from="1603129809861" duration="3544000" />
       <workItem from="1603177185391" duration="1319000" />
+      <workItem from="1603214129686" duration="110000" />
     </task>
     <servers />
   </component>
