@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="Ejercicio5.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ejercicio5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <RelativePanel Grid.Column="0">
+            <CommandBar x:Name="topBar" Background="White" Height="Auto">
+                <CommandBar.PrimaryCommands>
+                    <AppBarButton Icon="Accept"/>
+                    <AppBarButton Icon="Delete"/>
+                    <AppBarButton Icon="Download"/>
+                    <AppBarButton Icon="Zoom"/>
+                </CommandBar.PrimaryCommands>
+            </CommandBar>
+
+            <CommandBar x:Name="bottomBar" Background="White" OverflowButtonVisibility="Collapsed" RelativePanel.AlignHorizontalCenterWith="topBar"  RelativePanel.Below="nameList">
+                <CommandBar.PrimaryCommands>
+                    <AppBarButton Icon="Back"/>
+                    <AppBarButton Icon="Forward"/>
+                </CommandBar.PrimaryCommands>
+            </CommandBar>
+
+            <AppBarButton Icon="Add" Label="Añadir" RelativePanel.AlignBottomWith="nameList" RelativePanel.AlignRightWith="nameList"/>
+
+            <!--Setting padding property individually is not efficient at all-->
+            <ScrollViewer x:Name="nameList" RelativePanel.AlignRightWith="topBar" RelativePanel.AlignLeftWith="topBar" RelativePanel.Below="topBar">
+                <StackPanel x:Name="listContent" Orientation="Vertical" Grid.Column="0">
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                    <TextBlock Padding="5" Text="Fernando Galiana"></TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+        </RelativePanel>
+    </Grid>
+
+</Page>

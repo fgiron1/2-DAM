@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="Ejercicio6.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ejercicio6"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel>
+        <CommandBar x:ConnectionId='2' x:Name="topBar" OverflowButtonVisibility="Collapsed">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Icon="Add"/>
+                <AppBarButton Icon="Save"/>
+                <AppBarButton Icon="Delete"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+
+         <!--This could also be done by modifying TextBox header property's default style (header on the side insted of above it) -->
+            
+            <TextBlock x:ConnectionId='3' x:Name="nameTextBlock" Margin="5" Text="Nombre:" RelativePanel.LeftOf="nameTextBox" RelativePanel.Below="topBar"/>
+            <TextBox x:ConnectionId='4' x:Name="nameTextBox" RelativePanel.Below="topBar"/>
+        
+            <TextBlock x:ConnectionId='5' x:Name="surnameTextBlock" Text="Apellidos:" RelativePanel.LeftOf="surnameTextBox" RelativePanel.Below="nameTextBox"/>
+            <TextBox x:ConnectionId='6' x:Name="surnameTextBox" RelativePanel.Below="nameTextBox"/>
+        
+            <TextBlock x:ConnectionId='7' x:Name="birthdateTextBlock" Text="Fecha de nacimiento: " RelativePanel.LeftOf="birthdateTextBox" RelativePanel.Below="surnameTextBlock"/>
+            <TextBox x:ConnectionId='8' x:Name="birthdateTextBox" RelativePanel.Below="surnameTextBox"/>
+
+    </RelativePanel>
+</Page>
+
