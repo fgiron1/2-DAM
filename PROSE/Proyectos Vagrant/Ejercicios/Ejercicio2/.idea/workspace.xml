@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6774f603-bd26-42dc-b7b2-76886b1559f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Tienda/auth/signup/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/action/edad.php" beforeDir="false" afterPath="$PROJECT_DIR$/action/edad.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form/edad_actual.html" beforeDir="false" afterPath="$PROJECT_DIR$/form/edad_actual.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicio4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicio4/action/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio4/action/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejercicio4/form/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio4/form/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tienda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tienda/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tienda/action/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Tienda/auth/signup/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tienda/form/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Tienda/auth/login/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tienda" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -82,6 +81,7 @@
       <workItem from="1603120083889" duration="1636000" />
       <workItem from="1603789993724" duration="1973000" />
       <workItem from="1603794853392" duration="116000" />
+      <workItem from="1603815088707" duration="643000" />
     </task>
     <servers />
   </component>
