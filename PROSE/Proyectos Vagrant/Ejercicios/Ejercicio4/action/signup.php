@@ -1,24 +1,22 @@
 <?php
 
+include "../class/Person.php";
 
 $tmp_filename = $_FILES["profilepic"]["tmp_name"];
-
+var_dump($tmp_filename);
 //Checking file upload. If unsuccessful, registration ends
-if(move_uploaded_file($tmp_filename, "/uploads")){
+
 
 $name = $_POST["name"];
 $surname = $_POST["surname"];
 $birthdate = $_POST["birthdate"];
 $address = $_POST["address"];
 $filename = $_FILES["profilepic"]["name"];
-
+echo "Yes1!";
 //File extension is missing
 $client = new Person("/uploads/".$filename, $name, $surname, $birthdate, $address);
+var_dump($client);
 
-
-} else {
-    echo "Invalid file. Please try signing up again";
-}
-
+echo "Yes2!";
 
 

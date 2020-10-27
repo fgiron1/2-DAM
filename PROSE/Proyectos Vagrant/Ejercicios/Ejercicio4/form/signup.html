@@ -5,8 +5,8 @@
     <title>Registro</title>
 </head>
 <body>
-        <!--Encrypted data-->
-        <form enctype="multipart/form-data" method="post" action="./action/signup.php">
+        <!--If the attribute enctype is not set, $_FILES will be empty-->
+        <form enctype="multipart/form-data" method="post" action="../action/signup.php">
             Name <input name="name" type="text"><br/>
             Surname <input name="surname" type="text"><br/>
             Birthdate <input name="birthdate" type="date"><br/>
