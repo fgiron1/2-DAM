@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />   
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h1>Hola, son las @DateTime.Now.ToString("HH:mm")</h1>
+        @if(DateTime.Compare(DateTime.Now, DateTime.ParseExact("12:00", "HH:mm", null)) > 0)
+        {
+            <h2>Son más de las 12:00</h2>
+        }
+        else
+        {
+            <h2>Aun no son las 12:00</h2>
+        }
+    </div>
+</body>
+</html>
