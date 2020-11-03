@@ -1,18 +1,18 @@
 package com.example.ejercicio1seleccion;
 
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-//LO TENGO QUE DEFINIR COMO UN HOLDER. ESTA DEFINICION DE CLASE
-//PODRIA SER REALIZADA COMO CLASE ANONIMA EN LA DEFINICION DEL ADAPTER
-//EN EL CASO DE SER MUY SIMPLE
+//ESTA DEFINICION DE CLASE PODRIA SER REALIZADA COMO CLASE ANONIMA
+// EN LA DEFINICION DEL ADAPTER EN EL CASO DE SER MUY SIMPLE
 public class TeamHolder extends RecyclerView.ViewHolder {
 
     //Creo que si solo va a tener vistas de un unico tipo, se pone y ya.
     //MIRATE https://stackoverflow.com/questions/26245139/how-to-create-recyclerview-with-multiple-view-type
     private TextView name;
-    private TextView foundingYear;
+    private ImageView picture;
 
     public TeamHolder(TextView name, TextView foundingYear){
         super(name);
@@ -22,7 +22,7 @@ public class TeamHolder extends RecyclerView.ViewHolder {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {

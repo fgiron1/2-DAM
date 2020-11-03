@@ -21,5 +21,9 @@ public class MainActivity extends AppCompatActivity {
         teamList = (RecyclerView) findViewById(R.id);
         item0 = (TextView) findViewById(R.id.item0);
         item1 = (TextView) findViewById(R.id.item1);
+
+        layoutManager = new ConstraintLayoutManager();
+
+
     }
 }
