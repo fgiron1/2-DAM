@@ -9,10 +9,13 @@ GO
 -- HAY QUE EXPLICAR LA BASE DE DATOS; NO SE VA A PRESENTAR.
 -- TENEMOS QUE DECIDIR UN NIVEL DE ISOLACIÓN DE LAS TRANSACCIONES
 
+--DUDA SOBRE EL MAXIMO: CADA PARTIDO TIENE UN MAXIMO POR CADA CATEGORIA, O ES MAS BIEN QUE CADA CATEGORIA TIENE UN MAXIMO
+-- QUE SE COMPARA INDIVIDUALMENTE CON CADA PARTIDO
+
 --UNA TRANSACCIÓN REPRESENTA LA REALIDAD DE UN MOVIMIENTO DE DINERO, POR LO QUE EL MOVIMIENTO DE DINERO DEBE IR ANTES QUE
 -- LA CREACIÓN DE LA TRANSACCIÓN. NO OBSTANTE, LAS TRANSACCIONES TIENEN AUTORIDAD EN CUANTO A QUE NOS AYUDAN A CONTROLAR LOS PAGOS
 -- POR LO QUE,  UN MOVIMIENTO QUE NO TENGA SU TRANSACCIÓN CORRESPONDENTE NO TIENE NINGÚN TIPO DE GARANTÍA DE SER UN MOVIMIENTO LEGAL.
--- PODRÍA SER EL RESULTADO DE ALGUIEN QUE EFECTIVAMENTE NOS DEBE/DEBEMOS DINERO, O UN ERROR EN EL SISTEMA
+-- PODRÍA SER EL RESULTADO DE ALGUIEN QUE EFECTIVAMENTE NOS DEBE/DEBEMOS DINERO, O UN ERROR EN EL SISTEMA, SIN NINGUNA DIFERENCIA PARA NOSOTROS.
 
 --COMENTARIO DE STACK OVERFLOW SOBRE EL NIVEL DE ISOLACIÓN DE LAS TRANSACCIONES EN APLICACIONES MONETARIAS
 --A financial application probably has many situations where one record is read and then based on that one or more records including the original one are altered. Every tim you encounter a situation like that, it is more important that you indicate the write intend on the initial read by requesting a write or update lock. If you do that within the same transaction that executes the writes later on you are not dependent on the isolation level at all. You also will reduce the likelihood of deadlocks.
@@ -25,7 +28,7 @@ GO
 --Debemos evitar tener una apuesta con el tipo de "cantidad de corners" cuyo resultado esperado sea "El recre de huelva"
 
 --Se debería de poner un trigger que cerrase los partidos que tienen una edad de más de 3 días
---y un procedimiento almacenado que tomara la id del partido como parámetro
+--y un procedimiento almacenado que tomara la id del partido como parámetro para cerrarlo
 
 --ACLARACIONES IMPORTANTES PARA LA EXPLICACIÓN EN LA DOCUMENTACIÓN:
 -- Distinguimos 4 tipos de movimientos de dinero en el balance del usuario: Las ganancias y las pérdidas
@@ -36,7 +39,6 @@ GO
 -- importe positivo e idApuesta distinto de NULL: El usuario ha ganado una apuesta.
 -- importe negativo e idApuesta NULL: El usuario ha retirado dinero de su cuenta voluntariamente
 -- importe negativo e idApuesta distinto de NULL:  El usuario acaba de realizar una apuesta
---Dado que 
 
 --Possible design improvements:
 -- The closing time of all bets might be possible to implement modifying database user's permissions?
@@ -64,7 +66,8 @@ GO
 
 CREATE TABLE TiposApuestas (
     ID int NOT NULL IDENTITY(1,1),
-    tipo varchar(30),
+	--Up to 99 different bet categories
+    tipo varchar(2),
     maximo int,
 
     CONSTRAINT PKTiposApuestas PRIMARY KEY (ID)
@@ -97,7 +100,11 @@ CREATE TABLE Apuestas (
     cuota decimal(4,2) NOT NULL,
 	--Helps track illegal bets (bets to a nonexiting or finished match, etc...)
 	fechaRealizacion datetime NOT NULL,
-    resultado int NULL,
+	--resultado expects 3 different formats for the 3 different bet categories i.e.:
+	--1-2 (Final results)
+	--Local/Visitante (Winning team) -> Do this with an enum
+	--15 (Number of corners)
+    resultado nvarchar(30) NULL,
 
     CONSTRAINT PKApuestas PRIMARY KEY (ID),
     CONSTRAINT FKTipo FOREIGN KEY (idTipo) REFERENCES TiposApuestas (ID),
@@ -111,7 +118,7 @@ CREATE TABLE Transacciones (
     idUsuario int NOT NULL,
 	--The value of idApuesta field, along with importe's positive or negative value allows us to determine whether
 	--it's a voluntary deposit or withdrawal by the user, or if the transaction expresses a win or a loss in a certain bet,
-	--as explained at the start of the script. It's crucial for the design that its nullability is set to NULL
+	--as explained at the start of the script. It's crucial for this design that its nullability is set to NULL.
     idApuesta int NULL UNIQUE,
     fecha datetime NOT NULL,
     importe smallmoney NOT NULL,
@@ -124,7 +131,7 @@ GO
 
 --FUNCTIONS
 
---CALCULO MAXIMO-CUOTA
+--CALCULO CUOTA
 
 -------------------------
 --Interface: calcularCuota()
@@ -167,6 +174,40 @@ BEGIN
 END
 GO
 
+--Me da la sensación de que esta función tiene demasiado acoplamiento con la del maximo, precisamente por lo de los partidos activos
+-------------------------
+--Interface: apuestasPorTipo()
+--Description: This scalar function returns the total amount of bets in a particular category for active matches
+--Input: A bet category
+--Output: The total amount of bets per category
+--Precondiciones: The bet category input must be valid (that is, a number between 1 and 3)
+--Postcondiciones: 
+--Improvements: 
+--------------------------
+--Comments: IMPORTANT. This function only takes into account non-finished matches
+-- 
+--------------------------
+--Cuando un partido tiene el desto de cerrado a 1, los premios se han repartido y todo está hecho.
+GO
+CREATE OR ALTER FUNCTION apuestasActivasPorTipo(@tipoApuesta int)
+RETURNS int AS
+BEGIN
+	DECLARE @cantidadTotal int
+
+	SELECT @cantidadTotal = SUM(sub1.cantidadApuestas) FROM
+	--La cantidad de apuestas de tipo @tipoApuesta realizadas por cada partido
+	(SELECT idPartido, COUNT(*) AS cantidadApuestas
+	FROM Apuestas A
+	INNER JOIN Partidos P ON P.ID = A.idPartido
+	WHERE A.idTipo = @tipoApuesta AND P.puedeApostar = 1
+	GROUP BY idPartido) AS sub1
+	GROUP BY idPartido
+
+	RETURN @cantidadTotal
+
+END
+GO
+
 --TRIGGERS
 
 
@@ -179,36 +220,10 @@ GO
 --usando la variable con el mismo valor. La utilidad de este método yace en que si por algún otro motivo extraño esos números
 --difieren, la base de dato reconozca esa diferencia. No obstante, es muy costoso para lo poco útil que es.
 
---Puede que este triger se pudiera definir de forma más típica de base de datos
 --GO
 --CREATE OR ALTER TRIGGER apuestaIgualSustraccion
 --ON Apuestas
---FOR INSERT
---AS
-
-----La cantidad de dinero apostada de la fila recién insertada
---DECLARE @cantidad smallmoney
---SELECT @cantidad = cantidad FROM inserted
-
-----El importe de la transaccion que le corresponde a la apuesta recién insertada
---DECLARE @importe smallmoney
---SELECT @importe = importe
---FROM Transacciones AS T
---WHERE T.idApuesta = inserted.idApuesta
-
---IF(@cantidad <> @importe)
---	BEGIN
---		--Se elimina la apuesta introducida
---		DELETE FROM Apuestas AS A
---		WHERE A.ID = inserted.ID
-
---		--Se crea una nueva transacción en la que se le devuelva el dinero al usuario
---		INSERT INTO Transacciones
-
---	END
-
-
---GO-----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 GO
 CREATE OR ALTER TRIGGER superaMaximoApuestas
@@ -216,38 +231,107 @@ GO
 
 GO
 CREATE OR ALTER TRIGGER dniEnListaNegra
+
 GO
 
 --STORED PROCEDURES
---COMIENZA LOS PROCEDIMIENTOS CON BEGIN TRANSACTION
+--El componente de maximo no se como funciona, asi que no lo voy a incluir hasta que lo sepa xd
 GO
-CREATE OR ALTER PROCEDURE apostar(usuario, cantidad, partido)--Crea entidad apuesta PRIMERO y despues resta el dinero, y finalmente crea transacción (Usa sustraerSaldo)
+CREATE OR ALTER PROCEDURE apostar @idUsuario int, @cantidad smallmoney, @tipoApuesta int, @resultado varchar(30), @partido int --Crea entidad apuesta PRIMERO y despues resta el dinero, y finalmente crea transacción (Usa sustraerSaldo)
 AS
-	--Estas tres comprobaciones se pueden hacer en un if y apañao
-	--Si el partido permite apuestas y
-	--si el usuario tiene saldo y
-	--si no ha superado el maximo de apuestas, se crea una apuesta por @cantidad y se almacena su id,
-	--inicializando el resultado previsto del partido a null
-	--Seguidamente se le sustrae al usuario el dinero.
-	--Por último, se crea una entidad Transaccion por el valor de @cantidad con el id previamente almacenado
+	BEGIN TRANSACTION
+		
+		--Usuario: saldo, 
+		--Partido: apuesta
+		DECLARE @saldo smallmoney
+		DECLARE @puedeApostar bit
+		DECLARE @maximo int
+		DECLARE @idApuesta int
+
+		SELECT @saldo = saldo
+		FROM Usuarios
+		WHERE ID = @idUsuario
+
+		SELECT @puedeApostar = puedeApostar
+		FROM Partidos
+		WHERE ID = @partido
+
+		SELECT @maximo = maximo
+		FROM TiposApuestas
+		WHERE tipo = @tipoApuesta
+		--Si el usuario tiene saldo suficiente y el partido permite apuestas
+		IF(@saldo >= 0.20 AND @puedeApostar = 1)
+			BEGIN
+				--Fecha e ID autogenerados. Revisar los triggers de insertar una apuesta
+				INSERT INTO Apuestas(idTipo, idUsuario, idPartido, cuota, resultado, cantidad)
+				VALUES(@tipoApuesta, @idUsuario, @partido, calcularCuota(), @resultado, @cantidad)
+
+				--Se sustrae el dinero al usuario (SCOPE_IDENTITY() devuelve la última ID generada en el lote)
+				--Este procedimiento también se encarga de crear la entidad transacción correspondiente
+				EXECUTE modificarSaldo @idUsuario, @cantidad, SCOPE_IDENTITY()
+
+			END
+		ELSE Print 'Error: Saldo insuficiente o apuesta cerrada'
 GO
 
 GO
-CREATE OR ALTER PROCEDURE anadirSaldo(usuario, cantidad) --Crea entidad transaccion
+CREATE OR ALTER PROCEDURE modificarSaldo @idUsuario int, @cantidad smallmoney, @idApuesta int
 AS
+	BEGIN TRANSACTION
 
+		INSERT INTO Transacciones(idUsuario, idApuesta, importe)
+		VALUES(@idUsuario, @idApuesta, @cantidad)
 GO
 
 GO
-CREATE OR ALTER PROCEDURE sustraerSaldo(usuario, cantidad) --Crea entidad transaccion
+CREATE OR ALTER PROCEDURE anularApuesta @idApuesta int
 AS
+	BEGIN TRANSACTION
+		DECLARE @cantidad smallmoney
+		DECLARE @idUsuario int
+
+		SELECT @cantidad = cantidad, @idUsuario = idUsuario
+		FROM Apuestas AS A
+		WHERE A.ID = @idApuesta
+
+		DELETE FROM Apuestas AS A
+		WHERE A.ID = @idApuesta
+
+		--ID y fecha son campos autogenerados
+		INSERT INTO Transacciones(idUsuario, idApuesta, importe)
+		VALUES (@idUsuario, @idApuesta, @cantidad)
+
 
 GO
 
 GO
-CREATE OR ALTER PROCEDURE cambiarEstadoApuestas
+CREATE OR ALTER PROCEDURE cerrarApuestasAbiertas
 AS
 	UPDATE Partidos
-	-- ~ Operator flips the bit
+	-- ~ Operator flips the bit on open bets
 	SET puedeApostar = ~puedeApostar
+	WHERE puedeApostar = 1
 GO
+
+GO
+CREATE OR ALTER PROCEDURE cambiarMaximoSeguro @tipoApuesta int, @nuevoMaximo int
+AS
+
+	DECLARE @totalApuestas int
+	SET @totalApuestas = apuestasPorTipo(@tipoApuesta)
+
+	IF(@nuevoMaximo >= @totalApuestas)
+		BEGIN
+			UPDATE TiposApuestas
+			SET maximo = @nuevoMaximo
+		END
+	ELSE
+		Print 'El nuevo maximo no puede ser menor que la cantidad de apuestas activas'
+	
+
+GO
+
+--Crea un procedimiento almacenado que calcule los premios tras finalizar un evento y actualice los saldos de los jugadores que hayan apostado en dicho evento.
+
+GO
+CREATE OR ALTER PROCEDURE
