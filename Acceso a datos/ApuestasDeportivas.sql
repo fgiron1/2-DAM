@@ -2,7 +2,6 @@ USE master
 CREATE DATABASE apuestasACDAT
 --DROP DATABASE apuestasACDAT
 GO
-USE apuestasACDAT
 GO
 
 
@@ -47,6 +46,7 @@ GO
 
 
 
+
 SET NOCOUNT ON
 SET DATEFORMAT dmy; 
 GO
@@ -59,6 +59,7 @@ CREATE TABLE Usuarios (
     contrasena varchar(12) NOT NULL,
     saldo smallmoney NOT NULL DEFAULT 0,
     fechaNacimiento date NOT NULL,
+	fechaRegistro datetime NOT NULL DEFAULT(GETDATE())
 
     CONSTRAINT PKUsuario PRIMARY KEY (ID),
     CONSTRAINT CFechaNacimiento CHECK  ((datediff(dd,fechaNacimiento,GETDATE()) / 365)  > 18))
@@ -99,7 +100,7 @@ CREATE TABLE Apuestas (
     cantidad smallmoney NOT NULL,
     cuota decimal(4,2) NOT NULL,
 	--Helps track illegal bets (bets to a nonexiting or finished match, etc...)
-	fechaRealizacion datetime NOT NULL,
+	fechaRealizacion datetime NOT NULL DEFAULT(GETDATE()),
 	--resultado expects 3 different formats for the 3 different bet categories i.e.:
 	--1-2 (Final results)
 	--Local/Visitante (Winning team) -> Do this with an enum
@@ -122,6 +123,7 @@ CREATE TABLE Transacciones (
     idApuesta int NULL UNIQUE,
     fecha datetime NOT NULL,
     importe smallmoney NOT NULL,
+	fecha_realizacion datetime NOT NULL DEFAULT(GETDATE())
 
     CONSTRAINT PKTransacciones PRIMARY KEY (ID),
     CONSTRAINT FKTransaccionesUsuario FOREIGN KEY (idUsuario) REFERENCES Usuarios (ID),
@@ -144,12 +146,14 @@ GO
 --so as not to hardcode something so prone to change.
 --------------------------
 --Comments:
--- NON-DETERMINISTIC FUNCTION
 -- Distinguimos tres (casualmente la misma cantidad de tipos de apuesta) dificultades en las apuestas realizadas
 -- (INDEPENDIENTEMENTE DEL TIPO DE APUESTA): fácil, dificultad moderada y difícil (Respectivamente 1, 2 y 3 en la implementación).
 -- Estas dificultades se corresponden naturalmente con lo difícil o fácil que sea ganar la apuesta en cuestión.
 -- En el cálculo de la cuota para cada apuesta, se le asignará de forma arbitraria a la apuesta una dificultad, con su cuota
 -- correspondiente. Hemos escogido un intervalo entre 1 y 10 para la cuota, de nuevo, sin ningún criterio de peso.
+--
+--Uso la vista vw_valorAleatorio para generar un valor aleatorio porque las funciones del usuario no admiten funciones no deterministas en su definición
+--
 
 --------------------------
 GO
@@ -159,19 +163,36 @@ BEGIN
 	DECLARE @cuota decimal(4,2)
 	DECLARE @dificultad tinyint
 	--Assigning a random difficulty from 1 to 3
-	SELECT @dificultad = RAND()*(3-1)+1;
+	SELECT @dificultad = (SELECT Value From vw_valorAleatorio) *(3-1)+1;
 
 	--Assigning the bet's rate according to its difficulty ([1.1-10] interval is divided into three equal parts)
-	SELECT @cuota =
-	CASE @dificultad
-		WHEN 1 THEN RAND()*(3.3-1.1)+1.1
-		WHEN 2 THEN RAND()*(6.3-3.4)+3.4
-		WHEN 3 THEN RAND()*(10-6.4)+6.4
-	END;
+	EXECUTE calcularCuotaAux @dificultad, @cuotaFinal = @cuota OUTPUT
 
 	RETURN @cuota;
 
 END
+GO
+
+GO
+CREATE OR ALTER PROCEDURE calcularCuotaAux @dificultad int,
+										   @cuotaFinal int OUTPUT
+AS
+
+	SELECT @cuotaFinal =
+	CASE @dificultad
+		WHEN 1 THEN (SELECT Value FROM vw_valorAleatorio)*(3.3-1.1)+1.1
+		WHEN 2 THEN (SELECT Value FROM vw_valorAleatorio)*(6.3-3.4)+3.4
+		WHEN 3 THEN (SELECT Value FROM vw_valorAleatorio)*(10-6.4)+6.4
+	END;
+
+RETURN
+
+GO
+
+GO
+CREATE OR ALTER VIEW vw_valorAleatorio
+AS
+SELECT RAND() AS Value
 GO
 
 --Me da la sensación de que esta función tiene demasiado acoplamiento con la del maximo, precisamente por lo de los partidos activos
@@ -246,7 +267,8 @@ AS
 		DECLARE @saldo smallmoney
 		DECLARE @puedeApostar bit
 		DECLARE @maximo int
-		DECLARE @idApuesta int
+		DECLARE @idNuevaApuesta int
+		DECLARE @cuota decimal(4,2)
 
 		SELECT @saldo = saldo
 		FROM Usuarios
@@ -259,28 +281,40 @@ AS
 		SELECT @maximo = maximo
 		FROM TiposApuestas
 		WHERE tipo = @tipoApuesta
+
 		--Si el usuario tiene saldo suficiente y el partido permite apuestas
 		IF(@saldo >= 0.20 AND @puedeApostar = 1)
 			BEGIN
+				SET @cuota = calcularCuota()
 				--Fecha e ID autogenerados. Revisar los triggers de insertar una apuesta
 				INSERT INTO Apuestas(idTipo, idUsuario, idPartido, cuota, resultado, cantidad)
-				VALUES(@tipoApuesta, @idUsuario, @partido, calcularCuota(), @resultado, @cantidad)
+				VALUES(@tipoApuesta, @idUsuario, @partido, (SELECT * FROM calcularCuota()), @resultado, @cantidad)
 
 				--Se sustrae el dinero al usuario (SCOPE_IDENTITY() devuelve la última ID generada en el lote)
 				--Este procedimiento también se encarga de crear la entidad transacción correspondiente
-				EXECUTE modificarSaldo @idUsuario, @cantidad, SCOPE_IDENTITY()
+				SET @idNuevaApuesta = SCOPE_IDENTITY()
+				EXECUTE modificarsaldo @idUsuario, @cantidad, @idNuevaApuesta
 
 			END
 		ELSE Print 'Error: Saldo insuficiente o apuesta cerrada'
 GO
 
+
 GO
+
+GO
+
 CREATE OR ALTER PROCEDURE modificarSaldo @idUsuario int, @cantidad smallmoney, @idApuesta int
 AS
-	BEGIN TRANSACTION
+    BEGIN TRANSACTION
 
+        UPDATE Usuarios
+		SET saldo = saldo + @cantidad
+		WHERE ID = @idUsuario
+		
 		INSERT INTO Transacciones(idUsuario, idApuesta, importe)
-		VALUES(@idUsuario, @idApuesta, @cantidad)
+        VALUES(@idUsuario, @idApuesta, @cantidad)
+
 GO
 
 GO
@@ -294,12 +328,11 @@ AS
 		FROM Apuestas AS A
 		WHERE A.ID = @idApuesta
 
-		DELETE FROM Apuestas AS A
-		WHERE A.ID = @idApuesta
+		DELETE FROM Apuestas
+		WHERE ID = @idApuesta
 
-		--ID y fecha son campos autogenerados
-		INSERT INTO Transacciones(idUsuario, idApuesta, importe)
-		VALUES (@idUsuario, @idApuesta, @cantidad)
+		--Se crea la transacción y se actualiza el balance
+		EXECUTE modificarSaldo @idUsuario, @cantidad, @idApuesta
 
 
 GO
@@ -313,12 +346,12 @@ AS
 	WHERE puedeApostar = 1
 GO
 
-GO
+GO --Un poco innecesario en verdad
 CREATE OR ALTER PROCEDURE cambiarMaximoSeguro @tipoApuesta int, @nuevoMaximo int
 AS
 
 	DECLARE @totalApuestas int
-	SET @totalApuestas = apuestasPorTipo(@tipoApuesta)
+	SET @totalApuestas = apuestasActivasPorTipo(@tipoApuesta)
 
 	IF(@nuevoMaximo >= @totalApuestas)
 		BEGIN
@@ -331,7 +364,52 @@ AS
 
 GO
 
---Crea un procedimiento almacenado que calcule los premios tras finalizar un evento y actualice los saldos de los jugadores que hayan apostado en dicho evento.
+---------------------------------
+--Interface: entregarPremio @idPartido int
+--Description: This procedure closes the bets for a match and modifies every better's balance adding their profits/losses
+--Input: The id of a match whose bets are still open and wish to close
+--Output: -
+--Precondiciones: The match's bets must be open
+--Postcondiciones: The match's bets are closed
+--Comments: Another way of defining this procedure and modificarSaldo procedure is explained below
+---------------------------------
 
 GO
-CREATE OR ALTER PROCEDURE
+CREATE OR ALTER PROCEDURE entregarPremio @idPartido int
+AS
+	--Primero se actualiza el campo esApostable del partido a 0
+	UPDATE Partidos
+	SET puedeApostar = 0
+
+	--Opcion para hacer esto:
+	--Podria usar el procedimiento modificarSaldo, pero tendria que modificar sus parametros y poner una variable tipo tabla.
+	--La cosa es que pasarle variables tipo tabla a un parametro directamente no se puede
+	--y en su lugar, se define un tipò tabla, lo pueblas donde y como quieras quieras y en el procedimiento
+	--lo que se hace es crear una transacción con los datos del tipo previamente creado.
+	--Lo que pasa es que todos los movimientos de dinero usan ese mismo tipo como forma
+	--de comunicarle al procedimiento de modificarDinero la información para crear la transacción. Como es
+	--tan usado, no se si dará problemas de disponibilidad.
+
+	--Creamos todas las transacciones correspondientes
+	INSERT INTO Transacciones(idApuesta, idUsuario, importe)
+	SELECT A.ID, A.idUsuario, A.cuota * A.cantidad AS cantidadResultante FROM Apuestas A
+	WHERE A.idPartido = @idPartido
+	GROUP BY A.idUsuario, A.cuota, A.cantidad, A.ID
+
+	--Actualizamos los balances de los jugadores
+	--Si no hago el join entre las dos exactas tablas, me actualiza todos los saldos con el primer
+	--valor de dicha tabla, en lugar de ir uno por uno
+	UPDATE Usuarios
+	SET saldo = saldo + InfoTran1.cantidad
+	FROM (SELECT (A.cuota * A.cantidad) cantidad FROM Apuestas A
+		  WHERE A.idPartido = @idPartido
+		  GROUP BY A.idUsuario, A.cuota, A.cantidad, A.ID) AS InfoTran1
+		  INNER JOIN
+		  (SELECT (A.cuota * A.cantidad) cantidad FROM Apuestas A
+		  WHERE A.idPartido = @idPartido
+		  GROUP BY A.idUsuario, A.cuota, A.cantidad, A.ID) AS InfoTran2
+		  ON Infotran1.cantidad = Infotran2.cantidad
+		
+
+
+GO
