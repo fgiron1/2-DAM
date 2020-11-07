@@ -1,8 +1,12 @@
 <?php
 
-//Checking if the data has been sent
-var_dump($_POST);
 
+require_once("./class/PersonDAO.php");
+require_once("./class/DAO.php");
+require_once("./class/Person.php");
+
+
+//Checking if the data has been sent
 if(!isset($_POST["inputName"],
           $_POST["inputSurname"],
           $_POST["inputBirthdate"],
@@ -25,7 +29,15 @@ if($_POST["inputPassword"] !== $_POST["inputRepeatPassword"]){
     exit("Passwords don't match");
 }
 
-//TODO CREAR OBJETO USUARIO
-//TODO HACERLO CON SESIONES
+$Person = new Person();
+$PersonDAO = new PersonDAO();
 
-echo ("Heyyy you did it");
+$Person->setName($_POST["inputName"]);
+$Person->setSurname($_POST["inputSurname"]);
+$Person->setBirthdate($_POST["inputBirthdate"]);
+$Person->setPassword(password_hash($_POST["inputPassword"],PASSWORD_DEFAULT));
+
+var_dump($Person);
+$PersonDAO->openConnection();
+$PersonDAO->insertPerson($Person);
+$PersonDAO->closeConnection();
