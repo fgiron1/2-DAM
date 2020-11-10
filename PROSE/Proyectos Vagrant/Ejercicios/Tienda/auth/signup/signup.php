@@ -1,9 +1,9 @@
 <?php
 
 
-require_once("./class/PersonDAO.php");
-require_once("./class/DAO.php");
-require_once("./class/Person.php");
+include_once("./class/PersonDAO.php");
+include_once("./class/DAO.php");
+include_once("./class/Person.php");
 
 
 //Checking if the data has been sent
