@@ -1,0 +1,6 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\CRUD_Personas\CRUD_Personas_Entities\bin\Debug\CRUD_Personas_Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\CRUD_Personas\CRUD_Personas_Entities\bin\Debug\CRUD_Personas_Entities.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\CRUD_Personas\CRUD_Personas_Entities\obj\Debug\CRUD_Personas_Entities.csprojAssemblyReference.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\CRUD_Personas\CRUD_Personas_Entities\obj\Debug\CRUD_Personas_Entities.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\CRUD_Personas\CRUD_Personas_Entities\obj\Debug\CRUD_Personas_Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\CRUD_Personas\CRUD_Personas_Entities\obj\Debug\CRUD_Personas_Entities.pdb
