@@ -73,6 +73,9 @@
     <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\Views2\MainPage.xbf">
+      <PackagePath>Views2\MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>

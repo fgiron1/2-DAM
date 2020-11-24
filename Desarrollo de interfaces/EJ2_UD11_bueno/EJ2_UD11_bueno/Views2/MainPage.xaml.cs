@@ -22,9 +22,13 @@ namespace EJ2_UD11_bueno.Views2
     /// </summary>
     public sealed partial class BlankPage1 : Page
     {
+        public MainPageVM ViewModel { get; } = new MainPageVM(); 
         public BlankPage1()
         {
             this.InitializeComponent();
         }
+
+        
+
     }
 }
