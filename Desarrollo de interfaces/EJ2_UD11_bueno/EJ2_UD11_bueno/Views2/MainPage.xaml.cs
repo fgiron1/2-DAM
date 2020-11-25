@@ -20,10 +20,10 @@ namespace EJ2_UD11_bueno.Views2
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class BlankPage1 : Page
+    public sealed partial class MainPage : Page
     {
         public MainPageVM ViewModel { get; } = new MainPageVM(); 
-        public BlankPage1()
+        public MainPage()
         {
             this.InitializeComponent();
         }

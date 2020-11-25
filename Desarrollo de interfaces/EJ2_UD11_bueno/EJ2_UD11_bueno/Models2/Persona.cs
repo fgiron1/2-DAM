@@ -8,12 +8,10 @@ using System.Threading.Tasks;
 
 namespace EJ2_UD11_bueno
 {
-    //El modelo implementa INotifyPropertyChanged, en lugar del VM, dado que la ObservableCollection que maneja el VM ya avisa de cambios entre los
-    //objetos que la componen. No obstante, no existe ningun mecanismo que nos notifique sobre las modificaciones en las propiedades de esos objetos
-    //de la coleccion
-    public class Persona : INotifyPropertyChanged
+    //No implementa INotifyPropertyChanged dado que este modelo es usado como entidad de persistencia;
+    //nos interesa en tanto que nos permite comunicarnos con la base de datos.
+    public class Persona
     {
-        public event PropertyChangedEventHandler PropertyChanged;
 
         #region Nombre
         private string _nombre;
@@ -58,11 +56,6 @@ namespace EJ2_UD11_bueno
         {
             this.Nombre = nombre;
             this.Apellidos = apellidos;
-        }
-
-        public void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

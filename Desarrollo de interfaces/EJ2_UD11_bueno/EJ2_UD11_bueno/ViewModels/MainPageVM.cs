@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -8,13 +9,40 @@ using System.Threading.Tasks;
 
 namespace EJ2_UD11_bueno
 {
-    public class MainPageVM
+    public class MainPageVM : clsVMBase
     {
+        private DelegateCommand _eliminarCommand;
         public ObservableCollection<Persona> listado { get; set; } = new ObservableCollection<Persona>();
+        public Persona personaSeleccionada
+        {
+            get
+            {
+                return personaSeleccionada;
+            }
 
+            set
+            {
+                personaSeleccionada = value;
+                EliminarCommand.RaiseCanExecuteChanged();
+                NotifyPropertyChanged("personaSeleccionada");
+            }
+        }
+        public string textoBusqueda { get; set; }
+        
+        public DelegateCommand EliminarCommand
+        {
+            get
+            {
+                //Se le provee de la funcionalidad al command
+                _eliminarCommand = new DelegateCommand(eliminarCommand_execute, eliminarCommand_canExecute);
+                return EliminarCommand;
+            }
+
+        }
 
         public MainPageVM()
         {
+
 
             Persona p1 = new Persona("Fernando", "Giron");
             this.listado.Add(p1);
@@ -34,6 +62,27 @@ namespace EJ2_UD11_bueno
             this.listado.Add(p8);
 
 
+        }
+
+        private void eliminarCommand_execute()
+        {
+            listado.Remove(personaSeleccionada);
+        }
+
+        private bool eliminarCommand_canExecute()
+        {
+            bool sePuede;
+
+            if(personaSeleccionada == null)
+            {
+                sePuede = true;
+            } else
+            {
+                sePuede = false;
+            }
+
+            return sePuede;
+            
         }
     }
 }

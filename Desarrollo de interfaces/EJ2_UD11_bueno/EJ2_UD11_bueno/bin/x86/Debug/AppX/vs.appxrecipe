@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPTOP-76FHN2D2</Machine>
-    <WindowsUser>ferna</WindowsUser>
+    <Machine>107-19</Machine>
+    <WindowsUser>fgiron</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>fc980c14-989f-47f7-8b5e-b053d6e696a3</PackageIdentityName>
     <PackageIdentityPublisher>CN=ferna</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>F9BD9090AC2EAC07D090069FDCA62E0FE11C3A83AF51DEFB89CC6E53D74BA61F</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>58308FF8B71DBA62213FB2C6CE8493D373595F9DCC94CD1359D218BF63A84D0D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>fc980c14-989f-47f7-8b5e-b053d6e696a3_1.0.0.0_x86__3f8bj6r79h5v0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fc980c14-989f-47f7-8b5e-b053d6e696a3_3f8bj6r79h5v0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fc980c14-989f-47f7-8b5e-b053d6e696a3</RegisteredPackageID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-24T16:24:30.572</Modified>
+      <Modified>2020-11-25T10:14:34.673</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\EJ2_UD11_bueno.exe">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\EJ2_UD11_bueno.exe">
       <PackagePath>entrypoint\EJ2_UD11_bueno.exe</PackagePath>
-      <Modified>2020-11-24T16:24:06.990</Modified>
+      <Modified>2020-11-25T10:14:33.247</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -46,71 +46,67 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T16:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-11-24T11:18:15.519</Modified>
+      <Modified>2020-11-25T07:26:10.510</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-11-24T10:27:01.612</Modified>
+      <Modified>2020-11-25T07:26:10.024</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-24T10:27:01.622</Modified>
+      <Modified>2020-11-25T07:26:10.026</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-24T10:27:01.624</Modified>
+      <Modified>2020-11-25T07:26:10.033</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-24T10:27:01.629</Modified>
+      <Modified>2020-11-25T07:26:10.035</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-24T10:27:01.632</Modified>
+      <Modified>2020-11-25T07:26:10.038</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-24T10:27:01.635</Modified>
+      <Modified>2020-11-25T07:26:10.043</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-24T10:27:01.637</Modified>
+      <Modified>2020-11-25T07:26:10.052</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\EJ2_UD11_bueno.xr.xml">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\EJ2_UD11_bueno.xr.xml">
       <PackagePath>EJ2_UD11_bueno.xr.xml</PackagePath>
-      <Modified>2020-11-24T16:18:02.482</Modified>
+      <Modified>2020-11-25T10:14:32.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-11-24T16:24:06.855</Modified>
+      <Modified>2020-11-25T10:14:32.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-11-24T16:24:06.855</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\Views2\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\Views2\MainPage.xbf">
       <PackagePath>Views2\MainPage.xbf</PackagePath>
-      <Modified>2020-11-24T16:24:06.855</Modified>
+      <Modified>2020-11-25T10:14:32.939</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T15:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-11-24T16:24:09.809</Modified>
+      <Modified>2020-11-25T09:43:17.470</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\Core\EJ2_UD11_bueno.exe">
+    <AppxPackagedFile Include="C:\Users\fgiron\source\repos\2-DAM\Desarrollo de interfaces\EJ2_UD11_bueno\EJ2_UD11_bueno\bin\x86\Debug\Core\EJ2_UD11_bueno.exe">
       <PackagePath>EJ2_UD11_bueno.exe</PackagePath>
-      <Modified>2020-11-24T16:24:30.567</Modified>
+      <Modified>2020-11-25T10:14:34.651</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
