@@ -9,9 +9,39 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <RelativePanel>
-        <ListView ItemsSource="{x:Bind ViewModel.PersonList}"
-                  SelectedItem="{x:Bind ViewModel.PersonFocus, Mode=TwoWay}">
-            <ListView.ItemTemplate>
+
+        <NavigationView x:Name="leftMenu"
+                        PaneDisplayMode="LeftMinimal"
+                        IsSettingsVisible="False"
+                        IsBackButtonVisible="Collapsed"
+                        IsPaneOpen="False"
+                        RelativePanel.Below="topMenu">
+
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Add"/>
+            </NavigationView.MenuItems>
+            
+        </NavigationView>
+
+        <NavigationView x:Name="topMenu"
+                        PaneDisplayMode="Top"
+                        IsSettingsVisible="False"
+                        BackRequested="On_BackRequested"
+                        IsBackButtonVisible="Visible">
+
+            <NavigationView.MenuItems>
+                <NavigationViewItem  Icon="Find"/>
+                <NavigationViewItem  Icon="Delete"/>
+            </NavigationView.MenuItems>
+        </NavigationView>
+
+      
+        
+        <GridView ItemsSource="{x:Bind ViewModel.PersonList}"
+                  SelectedItem="{x:Bind ViewModel.PersonFocus, Mode=TwoWay}"
+                  RelativePanel.Below="topMenu"
+                  RelativePanel.RightOf="leftMenu">
+            <GridView.ItemTemplate>
                 <DataTemplate x:DataType="viewmodels:PersonVM">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="{Binding Path=ID}"/>
@@ -22,7 +52,7 @@
                         <TextBlock Text="{Binding Path=Email}"/>
                     </StackPanel>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </GridView.ItemTemplate>
+        </GridView>
     </RelativePanel>
 </Page>

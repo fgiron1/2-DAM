@@ -57,11 +57,7 @@ namespace BackwardsNavigation
         }
 
         //TODO No entiendo la necesidad de este método
-        private void BackInvoked(KeyboardAccelerator sender, KeyboardAcceleratorInvokedEventArgs args)
-        {
-            On_BackRequested();
-            args.Handled = true;
-        }
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

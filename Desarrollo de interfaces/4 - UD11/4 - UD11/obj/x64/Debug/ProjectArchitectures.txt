@@ -1,0 +1,5 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\4 - UD11 - BL.csproj;x64
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - DAL\4 - UD11 - DAL.csproj;x64
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - Entities\4 - UD11 - Entities.csproj;x64
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - Entities\4 - UD11 - Entities.csproj;x64
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\4 - UD11 - UI.csproj;x64

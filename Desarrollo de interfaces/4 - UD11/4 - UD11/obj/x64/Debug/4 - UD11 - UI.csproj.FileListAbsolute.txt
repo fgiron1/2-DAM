@@ -1,0 +1,58 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\4 - UD11 - UI.csprojAssemblyReference.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\App.g.i.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\App.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\Views\Deparment.g.i.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\Views\Deparment.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\Views\Person.g.i.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\Views\Person.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\App.xaml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\Views\Deparment.xaml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\Views\Person.xaml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\App.xbf
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\Views\Deparment.xbf
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\Views\Person.xbf
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\App.xbf
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\Views\Deparment.xbf
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\Views\Person.xbf
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\4 - UD11.xr.xml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\4 - UD11.exe
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\4 - UD11.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\resources.pri
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\AppxManifest.xml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\Core\4 - UD11.exe
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\Core\AppxManifest.xml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\4 - UD11 - UI.build.appxrecipe
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\System.Runtime.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\4 - UD11 - BL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\4 - UD11 - Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\4 - UD11 - BL.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\4 - UD11 - BL.pri
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\4 - UD11 - Entities.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\bin\x64\Debug\4 - UD11 - Entities.pri
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\XamlTypeInfo.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\XamlSaveStateFile.xml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\4 - UD11 - UI.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\4 - UD11 - UI.csproj.CopyComplete
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\4 - UD11 - BL.pri.xml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\4 - UD11 - Entities.pri.xml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\4 - UD11.exe
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\4 - UD11.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\ResourceHandlingTask.state
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\priconfig.xml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\priconfig.xml.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\unfiltered.layout.resfiles
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\unfiltered.layout.resfiles.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\filtered.layout.resfiles
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\filtered.layout.resfiles.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\excluded.layout.resfiles
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\excluded.layout.resfiles.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\resources.resfiles
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\resources.resfiles.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\pri.resfiles
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\pri.resfiles.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\qualifiers.txt
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\qualifiers.txt.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\ProjectArchitectures.txt
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json

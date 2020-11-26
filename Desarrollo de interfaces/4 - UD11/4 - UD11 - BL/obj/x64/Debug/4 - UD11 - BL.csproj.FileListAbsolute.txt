@@ -1,0 +1,32 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\bin\x64\Debug\4 - UD11 - BL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\bin\x64\Debug\4 - UD11 - BL.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\bin\x64\Debug\4 - UD11 - BL.pri
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\bin\x64\Debug\4 - UD11 - DAL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\bin\x64\Debug\4 - UD11 - Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\bin\x64\Debug\4 - UD11 - DAL.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\bin\x64\Debug\4 - UD11 - DAL.pri
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\bin\x64\Debug\4 - UD11 - Entities.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\bin\x64\Debug\4 - UD11 - Entities.pri
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\4 - UD11 - BL.csprojAssemblyReference.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\4 - UD11 - BL.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\4 - UD11 - BL.csproj.CopyComplete
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\4 - UD11 - DAL.pri.xml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\4 - UD11 - Entities.pri.xml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\4 - UD11 - BL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\4 - UD11 - BL.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\priconfig.xml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\priconfig.xml.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\unfiltered.layout.resfiles
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\unfiltered.layout.resfiles.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\filtered.layout.resfiles
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\filtered.layout.resfiles.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\excluded.layout.resfiles
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\excluded.layout.resfiles.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\resources.resfiles
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\resources.resfiles.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\pri.resfiles
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\pri.resfiles.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\qualifiers.txt
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\qualifiers.txt.intermediate
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11 - BL\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt

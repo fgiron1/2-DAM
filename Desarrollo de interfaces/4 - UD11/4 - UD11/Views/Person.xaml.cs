@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,8 +23,6 @@ namespace _4___UD11.Views
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
 
-
-    /// Esto deberia ser public
     public sealed partial class Person : Page
     {
 
@@ -32,6 +31,27 @@ namespace _4___UD11.Views
         public Person()
         {
             this.InitializeComponent();
+            ViewModel = new PersonVM();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            topMenu.IsBackEnabled = this.Frame.CanGoBack;
+        }
+
+
+        //This method checks whether the frame can go back and does it (also returns true). If it can't, returns false
+        private void On_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs e)
+        {
+
+            if (this.Frame.CanGoBack)
+            {
+                this.Frame.GoBack();
+            }
+
+            //True if backwards navigation was successful
+
+
         }
     }
 }

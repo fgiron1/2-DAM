@@ -19,3 +19,9 @@ C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\
 C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x86\Debug\Views\MainPage.xbf
 C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x86\Debug\Views\Person.xbf
 C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x86\Debug\Views\Deparment.g.i.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x86\Debug\Views\Deparment.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x86\Debug\Views\MainPage.g.i.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x86\Debug\Views\MainPage.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x86\Debug\Views\Deparment.xaml
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\4 - UD11\4 - UD11\obj\x86\Debug\Views\Deparment.xbf

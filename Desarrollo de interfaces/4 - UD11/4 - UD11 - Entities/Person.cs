@@ -17,6 +17,7 @@ namespace _4___UD11___Entities
         public string Email { get; set; }
         public byte[] ProfilePic { get; set; }
 
+        public Person(){}
         public Person(string firstName, string lastName, DateTime Birthdate, string PhoneNumber, string Email)
         {
             this.FirstName = firstName;
@@ -24,8 +25,6 @@ namespace _4___UD11___Entities
             this.Birthdate = Birthdate;
             this.PhoneNumber = PhoneNumber;
             this.Email = Email;
-
-
         }
     }
 }
