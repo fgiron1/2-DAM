@@ -15,7 +15,7 @@ namespace UD11___4___Entities
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         private int _departmentID;
-        public int DepartmentID
+        public virtual int DepartmentID
         {
             get
             {
@@ -26,6 +26,17 @@ namespace UD11___4___Entities
             {
                 _departmentID = value;
             }
+        }
+
+        public Person()
+        {
+            this.ID = 0;
+            this.FirstName = "John";
+            this.LastName = "Doe";
+            this.Birthdate = new DateTime();
+            this.Email = "johndoe@hotmail.com";
+            this.PhoneNumber = "654000000";
+            this.DepartmentID = 0;
         }
     }
 }

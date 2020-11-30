@@ -37,96 +37,7 @@ namespace UD11___4___DAL.Handlers
         {
             this.connection = new MyConnection();
         }
-        public Person getPerson(int id)
-        {
-            //Opening and closing methods already check for possible exceptions. No need to wrap them around try catch again
 
-            //Instantiating necessary objects
-            connection = new MyConnection();
-            connection.myCommand = new SqlCommand();
-            Person readPerson = new Person();
-
-            //Opening DB connection -> setting SQL sentence as a SqlCommand object -> SQLCommand object executes the code and returns
-            //a new reader, passed to our own reader -> Reader returns queried information
-            connection.openConnection();
-            connection.myCommand.CommandText = "SELECT *" +
-                                               "FROM Personas" +
-                                              $"WHERE id = {id}";
-
-            try
-            {
-                connection.myReader = connection.myCommand.ExecuteReader();
-            }
-            catch (SqlException e)
-            {
-                throw e;
-            }
-            
-            //Passing the value of rows affected to our handler's property
-            this.rowsAffected = connection.myReader.RecordsAffected;
-
-                readPerson.ID = (int)connection.myReader["id"];
-                readPerson.FirstName = (string)connection.myReader["firstName"];
-                readPerson.LastName = (string)connection.myReader["lastName"];
-                readPerson.Birthdate = (DateTime)connection.myReader["birthdate"]; //I think this one's going to be problematic
-                readPerson.Email = (string)connection.myReader["email"];
-                readPerson.PhoneNumber = (string)connection.myReader["phoneNumber"];
-
-            //Closing reader and connection
-            this.connection.myReader.Close();
-            this.connection.closeConnection();
-
-            return readPerson;
-
-        }
-
-        public List<Person> getPersonList()
-        {
-            //Opening and closing methods already check for possible exceptions. No need to wrap them around try catch again
-
-            //Instantiating necessary objects
-            connection = new MyConnection();
-            connection.myCommand = new SqlCommand();
-            List<Person> PersonList = new List<Person>();
-
-            //Opening DB connection -> setting SQL sentence as a SqlCommand object -> SQLCommand object executes the code and returns
-            //a new reader, passed to our own reader -> Reader returns queried information
-            connection.openConnection();
-            connection.myCommand.CommandText = "SELECT id, firstName, lastName, birthdate, email, phoneNumber FROM Personas";
-            connection.myReader = connection.myCommand.ExecuteReader();
-
-            if (connection.myReader.HasRows)
-            {
-                //Read method points to the next record.
-                //It also returns true if it's pointing to a record and there are more left
-                while (connection.myReader.Read())
-                {
-                    Person readPerson = new Person();
-                    readPerson.ID = (int) connection.myReader["id"];
-                    readPerson.FirstName = (string) connection.myReader["firstName"];
-                    readPerson.LastName = (string) connection.myReader["lastName"];
-                    readPerson.Birthdate = (DateTime) connection.myReader["birthdate"]; //I think this one's going to be problematic
-                    readPerson.Email = (string) connection.myReader["email"];
-                    readPerson.PhoneNumber = (string) connection.myReader["phoneNumber"];
-
-                    //If the field is null, use this code:
-                    //if (connection.myReader["email"] != System.DBNull.Value)
-                    //{ readPerson.Email = (string) connection.myReader["email"]; }
-
-                    //Adding retrieved records to our PersonList
-                    PersonList.Add(readPerson);
-
-                }
-            }
-
-            //Closing reader and connection
-            this.connection.myReader.Close();
-            this.connection.closeConnection();
-
-            return PersonList;
-
-        }
-       // public List<Person> getPersonListBy() { }
         public void updatePerson(int id, Person newPerson)
         {
             //Opening and closing methods already check for possible exceptions. No need to wrap them around try catch again
@@ -139,14 +50,27 @@ namespace UD11___4___DAL.Handlers
             //Opening DB connection -> setting SQL sentence as a SqlCommand object -> SQLCommand object executes the code and returns
             //a new reader, passed to our own reader -> Reader returns queried information, if any
             connection.openConnection();
-            connection.myCommand.CommandText = "UPDATE Personas" +
-                                              $"SET firstName = {newPerson.FirstName}," +
-                                              $"SET lastName = {newPerson.LastName}," +
-                                              $"SET birthdate = {newPerson.Birthdate}," +
-                                              $"SET email = {newPerson.Email}," +
-                                              $"SET phoneNumber = {newPerson.PhoneNumber}," +
-                                              $"SET DepartmentID = {newPerson.DepartmentID}";
+
+            //Passing myConnection property to myCommand's own connection property
+            connection.myCommand.Connection = connection.myConnection;
+
+            connection.myCommand.CommandText = "UPDATE Persons " +
+                                              $"SET FirstName = @FirstName, " +
+                                              $"SET LastName = @LastName, " +
+                                              $"SET Birthdate = @Birthdate, " +
+                                              $"SET Email = @Email, " +
+                                              $"SET PhoneNumber = @PhoneNumber, " +
+                                              $"SET DepartmentID = @DepartmentID " +
+                                              $"WHERE ID = @ID";
             //New department ID would have to be verified
+
+            connection.myCommand.Parameters.Add("@ID", System.Data.SqlDbType.Int).Value = newPerson.ID;
+            connection.myCommand.Parameters.Add("@FirstName", System.Data.SqlDbType.NVarChar).Value = newPerson.FirstName;
+            connection.myCommand.Parameters.Add("@LastName", System.Data.SqlDbType.NVarChar).Value = newPerson.LastName;
+            connection.myCommand.Parameters.Add("@PhoneNumber", System.Data.SqlDbType.NVarChar).Value = newPerson.PhoneNumber;
+            connection.myCommand.Parameters.Add("@Email", System.Data.SqlDbType.NVarChar).Value = newPerson.Email;
+            connection.myCommand.Parameters.Add("@Birthdate", System.Data.SqlDbType.DateTime).Value = newPerson.Birthdate;
+            connection.myCommand.Parameters.Add("@DepartmentID", System.Data.SqlDbType.Int).Value = newPerson.DepartmentID;
 
             //Executing non-query statement and passing the value of rows affected to our handler's property
             this.rowsAffected = connection.myCommand.ExecuteNonQuery();
@@ -164,9 +88,14 @@ namespace UD11___4___DAL.Handlers
             connection.myCommand = new SqlCommand();
             List<Person> PersonList = new List<Person>();
 
-            connection.myCommand.CommandText = "DELETE FROM Personas" +
-                                               $"WHERE id = {id}";
+            connection.openConnection();
+            //Passing myConnection property to myCommand's own connection property
+            connection.myCommand.Connection = connection.myConnection;
 
+            connection.myCommand.CommandText = "DELETE FROM Persons " +
+                                               "WHERE ID = @id";
+
+            connection.myCommand.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
             //Executing non-query statement and passing the value of rows affected to our handler's property
             this.rowsAffected = connection.myCommand.ExecuteNonQuery();
 
@@ -187,14 +116,25 @@ namespace UD11___4___DAL.Handlers
             //a new reader, passed to our own reader -> Reader returns queried information, if any
             connection.openConnection();
 
-            connection.myCommand.CommandText = "INSERT INTO Personas (firstName, lastName, birthdate, email, phoneNumber, DepartmentID" +
-                                               $"VALUES  {newPerson.FirstName}," +
-                                               $" {newPerson.LastName}," +
-                                               $" {newPerson.Birthdate}," +
-                                               $" {newPerson.Email}," +
-                                               $" {newPerson.PhoneNumber}," +
-                                               $" {newPerson.DepartmentID}";
-                                                 //DepartmentID should be verified
+            //Passing myConnection property to myCommand's own connection property
+            connection.myCommand.Connection = connection.myConnection;
+
+            connection.myCommand.CommandText = "INSERT INTO Persons (FirstName, LastName, Birthdate, Email, PhoneNumber, DepartmentID)" +
+                                               " VALUES @FirstName, " +
+                                               " @FirstName, " +
+                                               " @LastName, " +
+                                               " @PhoneNumber, " +
+                                               " @Email, " +
+                                               " @Birthdate, " +
+                                               " @DepartmentID";
+                                                //DepartmentID should be verified
+
+            connection.myCommand.Parameters.Add("@FirstName", System.Data.SqlDbType.NVarChar).Value = newPerson.FirstName;
+            connection.myCommand.Parameters.Add("@LastName", System.Data.SqlDbType.NVarChar).Value = newPerson.LastName;
+            connection.myCommand.Parameters.Add("@PhoneNumber", System.Data.SqlDbType.NVarChar).Value = newPerson.PhoneNumber;
+            connection.myCommand.Parameters.Add("@Email", System.Data.SqlDbType.NVarChar).Value = newPerson.Email;
+            connection.myCommand.Parameters.Add("@Birthdate", System.Data.SqlDbType.DateTime).Value = newPerson.Birthdate;
+            connection.myCommand.Parameters.Add("@DepartmentID", System.Data.SqlDbType.Int).Value = newPerson.DepartmentID;
 
             //Executing non-query statement andPassing the value of rows affected to our handler's property
             this.rowsAffected = connection.myCommand.ExecuteNonQuery();

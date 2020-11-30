@@ -43,7 +43,7 @@ namespace UD11___4___DAL.Connection
             this.server = "fgiron1.database.windows.net";
             this.dataBase = "SGE";
             this.user = "usuario";            
-            this.pass = "Mitesoro";
+            this.pass = "Mitesoro123";
 
         }
         //Con parámetros por si quisiera cambiar las conexiones

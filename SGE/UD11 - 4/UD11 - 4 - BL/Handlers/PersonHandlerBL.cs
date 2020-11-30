@@ -4,16 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UD11___4___DAL.Handlers;
+using UD11___4___Entities;
 
 namespace UD11___4___BL.Handlers
 {
     public class PersonHandlerBL
     {
-        public PersonHandlerDAL PersonHandler { get; set; }
+        private PersonHandlerDAL handler;
 
         public PersonHandlerBL()
         {
-            PersonHandler = new PersonHandlerDAL();
+            handler = new PersonHandlerDAL();
         }
+
+        public void updatePerson(int id, Person newPerson)
+        {
+            handler.updatePerson(id, newPerson);
+        }
+        public void deletePerson(int id)
+        {
+            handler.deletePerson(id);
+        }
+        public void insertPerson(Person newPerson)
+        {
+            handler.insertPerson(newPerson);
+        }
+
     }
 }

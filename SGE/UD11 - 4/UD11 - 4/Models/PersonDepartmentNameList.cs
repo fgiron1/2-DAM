@@ -7,11 +7,11 @@ namespace UD11___4.Models
 {
     public class PersonDepartmentNameList
     {
-        public List<PersonDepartmentName> PersonDepartmentName { get; set; }
+        public List<PersonDepartmentName> List { get; set; }
 
         public PersonDepartmentNameList()
         {
-            this.PersonDepartmentName = new List<PersonDepartmentName>();
+            this.List = new List<PersonDepartmentName>();
         }
 
     }
