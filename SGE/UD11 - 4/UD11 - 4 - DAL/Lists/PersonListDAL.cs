@@ -38,11 +38,11 @@ namespace UD11___4___DAL.Lists
             connection.myCommand.Connection = connection.myConnection;
 
             connection.myCommand.CommandText = "SELECT ID, FirstName, LastName, Birthdate, Email, PhoneNumber, DepartmentID " +
-                                               "FROM Persons " +
-                                               "WHERE ID = @ID";
+                                               "FROM dbo.Persons " +
+                                               "WHERE ID = @id";
 
 
-            connection.myCommand.Parameters.Add("@ID", System.Data.SqlDbType.NVarChar).Value = id;
+            connection.myCommand.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
 
             try
             {
@@ -54,9 +54,10 @@ namespace UD11___4___DAL.Lists
             }
 
             //Passing the value of rows affected to our handler's property
-            this.rowsAffected = connection.myReader.RecordsAffected;
+            //this.rowsAffected = connection.myReader.RecordsAffected;
+            connection.myReader.Read();
 
-            readPerson.ID = (int)connection.myReader["ID"];
+            readPerson.id = (int)connection.myReader["ID"];
             readPerson.FirstName = (string)connection.myReader["FirstName"];
             readPerson.LastName = (string)connection.myReader["LastName"];
             readPerson.Birthdate = (DateTime)connection.myReader["Birthdate"]; //I think this one's going to be problematic
@@ -97,7 +98,7 @@ namespace UD11___4___DAL.Lists
                 while (connection.myReader.Read())
                 {
                     Person readPerson = new Person();
-                    readPerson.ID = (int)connection.myReader["ID"];
+                    readPerson.id = (int)connection.myReader["ID"];
                     readPerson.FirstName = (string)connection.myReader["FirstName"];
                     readPerson.LastName = (string)connection.myReader["LastName"];
                     readPerson.Birthdate = (DateTime)connection.myReader["Birthdate"]; //I think this one's going to be problematic

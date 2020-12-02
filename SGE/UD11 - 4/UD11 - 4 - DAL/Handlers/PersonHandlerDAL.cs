@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using UD11___4___DAL.Connection;
 using UD11___4___Entities;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
 
 
 
@@ -55,16 +56,16 @@ namespace UD11___4___DAL.Handlers
             connection.myCommand.Connection = connection.myConnection;
 
             connection.myCommand.CommandText = "UPDATE Persons " +
-                                              $"SET FirstName = @FirstName, " +
-                                              $"SET LastName = @LastName, " +
-                                              $"SET Birthdate = @Birthdate, " +
-                                              $"SET Email = @Email, " +
-                                              $"SET PhoneNumber = @PhoneNumber, " +
-                                              $"SET DepartmentID = @DepartmentID " +
-                                              $"WHERE ID = @ID";
+                                              "SET FirstName = @FirstName, " +
+                                              "LastName = @LastName, " +
+                                              "Birthdate = @Birthdate, " +
+                                              "Email = @Email, " +
+                                              "PhoneNumber = @PhoneNumber, " +
+                                              "DepartmentID = @DepartmentID " +
+                                              "WHERE ID = @ID";
             //New department ID would have to be verified
 
-            connection.myCommand.Parameters.Add("@ID", System.Data.SqlDbType.Int).Value = newPerson.ID;
+            connection.myCommand.Parameters.Add("@ID", System.Data.SqlDbType.Int).Value = newPerson.id;
             connection.myCommand.Parameters.Add("@FirstName", System.Data.SqlDbType.NVarChar).Value = newPerson.FirstName;
             connection.myCommand.Parameters.Add("@LastName", System.Data.SqlDbType.NVarChar).Value = newPerson.LastName;
             connection.myCommand.Parameters.Add("@PhoneNumber", System.Data.SqlDbType.NVarChar).Value = newPerson.PhoneNumber;
@@ -76,7 +77,8 @@ namespace UD11___4___DAL.Handlers
             this.rowsAffected = connection.myCommand.ExecuteNonQuery();
 
             //Closing reader and connection
-            this.connection.myReader.Close();
+            //The reader doesn't exist at this point, so there's no need to close it
+            //this.connection.myReader.Close();
             this.connection.closeConnection();
         }
         public void deletePerson(int id)
@@ -100,7 +102,8 @@ namespace UD11___4___DAL.Handlers
             this.rowsAffected = connection.myCommand.ExecuteNonQuery();
 
             //Closing reader and connection
-            this.connection.myReader.Close();
+            //It's not necessary to close it, because at this point, the reader has been deleted by the garbage collector
+            //this.connection.myReader.Close();
             this.connection.closeConnection();
         }
         public void insertPerson(Person newPerson)
@@ -120,13 +123,12 @@ namespace UD11___4___DAL.Handlers
             connection.myCommand.Connection = connection.myConnection;
 
             connection.myCommand.CommandText = "INSERT INTO Persons (FirstName, LastName, Birthdate, Email, PhoneNumber, DepartmentID)" +
-                                               " VALUES @FirstName, " +
-                                               " @FirstName, " +
+                                               " VALUES (@FirstName, " +
                                                " @LastName, " +
                                                " @PhoneNumber, " +
                                                " @Email, " +
-                                               " @Birthdate, " +
-                                               " @DepartmentID";
+                                               " CAST(@Birthdate AS date), " +
+                                               " @DepartmentID)";
                                                 //DepartmentID should be verified
 
             connection.myCommand.Parameters.Add("@FirstName", System.Data.SqlDbType.NVarChar).Value = newPerson.FirstName;
@@ -137,7 +139,16 @@ namespace UD11___4___DAL.Handlers
             connection.myCommand.Parameters.Add("@DepartmentID", System.Data.SqlDbType.Int).Value = newPerson.DepartmentID;
 
             //Executing non-query statement andPassing the value of rows affected to our handler's property
+            try { 
             this.rowsAffected = connection.myCommand.ExecuteNonQuery();
+            } catch (SqlTypeException e)
+            {
+                throw e;
+            }
+            catch (Exception e)
+            {
+                    throw e;
+            }
 
             //Closing reader and connection
             this.connection.myReader.Close();

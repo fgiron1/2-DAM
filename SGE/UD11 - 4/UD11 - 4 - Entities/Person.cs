@@ -8,7 +8,7 @@ namespace UD11___4___Entities
 {
     public class Person
     {
-        public int ID { get; set; }
+        public int id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime Birthdate { get; set; }
@@ -30,7 +30,7 @@ namespace UD11___4___Entities
 
         public Person()
         {
-            this.ID = 0;
+            this.id = 0;
             this.FirstName = "John";
             this.LastName = "Doe";
             this.Birthdate = new DateTime();
