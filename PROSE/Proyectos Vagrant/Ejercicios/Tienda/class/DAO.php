@@ -1,6 +1,6 @@
 <?php
 
-
+namespace clase;
 /*Clase abstracta diseñada para acceder a una base de datos MySQL*/
 class DAO
 {

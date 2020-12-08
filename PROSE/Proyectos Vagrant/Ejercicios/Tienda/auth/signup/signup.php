@@ -1,10 +1,16 @@
 <?php
 
 
-include_once("./class/PersonDAO.php");
-include_once("./class/DAO.php");
-include_once("./class/Person.php");
+//No se como coño se pone la ruta, no me coge ninguna, ni relativa ni absoluta
+//Ni desde el directorio del vagrant ni desde el local
+include_once "/vagrant/Ejercicios/Tienda/class/Person.php";
+include_once "";
+include_once "";
 
+
+
+$var = getcwd();
+echo $var;
 
 //Checking if the data has been sent
 if(!isset($_POST["inputName"],
@@ -31,13 +37,12 @@ if($_POST["inputPassword"] !== $_POST["inputRepeatPassword"]){
 
 $Person = new Person();
 $PersonDAO = new PersonDAO();
-
+echo "hi";
 $Person->setName($_POST["inputName"]);
 $Person->setSurname($_POST["inputSurname"]);
 $Person->setBirthdate($_POST["inputBirthdate"]);
 $Person->setPassword(password_hash($_POST["inputPassword"],PASSWORD_DEFAULT));
-
-var_dump($Person);
+echo "Hey";
 $PersonDAO->openConnection();
 $PersonDAO->insertPerson($Person);
 $PersonDAO->closeConnection();

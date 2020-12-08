@@ -1,0 +1,111 @@
+NOTE: Up until the UI layer, this application is designed as intended. However, I haven't had the time to properly
+implement the model PersonDepartmentList. For that reason, when editing a record, the user has to choose a department name
+and a department ID. There should be some logic which ties a certain department name to its corresponding database id,
+so the user only has to see and choose a department name.
+
+Creating a new record doesnt' work due to a casting sql exception in the birthdate field
+
+
+
+Entities
+	Department
+		- int ID (C, M)
+		- string Name (C, M)
+	Person
+		-int id (C, M)
+		-string FirstName (C, M)
+		-string LastName (C, M)
+		-DateTime Birthdate (C, M)
+		-string Email (C, M)
+		-string PhoneNumber (C, M)
+		-int DepartmentID (C, M) //I could modify the setter so it verifies the ID corresponds with the DB id
+
+DAL
+	Connection
+		MyConnection
+			-String server (C, M)
+			-String dataBase (C, M)
+			-String user (C, M)
+			-String pass (C, M)
+			-SqlDataReader myReader (C, M)
+			-SqlCommand myCommand (C, M)
+			-SqlConnection myConnection (C, M)
+	Handlers
+		PersonHandlerDAL
+
+			- MyConnection connection
+			- int rowsAffected
+				+ Person getPerson(int id)
+				+ List<Person> getPersonList()
+				+ void updatePerson(int id, Person newPerson)
+				+ void deletePerson (int id)
+				+ void insertPerson (Person newPerson)
+
+		DepartmentHandlerDAL
+
+			- MyConnection connection
+			- int rowsAffected
+				+ void updateDepartment(int id, Department newDepartment)
+				+ void deleteDepartment (int id)
+				+ void insertDepartment (Department newDepartment)
+	Lists
+		PersonListDAL
+			-MyConnection connection
+			-int rowsAffected
+				+ Person getPerson(int id)
+				+ List<Person> getPersonList()
+		DepartmentListDAL
+			- MyConnection connection
+			- int rowsAffected
+				+ Department getDepartment(int id)
+				+ List<Department> getDepartmentList()
+BL
+	Handlers
+		PersonHandlerBL
+			- private PersonHandlerDAL handler
+				+ void updatePerson(int id, Person newPerson)
+				+ void deletePerson(int id)
+				+ void insertPerson(Person newPerson)
+
+		DepartmentHandlerBL
+			- private DepartmentHandlerDAL handler
+				+ void updateDepartment(int id, Department newDepartment)
+				+ void deleteDepartment(int id)
+				+ void insertDepartment(Department newDepartment)
+	Lists
+		PersonListBL
+			+List<Person> getPersonList()
+			+Person getPersonById(int id)
+		DepartmentListBL
+			+List<Department> getDepartmentList()
+			+Department getDepartmentById(int id)
+UI
+	Controllers
+		HomeController
+			+ActionResult List()
+			+ActionResult Create()
+			+ActionResult [HttpPost]Create
+			+ActionResult Details
+			+ActionReuslt Edit
+			+ActionResult [HttpPost]Edit
+			+ActionResult Delete
+			+ActionResult [HttpPost]Delete
+			+ActionResult Done
+
+	Models
+		PersonDepartmentList : Person
+			-List<Department> departmentList (C, M)
+		PersonDepartmentName : Person
+			-string departmentName (C, M)
+		PersonDepartmentNameList
+			-List<PersonDepartmentName> List (C, M)
+	Views
+		Create
+		Delete
+		Details
+		Done
+		Edit
+		List
+
+
+		
