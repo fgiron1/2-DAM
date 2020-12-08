@@ -1,16 +1,19 @@
---Funcion que dice si un pedido cabe en un almacen
---Trigger en insercion en Asignaciones
-	--Comprobacion de que el IDEnvio tiene su FechaAsignacion a NULL, si no, acabamos. (IDEnvio e IDAlmacen estan en la tabla temporal inserted)
-	--Comprobamos capacidad de el almacen preferido (lo obtenemos con un SELECT WHERE ID = IDEnvio)
-	--Si cabe, se comprueba que el IDEnvio sea igual al de AlmacenPreferido. Si lo es, todo correcto.
-	--Si no, preguntamos al usuario en java si quiere ponerlo en otro almacen. Si es así
-	--Obtenemos una lista ordenada por cercanía de los almacenes que tienen espacio para el envío y cogemos el más cercano
 
 
---Este trigger prioriza el almacen preferido independientemente de lo que se inserte en la tabla Asignaciones
+-- A HACER --
+--El ejercicio me pide tambien que lidie con las filas que tienen ya el valor de fecha de asignación en null
+-- A HACER --
+
+
+
+-----------Funcionamiento-----------
+--Este trigger es activado al insertar una nueva fila en la tabla Asignaciones.
+--Se encarga de comprobar si el pedido que se pretende insertar puede ser enviado al almacen
+--que tambien se quiere insertar (NO al almacén preferido del envío). De no ser así, lanza una excepción
+------------------------------------
 
 GO
-CREATE OR ALTER TRIGGER AsignarAlmacen
+CREATE OR ALTER TRIGGER ComprobarEspacio
 ON Asignaciones
 INSTEAD OF INSERT
 AS
@@ -18,17 +21,14 @@ BEGIN
 	
 	DECLARE @IDEnvio bigint
 	DECLARE @FechaAsignacion date
-	DECLARE @IDAlmacenPreferido bigint
 	DECLARE @IDAlmacen bigint
-	DECLARE @IDAlmacenMasCercano bigint
 
 	--Almacenamos los datos necesarios
 	SELECT @IDEnvio = IDEnvio,
 	       @IDAlmacen = IDAlmacen
 	FROM inserted
 
-	SELECT @FechaAsignacion = FechaAsignacion,
-	       @IDAlmacenPreferido = AlmacenPreferido 
+	SELECT @FechaAsignacion = FechaAsignacion
 	FROM Envios
 	WHERE ID = @IDEnvio
 
@@ -49,35 +49,25 @@ BEGIN
 				FROM inserted I
 			END
 		ELSE
-			--Todas las distancias entre un almacen en particular a otro cualquiera
-			--no estan expresadas de la forma: distancia de IDAlmacen1 a IDAlmacen2.
-			--Una parte sí, pero otras son de la forma: distancia de IDAlmacen2 a IDAlmacen1.
-			--Por ello, hay unas comprobaciones adicionales.
-			
-			--Ordenamos la subconsulta por la distancia y almacenamos el ID del almacen
-			--más cercano al preferido
-			SELECT TOP 1 
-					--Este CASE nos permite diferenciar entre el ID del almacen preferido
-					--y el id del almacen mas cercano al preferido
-					@IDAlmacenMasCercano = CASE sub1.IDAlmacen1 
-							WHEN @IDAlmacen THEN sub1.IDAlmacen2
-							ELSE sub1.IDAlmacen1
-					END
-				FROM
-				--Esta consulta devuelve las distancias entre los almacenes
-				--que tienen espacio para almacenar un envio dado cuya id es @IDEnvio
-				(SELECT IDAlmacen1, IDAlmacen2, Distancia FROM Distancias
-				WHERE (IDAlmacen1 = @IDAlmacen OR
-					  IDAlmacen2 = @IDAlmacen) AND
-					  --Tengo que ver si las llamadas a la funcion se hacen por cada fila o solo la primera, que pasa mucho
-					  (dbo.FNHayEspacio(@IDEnvio, IDAlmacen1) = 1 OR
-					  dbo.FNHayEspacio(@IDEnvio, IDAlmacen2) = 1)
-				ORDER BY Distancia ASC) sub1
+			RAISERROR(N'No hay suficiente espacio en el almacen', 16, 1)
 				
 END;
 GO
 
-
+----------Interfaz----------
+--Prototipo: FNHayEspacio(@IDEnvio bigint, @IDAlmacen bigint)
+--
+--Entradas: El id de un envío (bigint) y el id de un almacén (bigint)
+--
+--Salidas: Un tipo bit que expresa si en el almacen pasado por parametros
+--hay espacio para el envío pasado por parametros
+--
+--Precondiciones: Todos los id han de estar validados
+--
+--Postcondiciones: -
+--
+--Otros: -
+----------------------------
 GO
 CREATE OR ALTER FUNCTION FNHayEspacio(@IDEnvio bigint, @IDAlmacen bigint)
 RETURNS bit
@@ -107,6 +97,63 @@ BEGIN
 		SET @resultado = 0
 
 	RETURN @resultado
+
+END
+GO
+
+------Interfaz------
+--Prototipo: FNAlmacenMasCercaDisponible(@IDAlmacen bigint, @IDEnvio bigint)
+--
+--Entradas: El id de un almacén (bigint) y el id de un envío (bigint)
+--
+--Salidas: Una variable tipo tabla que contiene los almacenes que tienen
+--espacio para guardar un envio de ID @IDEnvio, además de la distancia hacia ellos
+--desde el almacen de ID @IDAlmacen
+--
+--Precondiciones: Todos los id han de estar validados
+--
+--Postcondiciones: La variable tipo tabla devuelta NO esta ordenada
+--
+--Otros: El almacen cuya ID se pasa por parametros suele ser el almacen preferido
+--de un paquete, que por algun motivo necesita ser enviado a otro almacén
+--------------------
+GO
+CREATE OR ALTER FUNCTION FNAlmacenMasCercaDisponible(@IDAlmacen bigint, @IDEnvio bigint)
+RETURNS @almacenesDistancia TABLE
+(
+	IDAlmacen bigint NOT NULL,
+	Distancia int NOT NULL
+)
+AS
+BEGIN
+
+	--Todas las distancias entre un almacen en particular a otro cualquiera
+	--no estan expresadas de la forma: distancia de IDAlmacen1 a IDAlmacen2.
+	--Una parte sí, pero otras son de la forma: distancia de IDAlmacen2 a IDAlmacen1.
+	--Por ello, hay unas comprobaciones adicionales.
+	
+	--Ordenamos la subconsulta por la distancia y almacenamos el ID del almacen
+	--más cercano al preferido
+	INSERT INTO @almacenesDistancia
+	SELECT
+			--Este CASE nos permite diferenciar entre el ID del almacen pasado por parametros
+			--y el id de otro almacen
+			 (CASE sub1.IDAlmacen1 
+					WHEN @IDAlmacen THEN sub1.IDAlmacen2
+					ELSE sub1.IDAlmacen1
+			 END) AS IDAlmacen,
+			 sub1.Distancia
+		FROM
+		--Esta consulta devuelve las distancias entre los almacenes
+		--que tienen espacio para almacenar un envio dado cuya id es @IDEnvio
+		(SELECT IDAlmacen1, IDAlmacen2, Distancia FROM Distancias
+			WHERE (IDAlmacen1 = @IDAlmacen OR
+					  IDAlmacen2 = @IDAlmacen) AND
+					  --Tengo que ver si las llamadas a la funcion se hacen por cada fila o solo la primera, que pasa mucho
+					  (dbo.FNHayEspacio(@IDEnvio, IDAlmacen1) = 1 OR
+					  dbo.FNHayEspacio(@IDEnvio, IDAlmacen2) = 1)) sub1
+
+	RETURN
 
 END
 GO
