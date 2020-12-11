@@ -1,4 +1,6 @@
 <?php
+
+namespace clase;
 class Person
 {
     private $idPerson;

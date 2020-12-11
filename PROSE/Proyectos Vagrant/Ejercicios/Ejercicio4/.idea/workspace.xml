@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79edd896-17de-4872-813f-b782a88b1862" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Tienda/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tienda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tienda/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tienda/auth/signup/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Tienda/auth/signup/signup.php" afterDir="false" />
-    </list>
+    <list default="true" id="79edd896-17de-4872-813f-b782a88b1862" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +69,7 @@
       <workItem from="1603788167321" duration="2727000" />
       <workItem from="1603794858855" duration="96000" />
       <workItem from="1604915538592" duration="868000" />
+      <workItem from="1607073903453" duration="454000" />
     </task>
     <servers />
   </component>
@@ -93,11 +89,19 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="521" y="120" key="FileChooserDialogImpl" timestamp="1604831867499">
+    <state x="348" y="79" key="#Servers" timestamp="1607074335740">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="348" y="79" key="#Servers/0.0.1536.824@0.0.1536.824" timestamp="1607074335740" />
+    <state x="-11" y="111" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607074348413">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-11" y="111" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1607074348413" />
+    <state x="521" y="120" key="FileChooserDialogImpl" timestamp="1607074369801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="463" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603179887335" />
-    <state x="521" y="120" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604831867499" />
+    <state x="521" y="120" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607074369801" />
     <state x="429" y="135" key="NewPhpClassDialog" timestamp="1603125468843">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

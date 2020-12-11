@@ -1,5 +1,6 @@
 <?php
 
+namespace clase;
 require_once "DAO.php";
 require_once  "Person.php";
 
