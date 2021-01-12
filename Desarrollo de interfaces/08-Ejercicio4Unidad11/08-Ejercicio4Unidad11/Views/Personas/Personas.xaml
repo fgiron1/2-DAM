@@ -1,0 +1,117 @@
+﻿<Page
+    x:Class="_08_Ejercicio4Unidad11.Views.Personas.Personas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_08_Ejercicio4Unidad11.Views.Personas"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="VistaGrande">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="10"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="VistaPequena">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="buscador.(RelativePanel.RightOf)" Value="btnActualizar"/>
+                        <Setter Target="buscador.(RelativePanel.AlignVerticalCenterWith)" Value="btnActualizar"/>
+                        <Setter Target="buscador.Margin" Value="0,0,0,0"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <TextBlock x:Name="titulo" Text="PERSONAS" RelativePanel.AlignTopWithPanel="True"
+                   RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" Padding="0,20"
+                   TextAlignment="Center" FontSize="40"/>
+
+        <AppBarButton x:Name="btnAnadir" MinWidth="100" Label="Añadir" Command="{x:Bind VMVistaPersonas.ComandoAnadirPersonas}"
+                      RelativePanel.AlignLeftWithPanel="True" RelativePanel.Below="titulo">
+            <AppBarButton.Icon>
+                <SymbolIcon Symbol="AddFriend"/>
+            </AppBarButton.Icon>
+        </AppBarButton>
+
+        <AppBarButton x:Name="btnEliminar" MinWidth="100" Label="Eliminar" Command="{x:Bind VMVistaPersonas.ComandoEliminarPersona}"
+                      RelativePanel.RightOf="btnAnadir" RelativePanel.Below="titulo">
+            <AppBarButton.Icon>
+                <SymbolIcon Symbol="Delete"/>
+            </AppBarButton.Icon>
+        </AppBarButton>
+
+        <AppBarButton x:Name="btnActualizar" MinWidth="100" Label="Actualizar" Command="{x:Bind VMVistaPersonas.ComandoActualizarPersonas}"
+                      RelativePanel.RightOf="btnEliminar" RelativePanel.Below="titulo">
+            <AppBarButton.Icon>
+                <SymbolIcon Symbol="Refresh"/>
+            </AppBarButton.Icon>
+        </AppBarButton>
+
+
+        <StackPanel x:Name="buscador" RelativePanel.Below="btnAnadir" Orientation="Horizontal" Margin="0,20,0,0">
+
+            <TextBox x:Name="txtvBuscador" MinWidth="400" PlaceholderText="Buscar personas por nombre" Margin="20,0,0,0"
+                        Text="{x:Bind VMVistaPersonas.Buscador, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Button x:Name="buscar" Command="{x:Bind VMVistaPersonas.ComandoBuscarPersona}" Margin="5,0,0,0">
+                <SymbolIcon Symbol="Find" />
+            </Button>
+
+        </StackPanel>
+
+        <GridView RelativePanel.AlignBottomWithPanel="True" RelativePanel.Below="buscador" Margin="0,20,0,0"
+                  RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" ItemsSource="{x:Bind VMVistaPersonas.ListadoFiltrado, Mode=OneWay}"
+                  SelectedItem="{x:Bind VMVistaPersonas.PersonaSeleccionada, Mode=TwoWay}" DoubleTapped="entrarOpcionesPersona" RightTapped="GridView_RightTapped">
+
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+
+            <GridView.ContextFlyout>
+                <MenuFlyout x:Name="menuFluout" >
+                    <MenuFlyoutItem Text="Eliminar" Command="{x:Bind VMVistaPersonas.ComandoEliminarPersona }"/>
+                </MenuFlyout>
+            </GridView.ContextFlyout>
+
+
+            <GridView.ItemTemplate>
+                <DataTemplate>
+
+                    <RelativePanel Margin="20" MaxHeight="200" MaxWidth="200">
+
+                        <Image x:Name="imagen" RelativePanel.AlignTopWithPanel="True"
+                               RelativePanel.AlignLeftWithPanel="True" MaxHeight="80" MaxWidth="80"
+                               Source="/Assets/personaDefecto.jpg"/>
+                        <!--="{Binding Foto}"/>-->
+
+                        <TextBlock x:Name="nombre" RelativePanel.RightOf="imagen" RelativePanel.AlignTopWith="imagen"
+                                   Margin="10,0,0,0" Text="{Binding Nombre}"/>
+
+
+                        <TextBlock x:Name="apellidos" RelativePanel.RightOf="nombre" RelativePanel.AlignTopWith="nombre"
+                                   Margin="10,0,0,0" Text="{Binding Apellidos}"/>
+
+
+                        <TextBlock x:Name="departamento" RelativePanel.RightOf="imagen" RelativePanel.Below="nombre"
+                                   Margin="10,10,0,0" Text="{Binding Departamento.Nombre}"/>
+
+                    </RelativePanel>
+
+                </DataTemplate>
+            </GridView.ItemTemplate>
+
+        </GridView>
+
+    </RelativePanel>
+
+</Page>

@@ -1,0 +1,99 @@
+﻿<Page
+    x:Class="_08_Ejercicio4Unidad11.Views.Departamentos.Departamentos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_08_Ejercicio4Unidad11.Views.Departamentos"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel>
+        
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="VistaGrande">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="10"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="VistaPequena">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="buscador.(RelativePanel.RightOf)" Value="btnActualizar"/>
+                        <Setter Target="buscador.(RelativePanel.AlignVerticalCenterWith)" Value="btnActualizar"/>
+                        <Setter Target="buscador.Margin" Value="0,0,0,0"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <TextBlock x:Name="titulo" Text="DEPARTAMENTOS" RelativePanel.AlignTopWithPanel="True"
+                   RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" Padding="0,20"
+                   TextAlignment="Center" FontSize="40"/>
+
+        <AppBarButton x:Name="btnAnadir" MinWidth="100" Label="Añadir" Command="{x:Bind VMVistaDepartamentos.ComandoAnadirDepartamento}"
+                      RelativePanel.AlignLeftWithPanel="True" RelativePanel.Below="titulo">
+            <AppBarButton.Icon>
+                <SymbolIcon Symbol="AddFriend"/>
+            </AppBarButton.Icon>
+        </AppBarButton>
+
+        <AppBarButton x:Name="btnEliminar" MinWidth="100" Label="Eliminar" Command="{x:Bind VMVistaDepartamentos.ComandoEliminarDepartamento}"
+                      RelativePanel.RightOf="btnAnadir" RelativePanel.Below="titulo">
+            <AppBarButton.Icon>
+                <SymbolIcon Symbol="Delete"/>
+            </AppBarButton.Icon>
+        </AppBarButton>
+
+        <AppBarButton x:Name="btnActualizar" MinWidth="100" Label="Actualizar" Command="{x:Bind VMVistaDepartamentos.ComandoActualizarDepartamento}"
+                      RelativePanel.RightOf="btnEliminar" RelativePanel.Below="titulo">
+            <AppBarButton.Icon>
+                <SymbolIcon Symbol="Refresh"/>
+            </AppBarButton.Icon>
+        </AppBarButton>
+
+
+        <StackPanel x:Name="buscador" RelativePanel.Below="btnAnadir" Orientation="Horizontal" Margin="0,20,0,0">
+
+            <TextBox x:Name="txtvBuscador" MinWidth="400" PlaceholderText="Buscar personas por nombre" Margin="20,0,0,0"
+                        Text="{x:Bind VMVistaDepartamentos.Buscador, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Button x:Name="buscar" Command="{x:Bind VMVistaDepartamentos.ComandoBuscarDepartamento}" Margin="5,0,0,0">
+                <SymbolIcon Symbol="Find" />
+            </Button>
+
+        </StackPanel>
+
+        <GridView RelativePanel.AlignBottomWithPanel="True" RelativePanel.Below="buscador" Margin="0,20,0,0"
+                  RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" ItemsSource="{x:Bind VMVistaDepartamentos.ListadoFiltrado, Mode=OneWay}"
+                  SelectedItem="{x:Bind VMVistaDepartamentos.DepartamentoSeleccionado, Mode=TwoWay}" DoubleTapped="entrarOpcionesDepartamento" RightTapped="GridView_RightTapped">
+
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+
+            <GridView.ContextFlyout>
+                <MenuFlyout x:Name="menuFluout" >
+                    <MenuFlyoutItem Text="Eliminar" Command="{x:Bind VMVistaDepartamentos.ComandoEliminarDepartamento }"/>
+                </MenuFlyout>
+            </GridView.ContextFlyout>
+
+            <GridView.ItemTemplate>
+                <DataTemplate>
+
+                    <TextBlock x:Name="nombre" Margin="20" Text="{Binding Nombre}"/>
+
+                </DataTemplate>
+            </GridView.ItemTemplate>
+
+        </GridView>
+
+    </RelativePanel>
+
+    
+</Page>

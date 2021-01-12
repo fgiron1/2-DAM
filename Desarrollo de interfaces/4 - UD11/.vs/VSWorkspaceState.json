@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\4 - UD11",
+    "\\4 - UD11 - BL",
+    "\\4 - UD11 - Entities",
+    "\\4 - UD11\\ViewModels",
+    "\\4 - UD11\\ViewModels\\Utils"
   ],
+  "SelectedNode": "\\4 - UD11\\ViewModels\\DepartmentVM.cs",
   "PreviewInSolutionExplorer": false
 }

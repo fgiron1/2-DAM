@@ -1,0 +1,62 @@
+ENTITY
+	- ClsPersona
+	- ClsDepartamento
+
+DAL
+	- Conexion (Carpeta)
+		- ClsConexion
+			- getConexion: Devuelve una conexion abierta.
+			- closeConexion: Recibe una conexion y la cierra.
+	- Gestora (Carpeta)
+
+		
+	- Listado (Carpeta)
+
+		
+
+BL
+	- Gestora (Carpeta)
+
+		
+	- Listado (Carpeta)
+
+
+UI
+	- Vistas
+		- Bienvenida
+
+		- Personas
+		- PersonaDetalles
+
+		- Departamentos
+		- DepartamentoDetalles
+
+	- Modelos
+		- ClsPersonaConDepartamento
+		- ClsDepartamento				
+
+
+	- VistasModelos
+		- VMVistaPersonas
+			- ObservableCollection<PersonasConDepartamento> personas
+			- ClsPersonaConDepartamento personaSeleccionada
+
+		- VMVistaPersonaDetalles
+			- ClsPersonaConDepartamento personaSeleccionada
+			- ObservableCollection<ClsDepartamento> departamentos
+
+		- VMVistaDepartamentos
+			- ObservableCollection<ClsDepartamento> departamentos
+			- ClsDepartamento departamentosSeleccionado
+
+		-VMVistaDepartamentoDetalles
+			- ClsDepartamento departamentosSeleccionado
+
+
+
+	
+
+
+
+
+
