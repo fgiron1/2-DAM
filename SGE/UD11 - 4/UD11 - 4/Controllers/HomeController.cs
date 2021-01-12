@@ -16,7 +16,7 @@ namespace UD11___4.Controllers
         // GET: Person
         public ActionResult List()
         {
-            PersonDepartmentNameList list = new PersonDepartmentNameList();
+           PersonDepartmentNameList list = new PersonDepartmentNameList();
 
             //Bringing the list of all Person records in the database and storing them 
             PersonListBL PersonListBL = new PersonListBL();
