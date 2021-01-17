@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--FrameLayout NO necesario, puedes usar cualquier tipo de layout-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailsFragmentContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".detailsFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/numeroTitulos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
 
 </FrameLayout>

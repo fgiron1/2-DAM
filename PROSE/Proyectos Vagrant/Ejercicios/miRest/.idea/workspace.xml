@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2077255a-6926-4323-82bc-4a03944f3c4a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.vagrant/machines/default/virtualbox/action_provision" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.vagrant/machines/default/virtualbox/action_set_name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.vagrant/machines/default/virtualbox/box_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.vagrant/machines/default/virtualbox/creator_uid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.vagrant/machines/default/virtualbox/id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.vagrant/machines/default/virtualbox/index_uuid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.vagrant/machines/default/virtualbox/private_key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.vagrant/machines/default/virtualbox/synced_folders" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCEjercicio/.idea/MVCEjercicio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCEjercicio/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCEjercicio/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejemploRest/.idea/ejemploRest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejemploRestSencillo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejemploRestSencillo/.idea/ejemploRestSencillo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejemploRestSencillo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejemploRestSencillo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejemploRestSencillo/class/Person.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejemploRestSencillo/class/PersonDAOMock.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejemploRestSencillo/service/ejemploSencilloRESTful.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/miRest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/androidTest/java/com/example/miguel/listadinamica/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/java/com/example/miguel/listadinamica/ListaDinamica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/drawable/alarm48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/drawable/calendar48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/drawable/compass48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/drawable/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/layout/activity_lista_dinamica.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/layout/row.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/app/src/test/java/com/example/miguel/listadinamica/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ListaDinamicaInflater/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/androidTest/java/com/example/listas/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/java/com/example/listas/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/java/com/example/listas/MyAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/app/src/test/java/com/example/listas/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/Listas/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/TextoColores/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vagrant/machines/default/virtualbox/vagrant_cwd" beforeDir="false" afterPath="$PROJECT_DIR$/../../.vagrant/machines/default/virtualbox/vagrant_cwd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ProgramacionMovil/TextoColores/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/TextoColores/.idea/gradle.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1lZ181QOwjHUOVadIrKXwb4ehAm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ejemploRest" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2077255a-6926-4323-82bc-4a03944f3c4a" name="Default Changelist" comment="" />
+      <created>1607789636046</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607789636046</updated>
+      <workItem from="1607789637411" duration="2918000" />
+      <workItem from="1609839295753" duration="1395000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

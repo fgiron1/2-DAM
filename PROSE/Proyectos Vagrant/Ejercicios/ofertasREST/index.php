@@ -1,7 +1,7 @@
 <?php
 
-require_once "Request.php";
-require_once "Response.php";
+require_once 'Request.php';
+require_once 'Response.php';
 
 //Autoload rules
 spl_autoload_register('apiAutoload');
@@ -71,7 +71,9 @@ $req = new Request($verb, $url_elements, $query_string, $body, $content_type, $a
 //para enviar el request al controlador que le corresponda (Si en url elements dice LibroController,
 //pues se lo enviamos a un nuevo librocontroller, a través de:  $controller->$action_name($req);)
 // route the request to the right place
-$controller_name = ucfirst($url_elements[1]) . 'Controller';
+
+//TODO IMPORTANTE HE CAMBIADO EN ESTA LINEA DE ABAJO EL INDICE DEL ARRAY DE 1 A 0 PORQUE 1 ME DECIA Q NO EXISTIA
+$controller_name = ucfirst($url_elements[0]) . 'Controller';
 if (class_exists($controller_name)) {
     $controller = new $controller_name(); //Using a variable that contains a string which represents the name of a class as part of the code to instantiate an object of that class
     $action_name = 'manage' . ucfirst(strtolower($verb)) . 'Verb';
