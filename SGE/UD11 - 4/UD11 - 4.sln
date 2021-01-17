@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UD11 - 4 - BL", "UD11 - 4 -
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UD11 - 4 - Entities", "UD11 - 4 - Entities\UD11 - 4 - Entities.csproj", "{5F7A1F05-5667-445E-9BBA-AD28DF9A363B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UD11 - 4 - API", "UD11 - 4 - API\UD11 - 4 - API.csproj", "{D5D5D50A-FA12-45AA-88BF-29CC3BDC388B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5F7A1F05-5667-445E-9BBA-AD28DF9A363B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F7A1F05-5667-445E-9BBA-AD28DF9A363B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F7A1F05-5667-445E-9BBA-AD28DF9A363B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D5D50A-FA12-45AA-88BF-29CC3BDC388B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D5D50A-FA12-45AA-88BF-29CC3BDC388B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D5D50A-FA12-45AA-88BF-29CC3BDC388B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D5D50A-FA12-45AA-88BF-29CC3BDC388B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
