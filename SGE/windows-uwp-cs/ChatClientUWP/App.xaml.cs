@@ -28,11 +28,6 @@ namespace ChatClientUWP
     {
 
 
-        public ChatMessageViewModel ChatVM { get; set; } = new ChatMessageViewModel();
-        public HubConnection conn { get; set; }
-        public IHubProxy proxy { get; set; }
-
-
         /// <summary>
         /// Inicializa el objeto de aplicación Singleton. Esta es la primera línea de código creado
         /// ejecutado y, como tal, es el equivalente lógico de main() o WinMain().
@@ -41,32 +36,8 @@ namespace ChatClientUWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-            SignalR();
         }
 
-        public void SignalR()
-        {
-            conn = new HubConnection("http://chatcristiano.azurewebsites.net");
-            proxy = conn.CreateHubProxy("ChatHub");
-            conn.Start();
-
-            //Cuando el servidor envíe un evento llamado broadcastMessage hacia el cliente, este responde con su metodo OnMessage
-            //que consiste en añadir al viewmodel el mensaje recibido por el servidor
-            proxy.On<ChatMessage>("broadcastMessage", OnMessage);
-
-        }
-        public void Broadcast(ChatMessage msg)
-        {
-            proxy.Invoke("Send", msg);
-        }
-        private async void OnMessage(ChatMessage msg)
-        {
-            await Windows.ApplicationModel.Core.CoreApplication.MainView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-            {
-                //Cuando 
-                ChatVM.Messages.Add(msg);
-            });
-        }
 
         /// <summary>
         /// Se invoca cuando la aplicación la inicia normalmente el usuario final. Se usarán otros puntos

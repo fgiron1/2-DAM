@@ -2,9 +2,6 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.17763": {
-      "Microsoft.AspNet.SignalR/2.4.1": {
-        "type": "package"
-      },
       "Microsoft.AspNet.SignalR.Client/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -15,15 +12,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.dll": {}
-        }
-      },
-      "Microsoft.AspNet.SignalR.Core/2.4.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.9-rel-29512-01": {
@@ -342,9 +330,6 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
-      "Microsoft.AspNet.SignalR/2.4.1": {
-        "type": "package"
-      },
       "Microsoft.AspNet.SignalR.Client/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -355,15 +340,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.dll": {}
-        }
-      },
-      "Microsoft.AspNet.SignalR.Core/2.4.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.9-rel-29512-01": {
@@ -861,9 +837,6 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm-aot": {
-      "Microsoft.AspNet.SignalR/2.4.1": {
-        "type": "package"
-      },
       "Microsoft.AspNet.SignalR.Client/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -874,15 +847,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.dll": {}
-        }
-      },
-      "Microsoft.AspNet.SignalR.Core/2.4.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.9-rel-29512-01": {
@@ -1381,9 +1345,6 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
-      "Microsoft.AspNet.SignalR/2.4.1": {
-        "type": "package"
-      },
       "Microsoft.AspNet.SignalR.Client/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -1394,15 +1355,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.dll": {}
-        }
-      },
-      "Microsoft.AspNet.SignalR.Core/2.4.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.9-rel-29512-01": {
@@ -1901,9 +1853,6 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
-      "Microsoft.AspNet.SignalR/2.4.1": {
-        "type": "package"
-      },
       "Microsoft.AspNet.SignalR.Client/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -1914,15 +1863,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.dll": {}
-        }
-      },
-      "Microsoft.AspNet.SignalR.Core/2.4.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.9-rel-29512-01": {
@@ -2420,9 +2360,6 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x64-aot": {
-      "Microsoft.AspNet.SignalR/2.4.1": {
-        "type": "package"
-      },
       "Microsoft.AspNet.SignalR.Client/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -2433,15 +2370,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.dll": {}
-        }
-      },
-      "Microsoft.AspNet.SignalR.Core/2.4.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.9-rel-29512-01": {
@@ -2940,9 +2868,6 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
-      "Microsoft.AspNet.SignalR/2.4.1": {
-        "type": "package"
-      },
       "Microsoft.AspNet.SignalR.Client/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -2953,15 +2878,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.dll": {}
-        }
-      },
-      "Microsoft.AspNet.SignalR.Core/2.4.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.9-rel-29512-01": {
@@ -3459,9 +3375,6 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x86-aot": {
-      "Microsoft.AspNet.SignalR/2.4.1": {
-        "type": "package"
-      },
       "Microsoft.AspNet.SignalR.Client/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -3472,15 +3385,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.dll": {}
-        }
-      },
-      "Microsoft.AspNet.SignalR.Core/2.4.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.9-rel-29512-01": {
@@ -3980,17 +3884,6 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNet.SignalR/2.4.1": {
-      "sha512": "aYbLVE5toZwv/qaQ0BiIZRRwN/00WKYzGjaYUWIQuI91xZ50nnAymWD1sxCZFN9XXDRq8bevM5ET9GmAeOI/Nw==",
-      "type": "package",
-      "path": "microsoft.aspnet.signalr/2.4.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "microsoft.aspnet.signalr.2.4.1.nupkg.sha512",
-        "microsoft.aspnet.signalr.nuspec"
-      ]
-    },
     "Microsoft.AspNet.SignalR.Client/2.4.1": {
       "sha512": "x5Bc1LkjBZV9GEjflBF0zsKgXbpFkTAArQMAdbhKKC1MopLaFPUYQZrCAPgGSAW8OudHGhyEfMZ5vJbdBu8IsA==",
       "type": "package",
@@ -4012,20 +3905,6 @@
         "lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.xml",
         "microsoft.aspnet.signalr.client.2.4.1.nupkg.sha512",
         "microsoft.aspnet.signalr.client.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.SignalR.Core/2.4.1": {
-      "sha512": "da5vF7ERsXAfFz2RzyXIV2VZACxsw+NxWwKtwXuHde7xuApvI/njJhpzq+LkoYpOYfzPZ8BbccaZ1yOaw1AQ4w==",
-      "type": "package",
-      "path": "microsoft.aspnet.signalr.core/2.4.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.AspNet.SignalR.Core.dll",
-        "lib/net45/Microsoft.AspNet.SignalR.Core.pdb",
-        "lib/net45/Microsoft.AspNet.SignalR.Core.xml",
-        "microsoft.aspnet.signalr.core.2.4.1.nupkg.sha512",
-        "microsoft.aspnet.signalr.core.nuspec"
       ]
     },
     "Microsoft.Net.Native.Compiler/2.2.9-rel-29512-01": {
@@ -4410,7 +4289,7 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -8497,25 +8376,23 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
-      "Microsoft.AspNet.SignalR >= 2.4.1",
       "Microsoft.AspNet.SignalR.Client >= 2.4.1",
-      "Microsoft.AspNet.SignalR.Core >= 2.4.1",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.11"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ferna\\.nuget\\packages\\": {},
+    "C:\\Users\\fgiron\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\SGE\\windows-uwp-cs\\ChatClientUWP\\ChatClientUWP.csproj",
+      "projectUniqueName": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\SGE\\windows-uwp-cs\\ChatClientUWP\\ChatClientUWP.csproj",
       "projectName": "ChatClientUWP",
-      "projectPath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\SGE\\windows-uwp-cs\\ChatClientUWP\\ChatClientUWP.csproj",
-      "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\SGE\\windows-uwp-cs\\ChatClientUWP\\obj\\",
+      "projectPath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\SGE\\windows-uwp-cs\\ChatClientUWP\\ChatClientUWP.csproj",
+      "packagesPath": "C:\\Users\\fgiron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\SGE\\windows-uwp-cs\\ChatClientUWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -8523,7 +8400,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fgiron\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -8543,15 +8420,7 @@
     "frameworks": {
       "uap10.0.17763": {
         "dependencies": {
-          "Microsoft.AspNet.SignalR": {
-            "target": "Package",
-            "version": "[2.4.1, )"
-          },
           "Microsoft.AspNet.SignalR.Client": {
-            "target": "Package",
-            "version": "[2.4.1, )"
-          },
-          "Microsoft.AspNet.SignalR.Core": {
             "target": "Package",
             "version": "[2.4.1, )"
           },
@@ -8590,17 +8459,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"Microsoft.AspNet.SignalR.Core 2.4.1\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \"UAP,Version=v10.0.17763\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "Microsoft.AspNet.SignalR.Core",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763"
-      ]
-    }
-  ]
+  }
 }

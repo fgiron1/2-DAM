@@ -1,0 +1,1 @@
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\windows-uwp-cs\ChatClientUWP\ChatClientUWP.csproj;arm

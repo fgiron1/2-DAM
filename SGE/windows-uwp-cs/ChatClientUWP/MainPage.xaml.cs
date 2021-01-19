@@ -1,4 +1,5 @@
 ﻿using ChatClientUWP.Models;
+using ChatClientUWP.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,17 +24,13 @@ namespace ChatClientUWP
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
         public MainPage()
         {
             this.InitializeComponent();
-            this.DataContext = (Application.Current as App).ChatVM;
+            
         }
 
-        //Cuando se hace clic, se hace uso del método definido en App.xaml.cs, Broadcast
-        //para enviar al resto de clientes el mensaje
-        private void send_Click(object sender, RoutedEventArgs e)
-        {
-            (Application.Current as App).Broadcast(new ChatMessage { Username = name.Text, Message = text.Text });
-        }
+
     }
 }
