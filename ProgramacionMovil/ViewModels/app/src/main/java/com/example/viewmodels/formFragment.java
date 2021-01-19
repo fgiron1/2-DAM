@@ -79,12 +79,13 @@ public class formFragment extends Fragment implements View.OnClickListener {
                 Equipo nuevoEquipo = new Equipo(nombreEquipoForm.getText().toString(), Integer.parseInt(numeroTitulosForm.getText().toString()));
 
                 //Podria hacer un metodo para añadir, editar y eliminar, porque con el wrpaper de MutableLiveData
-                //tengo que crearlos de nuevo. En su lugar, instancio
+                //tengo que crearlos de nuevo. En su lugar, instancio una nueva lista con
+                //el item que quiero añadir, y se la paso
 
-                ArrayList<Equipo> listaActualizada = vm.getValueEquiposNBA();
+                ArrayList<Equipo> listaActualizada = vm.getEquiposNBA().getValue();
                 listaActualizada.add(nuevoEquipo);
 
-                vm.setValueEquiposNBA(listaActualizada);
+                vm.getEquiposNBA().setValue(listaActualizada);
 
                 //Ahora llama al observador de equiposNBA para que el adapter le pasa la lista a
                 //la vista
