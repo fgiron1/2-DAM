@@ -4,25 +4,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
-import java.util.ArrayList;
-import java.util.Observable;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link formFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
 public class formFragment extends Fragment implements View.OnClickListener {
 
     private SharedVM vm;
@@ -31,11 +22,8 @@ public class formFragment extends Fragment implements View.OnClickListener {
     public Button botonAnadirformFragment;
 
 
-    public formFragment() {
-        // Required empty public constructor
-    }
+    public formFragment() {}
 
-    // TODO: Rename and change types and number of parameters
     public static formFragment newInstance() {
         formFragment fragment = new formFragment();
         Bundle args = new Bundle();
@@ -46,7 +34,6 @@ public class formFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -61,10 +48,12 @@ public class formFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
 
-        nombreEquipoForm = (AutoCompleteTextView) getView().findViewById(R.id.nombreEquipoForm);
-        numeroTitulosForm = (EditText) getView().findViewById(R.id.numeroTitulosForm);
+        nombreEquipoForm = (AutoCompleteTextView) view.findViewById(R.id.nombreEquipoForm);
+        numeroTitulosForm = (EditText) view.findViewById(R.id.numeroTitulosForm);
         botonAnadirformFragment = (Button) getView().findViewById(R.id.botonAñadirformFragment);
 
+        //Instanciamos el viewmodel cuyo propietario es la actividad principal
+        //Es decir, es un viewmodel compartido.
         vm = new ViewModelProvider(requireActivity()).get(SharedVM.class);
 
         botonAnadirformFragment.setOnClickListener(this);
@@ -78,17 +67,14 @@ public class formFragment extends Fragment implements View.OnClickListener {
 
                 Equipo nuevoEquipo = new Equipo(nombreEquipoForm.getText().toString(), Integer.parseInt(numeroTitulosForm.getText().toString()));
 
-                //Podria hacer un metodo para añadir, editar y eliminar, porque con el wrpaper de MutableLiveData
-                //tengo que crearlos de nuevo. En su lugar, instancio una nueva lista con
-                //el item que quiero añadir, y se la paso
-
+                //Lista auxiliar
                 ArrayList<Equipo> listaActualizada = vm.getEquiposNBA().getValue();
                 listaActualizada.add(nuevoEquipo);
 
+                //El observador detecta el cambio y notifica al adaptador de la lista
                 vm.getEquiposNBA().setValue(listaActualizada);
 
-                //Ahora llama al observador de equiposNBA para que el adapter le pasa la lista a
-                //la vista
+
 
                 break;
         }

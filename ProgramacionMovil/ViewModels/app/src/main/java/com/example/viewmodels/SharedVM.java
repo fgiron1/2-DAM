@@ -1,12 +1,9 @@
 package com.example.viewmodels;
 
-import android.content.Intent;
-import android.widget.ArrayAdapter;
-
-import androidx.lifecycle.*;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class SharedVM extends ViewModel {
 
@@ -14,54 +11,31 @@ public class SharedVM extends ViewModel {
     private MutableLiveData<ArrayList<Equipo>> equiposNBA = new MutableLiveData<ArrayList<Equipo>>(new ArrayList<Equipo>());
     private MutableLiveData<Equipo> seleccionado = new MutableLiveData<Equipo>(new Equipo());
 
-    public void seleccionar(Equipo e){
-        this.seleccionado.setValue(e);
+    /*añadirEquipo*/
+    /*eliminarEquipo*/
 
+    public SharedVM(){
+
+        Equipo e2 = new Equipo("Real Madrid", 2);
+        Equipo e3 = new Equipo("Huesca F.C.", 3);
+        Equipo e4 = new Equipo("Recre", 4);
+
+        ArrayList<Equipo> equipos = new ArrayList<Equipo>();
+        equipos.add(e2);
+        equipos.add(e3);
+        equipos.add(e4);
+
+        this.equiposNBA.setValue(equipos);
     }
 
-    //Devolviendo wrappers
 
     public MutableLiveData<ArrayList<Equipo>> getEquiposNBA() {
         return equiposNBA;
     }
+    public void setEquiposNBA(MutableLiveData<ArrayList<Equipo>> equiposNBA) {this.equiposNBA = equiposNBA;}
 
-    public void setEquiposNBA(MutableLiveData<ArrayList<Equipo>> equiposNBA) {
-
-        this.equiposNBA = equiposNBA;
-    }
-
-    public MutableLiveData<Equipo> getSeleccionado() {
-        return this.seleccionado;
-    }
-
-    public void setSeleccionado(MutableLiveData<Equipo> seleccionado) {
-
-        this.seleccionado = seleccionado;
-    }
-
-    //Devolviendo valores
-
-    public ArrayList<Equipo> getValueEquiposNBA() {
-        if(this.equiposNBA.getValue() == null){
-            this.equiposNBA.setValue(new ArrayList<Equipo>());
-        }
-        return this.equiposNBA.getValue();
-    }
-
-    public void setValueEquiposNBA(ArrayList<Equipo> valueEquiposNBA) {
-        this.equiposNBA = new MutableLiveData<ArrayList<Equipo>>(valueEquiposNBA);
-    }
-
-    public Equipo getValueSeleccionado() {
-        return this.seleccionado.getValue();
-    }
-
-    public void setValueSeleccionado(Equipo valueSeleccionado) {
-        this.seleccionado = new MutableLiveData<Equipo>(valueSeleccionado);
-    }
-
-
-    //Devolviendo valores
+    public MutableLiveData<Equipo> getSeleccionado() {return this.seleccionado;}
+    public void setSeleccionado(MutableLiveData<Equipo> seleccionado) {this.seleccionado = seleccionado;}
 
 
 }

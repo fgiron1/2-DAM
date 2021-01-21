@@ -36,9 +36,6 @@ public class detailsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
     }
 
     @Override
@@ -59,8 +56,8 @@ public class detailsFragment extends Fragment {
         EditText numeroTitulos = (EditText) getView().findViewById(R.id.numeroTitulos);
         TextView nombre = (TextView) getView().findViewById(R.id.nombre);
 
-        numeroTitulos.setText(Integer.toString(vm.getValueSeleccionado().getNumeroTitulos()));
-        nombre.setText(vm.getValueSeleccionado().getNombre());
+        numeroTitulos.setText(Integer.toString(vm.getSeleccionado().getValue().getNumeroTitulos()));
+        nombre.setText(vm.getSeleccionado().getValue().getNombre());
 
     }
 
