@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5677f393-12c2-4588-acb4-0ce8601afde6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Autoloader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/ClientAssertionType/ClientAssertionTypeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/ClientAssertionType/HttpBasic.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Controller/AuthorizeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Controller/AuthorizeControllerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Controller/ResourceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Controller/ResourceControllerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Controller/TokenController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Controller/TokenControllerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Encryption/EncryptionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Encryption/FirebaseJwt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Encryption/Jwt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/GrantType/AuthorizationCode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/GrantType/ClientCredentials.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/GrantType/GrantTypeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/GrantType/JwtBearer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/GrantType/RefreshToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/GrantType/UserCredentials.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/Controller/AuthorizeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/Controller/AuthorizeControllerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/Controller/UserInfoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/Controller/UserInfoControllerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/GrantType/AuthorizationCode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/ResponseType/AuthorizationCode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/ResponseType/AuthorizationCodeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/ResponseType/CodeIdToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/ResponseType/CodeIdTokenInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/ResponseType/IdToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/ResponseType/IdTokenInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/ResponseType/IdTokenToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/ResponseType/IdTokenTokenInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/Storage/AuthorizationCodeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/OpenID/Storage/UserClaimsInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/RequestInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/ResponseInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/ResponseType/AccessToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/ResponseType/AccessTokenInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/ResponseType/AuthorizationCode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/ResponseType/AuthorizationCodeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/ResponseType/JwtAccessToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/ResponseType/ResponseTypeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Scope.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/ScopeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/AccessTokenInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/AuthorizationCodeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/Cassandra.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/ClientCredentialsInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/ClientInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/CouchbaseDB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/DynamoDB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/JwtAccessToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/JwtAccessTokenInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/JwtBearerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/Memory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/Mongo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/MongoDB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/Pdo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/PublicKeyInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/Redis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/RefreshTokenInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/ScopeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/Storage/UserCredentialsInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/TokenType/Bearer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/TokenType/Mac.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/src/OAuth2/TokenType/TokenTypeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/AutoloadTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Controller/AuthorizeControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Controller/ResourceControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Controller/TokenControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Encryption/FirebaseJwtTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Encryption/JwtTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/GrantType/AuthorizationCodeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/GrantType/ClientCredentialsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/GrantType/ImplicitTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/GrantType/JwtBearerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/GrantType/RefreshTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/GrantType/UserCredentialsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/OpenID/Controller/AuthorizeControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/OpenID/Controller/UserInfoControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/OpenID/GrantType/AuthorizationCodeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/OpenID/ResponseType/CodeIdTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/OpenID/ResponseType/IdTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/OpenID/ResponseType/IdTokenTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/OpenID/Storage/AuthorizationCodeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/OpenID/Storage/UserClaimsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/RequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/ResponseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/ResponseType/AccessTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/ResponseType/JwtAccessTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/ScopeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/ServerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/AccessTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/AuthorizationCodeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/ClientCredentialsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/ClientTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/DynamoDBTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/JwtAccessTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/JwtBearerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/PdoTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/PublicKeyTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/RefreshTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/ScopeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/Storage/UserCredentialsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/OAuth2/TokenType/BearerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/cleanup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/config/keys/id_rsa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/config/keys/id_rsa.pub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/config/storage.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/lib/OAuth2/Request/TestRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/lib/OAuth2/Storage/BaseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/lib/OAuth2/Storage/Bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oauth2-server-php-master/test/lib/OAuth2/Storage/NullStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OAuth2Demo/Server/Controllers/Authorize.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/OAuth2Demo/Server/Controllers/Authorize.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1nITNw23IABA9xvKOChSvGCyMlz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../oauth2-server-php-master" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5677f393-12c2-4588-acb4-0ce8601afde6" name="Default Changelist" comment="" />
+      <created>1611076568811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611076568811</updated>
+      <workItem from="1611076575475" duration="1856000" />
+      <workItem from="1611165002968" duration="5267000" />
+      <workItem from="1611268830574" duration="694000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
