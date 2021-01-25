@@ -7,6 +7,7 @@ use Silex\Application;
 class Authorize
 {
     // Connects the routes in Silex
+    //$routing is a controller factory
     public static function addRoutes($routing)
     {
         $routing->get('/authorize', array(new self(), 'authorize'))->bind('authorize');

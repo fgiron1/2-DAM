@@ -2,7 +2,8 @@
 
 
 require_once("Controller.php");
-require_once("../model/OfertaModelHandler.php");
+//FIXME CON CAMINOS RELATIVOS NO ME LO COGE. TIENE QUE SER CAMINOS ABSOLUTOS Y CON RESPECTO AL VAGRANT
+require_once("/vagrant/Ejercicios/pruebaInclude/models/OfertaModelHandler.php");
 
 class OfertaController extends Controller
 {
@@ -22,6 +23,10 @@ class OfertaController extends Controller
 
         /*
          * Endpoints:
+         * Creo que en realidad son
+         * TODO MODIFICAR LOS getUrlElements()[i] aumentando en 1 el índice, porque hay que tener en cuenta en la URL el controlador
+         * ../Oferta/ofertas
+         * ../Oferta/ofertas/{id}
          *
          * ../ofertas       -> Devuelve una colección de todos los libros
          * ../ofertas/{id}  -> Devuelve un libro en concreto
@@ -35,8 +40,8 @@ class OfertaController extends Controller
 
         //Assigning the HTTP response's body
         //Comprobamos si el recurso solicitado es una colección o es un recurso individual
-        if(isset($request->getUrlElements()[1])){
-            $id = $request->getUrlElements()[1];
+        if(isset($request->getUrlElements()[3])){
+            $id = $request->getUrlElements()[3];
             $body = OfertaModelHandler::getOfferById($id);
         } else {
             $body = OfertaModelHandler::getAllOffers(); //Esto deberia de estar ya en json?
@@ -67,6 +72,7 @@ class OfertaController extends Controller
         /*
          * Endpoints:
          *
+         * index.php/Oferta/ofertas/{id}/eliminar
          * ../ofertas/{id}/eliminar
          *
          */
@@ -77,7 +83,7 @@ class OfertaController extends Controller
         $format = $request->getAccept();
         $id = null;
 
-        $id = $request->getUrlElements()[1];
+        $id = $request->getUrlElements()[3];
 
         //Assigning the HTTP response's body
         //Checking for a valid id

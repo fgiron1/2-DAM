@@ -38,6 +38,11 @@ class Request
         return true;
     }
 
+    /*
+     * Función empleada por el constructor para, en función del $content_type, decodificar esa información para
+     * tenerla en un formato que sea más manejable en php
+     *
+     */
     private function parseBody($body, $content_type)
     {
         $parameters = array();
@@ -64,14 +69,8 @@ class Request
                 }*/
 
                 break;
-
-            case "text/xml":
-                $this->format = "xml";
-                $parser = new XmlParser();
-                $parameters = xml_parse($parser, $body, true);
-                break;
             default:
-
+                // we could parse other supported formats here
                 break;
         }
         $this->body_parameters = $parameters;

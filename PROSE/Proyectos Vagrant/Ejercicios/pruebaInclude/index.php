@@ -8,25 +8,22 @@ spl_autoload_register('apiAutoload');
 function apiAutoload($classname)
 {
     $res = false;
-    require_once("controller/Controller.php");
-    require_once("controller/NotFoundController.php");
-    require_once("controller/OfertaController.php");
 
     //If the class name ends in "Controller", then try to locate the class in the controller directory to include it (require_once)
-/*    if (preg_match('/[a-zA-Z]+Controller$/', $classname)) {
-        if (file_exists(__DIR__ . '/controller/' . $classname . '.php')) {
+   if (preg_match('/[a-zA-Z]+Controller$/', $classname)) {
+        if (file_exists(__DIR__ . '/controllers/' . $classname . '.php')) {
 //            echo "cargamos clase: " . __DIR__ . '/controller/' . $classname . '.php';
-            require_once (__DIR__ . 'controller/' . $classname . '.php');
+            require_once (__DIR__ . '/controllers/' . $classname . '.php');
             $res = true;
         }
     } elseif (preg_match('/[a-zA-Z]+Model$/', $classname)) {
-        if (file_exists(__DIR__ . 'model/' . $classname . '.php')) {
+        if (file_exists(__DIR__ . '/models/' . $classname . '.php')) {
 //            echo "<br/>cargamos clase: " . __DIR__ . '/model/' . $classname . '.php';
-            require_once (__DIR__ . 'model/' . $classname . '.php');
+            require_once (__DIR__ . '/models/' . $classname . '.php');
 //            echo "clase cargada.......................";
             $res = true;
         }
-    }*/
+    }
     //Instead of having Views, like in a Model-View-Controller project,
     //we will have a Response class. So we don't need the following.
     //Although we could have different classes to generate the output,
@@ -75,7 +72,8 @@ $req = new Request($verb, $url_elements, $query_string, $body, $content_type, $a
 //pues se lo enviamos a un nuevo librocontroller, a través de:  $controller->$action_name($req);)
 // route the request to the right place
 
-//TODO IMPORTANTE HE CAMBIADO EN ESTA LINEA DE ABAJO EL INDICE DEL ARRAY DE 1 A 0 PORQUE 1 ME DECIA Q NO EXISTIA
+//TODO Dice que no existe el primer elemento, como es normal, porque al darle a run en el phpstorm no se esta haciendo
+//TODO ninguna peticion y no hay nada en la url
 $controller_name = ucfirst($url_elements[1]) . 'Controller';
 if (class_exists($controller_name)) {
     $controller = new $controller_name(); //Using a variable that contains a string which represents the name of a class as part of the code to instantiate an object of that class

@@ -16,6 +16,8 @@ class OfertaModelHandler
         $prep_query = $connection->prepare($query);
         $prep_query->execute();
 
+        //TODO NO ACABADO, FALTA DEVOLVER EL OBJETO OFERTA
+
     }
 
     public static function getAllOffers(){
