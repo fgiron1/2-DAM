@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - API\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - API\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - API\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

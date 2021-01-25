@@ -1,0 +1,11 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Release\UD11 - 4 - BL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Release\UD11 - 4 - BL.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Release\UD11 - 4 - DAL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Release\UD11 - 4 - Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Release\UD11 - 4 - DAL.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Release\UD11 - 4 - Entities.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Release\UD11 - 4 - BL.csprojAssemblyReference.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Release\UD11 - 4 - BL.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Release\UD11 - 4 - BL.csproj.CopyComplete
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Release\UD11 - 4 - BL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Release\UD11 - 4 - BL.pdb
