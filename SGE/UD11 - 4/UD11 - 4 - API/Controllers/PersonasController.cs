@@ -71,14 +71,32 @@ namespace UD11___4___API.Controllers
         // PUT: api/Personas/5
         public void Put(int id, [FromBody]Person personaActualizada)
         {
-
+            try
+            {
+                PersonHandlerBL handler = new PersonHandlerBL();
+                handler.updatePerson(id, personaActualizada);
+            }
+            catch (Exception e)
+            {
+                //Conexión con las otras capas fallida
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+            }
         }
 
         // DELETE: api/Personas/5
         public void Delete(int id)
         {
-            PersonHandlerBL handler = new PersonHandlerBL();
-            handler.deletePerson(id);
+            try
+            {
+                PersonHandlerBL handler = new PersonHandlerBL();
+                handler.deletePerson(id);
+            }
+            catch (Exception e)
+            {
+                //Conexión con las otras capas fallida
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+            }
+            
 
         }
     }
