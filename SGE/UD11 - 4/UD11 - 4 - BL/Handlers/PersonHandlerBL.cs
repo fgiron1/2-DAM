@@ -17,9 +17,9 @@ namespace UD11___4___BL.Handlers
             handler = new PersonHandlerDAL();
         }
 
-        public void updatePerson(int id, Person newPerson)
+        public void updatePerson(Person newPerson)
         {
-            handler.updatePerson(id, newPerson);
+            handler.updatePerson(newPerson);
         }
         public void deletePerson(int id)
         {

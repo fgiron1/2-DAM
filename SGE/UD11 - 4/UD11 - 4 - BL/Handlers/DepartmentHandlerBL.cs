@@ -18,9 +18,9 @@ namespace UD11___4___BL.Handlers
             handler = new DepartmentHandlerDAL();
         }
 
-        public void updateDepartment(int id, Department newDepartment)
+        public void updateDepartment(Department newDepartment)
         {
-            handler.updateDepartment(id, newDepartment);
+            handler.updateDepartment(newDepartment);
         }
         public void deleteDepartment(int id)
         {

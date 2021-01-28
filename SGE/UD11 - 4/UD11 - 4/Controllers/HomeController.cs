@@ -83,7 +83,7 @@ namespace UD11___4.Controllers
             //METHOD DOES WITH THE DEPARTMENT ID
 
             //The Person's id won't change, so we can use the updated Person's id for convenience
-            handler.updatePerson(Person.id, Person);
+            handler.updatePerson(Person);
 
             return View("Done");
         }

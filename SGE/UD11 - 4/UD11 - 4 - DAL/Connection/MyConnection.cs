@@ -86,9 +86,7 @@ namespace UD11___4___DAL.Connection
         /// Este metodo cierra una conexión con la Base de datos
         /// </summary>
         /// <post>La conexion es cerrada</post>
-        /// <param name="connection">SqlConnection pr referencia. Conexion a cerrar
-        /// </param>
-        /// Por que se pone ref? Si ya de por si se iba a pasar una referencia al objeto
+        /// <param name="connection">SqlConnection pr referencia. Conexion a cerrar</param>
         public void closeConnection()
         {
             try

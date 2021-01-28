@@ -9,20 +9,6 @@ using System.Data.SqlClient;
 using System.Data.SqlTypes;
 
 
-
-
-
-
-
-//TENGO QUE SUSTITUIR LOS NOMBRES DE LOS ATRIBUTOS QUE ESCRIBO AQUI POR LOS QUE REALMENTE SON EN LA BBDD
-
-
-
-
-
-
-
-
 namespace UD11___4___DAL.Handlers
 {
     //All the fields are hardcoded, this code won't be able to handle changes on the database schema
@@ -39,9 +25,15 @@ namespace UD11___4___DAL.Handlers
             this.connection = new MyConnection();
         }
 
-        public void updatePerson(int id, Person newPerson)
+        /// <summary>
+        /// This method takes a Person object as a parameter and
+        /// updates the database person record with the same ID
+        /// </summary>
+        /// <pre>id attribute </pre>
+        /// <param name="id"></param>
+        /// <param name="newPerson"></param>
+        public void updatePerson(Person newPerson)
         {
-            //Opening and closing methods already check for possible exceptions. No need to wrap them around try catch again
 
             //Instantiating necessary objects
             connection = new MyConnection();
@@ -74,13 +66,28 @@ namespace UD11___4___DAL.Handlers
             connection.myCommand.Parameters.Add("@DepartmentID", System.Data.SqlDbType.Int).Value = newPerson.DepartmentID;
 
             //Executing non-query statement and passing the value of rows affected to our handler's property
-            this.rowsAffected = connection.myCommand.ExecuteNonQuery();
+            try
+            {
+                this.rowsAffected = connection.myCommand.ExecuteNonQuery();
+            }
+            catch (InvalidOperationException e)
+            {
+                throw e;
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
 
-            //Closing reader and connection
-            //The reader doesn't exist at this point, so there's no need to close it
-            //this.connection.myReader.Close();
+            //Closing connection
             this.connection.closeConnection();
         }
+
+        /// <summary>
+        /// This method takes a person id as a parameter and
+        /// delete the database person record with the same id
+        /// </summary>
+        /// <param name="id"></param>
         public void deletePerson(int id)
         {
             //Opening and closing methods already check for possible exceptions. No need to wrap them around try catch again
@@ -99,13 +106,28 @@ namespace UD11___4___DAL.Handlers
 
             connection.myCommand.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
             //Executing non-query statement and passing the value of rows affected to our handler's property
-            this.rowsAffected = connection.myCommand.ExecuteNonQuery();
+            try
+            {
+                this.rowsAffected = connection.myCommand.ExecuteNonQuery();
+            }
+            catch (InvalidOperationException e)
+            {
+                throw e;
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
 
-            //Closing reader and connection
-            //It's not necessary to close it, because at this point, the reader has been deleted by the garbage collector
-            //this.connection.myReader.Close();
+            //Closing connection
             this.connection.closeConnection();
         }
+
+        /// <summary>
+        /// This method takes a Person object as a parameter
+        /// and inserts its data as a new database record
+        /// </summary>
+        /// <param name="newPerson"></param>
         public void insertPerson(Person newPerson)
         {
             //Opening and closing methods already check for possible exceptions. No need to wrap them around try catch again
@@ -141,17 +163,16 @@ namespace UD11___4___DAL.Handlers
             //Executing non-query statement andPassing the value of rows affected to our handler's property
             try { 
             this.rowsAffected = connection.myCommand.ExecuteNonQuery();
-            } catch (SqlTypeException e)
+            } catch (InvalidOperationException e)
             {
                 throw e;
             }
-            catch (Exception e)
+            catch (SqlException e)
             {
-                    throw e;
+                 throw e;
             }
 
-            //Closing reader and connection
-            this.connection.myReader.Close();
+            //Closing connection
             this.connection.closeConnection();
         }
     }

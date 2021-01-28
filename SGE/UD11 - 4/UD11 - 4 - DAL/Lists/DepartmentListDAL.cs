@@ -51,7 +51,7 @@ namespace UD11___4___DAL.Lists
 
 
             //Closing reader and connection
-            this.connection.myReader.Close();
+            this.connection.myReader.Dispose();
             this.connection.closeConnection();
 
             return readDepartment;
@@ -98,7 +98,7 @@ namespace UD11___4___DAL.Lists
             }
 
             //Closing reader and connection
-            this.connection.myReader.Close();
+            this.connection.myReader.Dispose();
             this.connection.closeConnection();
 
             return DepartmentList;

@@ -13,42 +13,70 @@ namespace UD11___4___API.Controllers
     public class PersonasController : ApiController
     {
         // GET: api/Personas
-        public IEnumerable<Person> Get()
+        public HttpResponseMessage Get()
         {
             List<Person> lista = null;
+            HttpResponseMessage respuesta;
 
             try
             {
                 PersonListBL handler = new PersonListBL();
                 lista = handler.getPersonList();
             }
-            catch(Exception e)
+            catch(HttpResponseException e)
             {
                 //Conexión con las otras capas fallida
                 throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
             }
+            finally
+            {
+                if (lista == null)
+                {
+                    //Según el estándar http, NO se debe incluir contenido
+                    //en las respuestas http de no content
+                    respuesta = Request.CreateResponse(HttpStatusCode.NoContent);
+                }
+                else
+                {
+                    respuesta = Request.CreateResponse(HttpStatusCode.OK, lista);
+                }
+            }
 
-            return lista;
+            return respuesta;
         }
 
         // GET: api/Personas/5
-        public Person Get(int id)
+        public HttpResponseMessage Get(int id)
         {
             Person oPersona = null;
+            HttpResponseMessage respuesta;
 
             try
             {
                 PersonListBL handler = new PersonListBL();
                 oPersona = handler.getPersonById(id);
-            }catch(Exception e)
+            }
+            catch(Exception e)
             {
                 //Conexión con las otras capas fallida
+                //No se envía la información de la excepción e para evitar exponer al público detalles técnicos
                 throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
             }
-           
-            
+            finally
+            {
+                if (oPersona == null)
+                {
+                    //Según el estándar http, NO se debe incluir contenido
+                    //en las respuestas http de no content
+                    respuesta = Request.CreateResponse(HttpStatusCode.NoContent);
+                }
+                else
+                {
+                    respuesta = Request.CreateResponse(HttpStatusCode.OK, oPersona);
+                }
+            }
 
-            return oPersona;
+            return respuesta;
         }
 
         // POST: api/Personas
@@ -63,18 +91,18 @@ namespace UD11___4___API.Controllers
             {
                 //Conexión con las otras capas fallida
                 throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
-            } 
+            }
 
-            
+
         }
 
         // PUT: api/Personas/5
-        public void Put(int id, [FromBody]Person personaActualizada)
+        public void Put([FromBody]Person personaActualizada)
         {
             try
             {
                 PersonHandlerBL handler = new PersonHandlerBL();
-                handler.updatePerson(id, personaActualizada);
+                handler.updatePerson(personaActualizada);
             }
             catch (Exception e)
             {

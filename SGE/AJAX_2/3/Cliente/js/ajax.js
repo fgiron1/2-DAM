@@ -4,6 +4,13 @@ function initializeEvents() {
     document.getElementById("btnEliminarPersona").addEventListener("click", borrarPersona, false);
 }
 
+
+/*
+ * Prototipo: 
+ * 
+ * 
+ */
+
 function borrarPersona() {
 
     var llamada = new XMLHttpRequest();
@@ -16,11 +23,14 @@ function borrarPersona() {
 
         if (llamada.readyState < 4) {
 
-        } else if (llamada.readyState == 4 && llamada.status == 200) {
+            //Código de estado para el eliminar es 204 (No content) porque no
+            //he programado nada 
+        } else if (llamada.readyState == 4 && llamada.status == 204) {
+            //No hay responseText porque no lo he programado yo lol
+            document.getElementById("exito").innerHTML = "Eliminada satisfactoriamente";
 
-            document.getElementById("exito").innerHTML = llamada.responseText;
-            alert("Exito!");
-
+        } else if (llamada.readyState == 4 && llamada.status == 404) {
+            document.getElementById("exito").innerHTML = "Persona no encontrada";
         }
 
     }
