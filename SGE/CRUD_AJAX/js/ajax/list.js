@@ -10,7 +10,12 @@ function showPersonList() {
 
     var id = 0;
     var table = document.getElementById("listTable");
+    var tbody = document.getElementsByTagName('tbody')[0];
+
     var personCollection = getPersonCollection();
+
+    //Limpiamos la tabla por si ya está llena de previas iteraciones de esta función
+    table.removeChild(tbody);
 
     //Por cada persona, creamos una nueva fila, 9 celdas, y las rellenamos con sus datos
     //y las últimas 2 celdas contendrán un botón de actualizar y otro de eliminar, respectivamente
@@ -24,6 +29,7 @@ function showPersonList() {
         let personID = person.id;
         let personBlockScope = person;
 
+
         //Necesitamos una variable con scope de bloque
         //que almacene el valor de id en esta iteración.
         //Si usaramos la id normal tendríamos el último valor solamente para pasarlo como parámetros
@@ -31,6 +37,8 @@ function showPersonList() {
         let idBlockScope = id;
 
         var newRow = table.insertRow(table.rows.length);
+
+        let newRowBlockScope = newRow;
 
         //Le asignamos un id a cada fila, diferente en cada iteración
         newRow.id = "tr - " + id;
@@ -41,6 +49,8 @@ function showPersonList() {
         for (var i = 0; i < 9; i++) {
             newRow.insertCell(i);
         }
+
+
 
         //Tengo que darle una id a cada botón y asignar aquí los event listeners que llamen
         //a una función y le pase por parámetros una persona
@@ -59,9 +69,16 @@ function showPersonList() {
 
         newRow.cells[6].innerHTML = "<p>" + person.DepartmentID + "</p>";
 
+        //Añadimos al boton de actualizar del formulario la funcion a la que llamar, y le pasamos la fila actual
+        //para poder alterarla visualmente.
+
+
         newRow.cells[7].innerHTML = "<input id=\"\" type=\"button\" value=\"Actualizame\"/>";
-        //Le pasamos el id de la fila en la que añadir el formulario
-        newRow.cells[7].addEventListener("click", function () { desplegarTodo(idBlockScope, personBlockScope) });
+
+        //Le pasamos el id de la fila en la que mostrar el formulario y la persona cuya info. cargaremos en los input
+
+        newRow.cells[7].addEventListener("click", function () { desplegarTodo(personBlockScope) });
+
 
         newRow.cells[8].innerHTML = "<input id=\"\" type=\"button\" value=\"Eliminame\"/>";
         newRow.cells[8].addEventListener("click", function () { confirmDelete(personID, ("tr - " + idBlockScope)) });
@@ -75,8 +92,13 @@ function showPersonList() {
 //y para eliminar la fila visualmente
 function confirmDelete(id, rowID) {
     if (confirm("¿Está seguro de que desea borrar a la persona?") == true) {
-        //Tenemos que eliminar visualmente la fila
-        deletePerson(id);
-        document.getElementById(rowID).remove();
+
+        //Si la peticion fue exitosa en la API, se elimina visualmente
+        if (deletePerson(id)) {
+            document.getElementById(rowID).remove();
+        }
     } 
 }
+
+//Lógica del botón de actualizar, asignada como callback para el boton del formulario
+

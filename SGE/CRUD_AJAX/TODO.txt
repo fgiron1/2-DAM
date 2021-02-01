@@ -2,21 +2,13 @@ DUDA/COSAS QUE NO FUNCIONAN/COSAS A HACER:
 
 1. Las peticiones se hacen de forma asíncrona por defecto, entonces hay que manejar funciones asíncronas en js
   y no sé cómo.
-		- El metodo deletePerson(id) de API.js no funciona de forma síncrona ni asíncrona. (readystate siempre en 1)
 
 2. Añadir checkboxes para marcar múltiples filas y eliminarlas, haciendo uso de la id de cada fila, que se crea en list.js
    (Esto solo se podria hacer llamando haciendo multiples peticiones DELETE)
 
-3. 
-
-
-4. Tengo que hacer una llamada a la API para traerme los departamentos y relacionarlos con el id
+3. Tengo que hacer una llamada a la API para traerme los departamentos y relacionarlos con el id
    y poner los nombres
 
-   PARA ACTUALIZAR LAS PERSONAS, VOY A HACER TODOS LOS TEXTOS EN INPUT TYPE TEXTS CON TEXTO POR DEFECTO
-   EL BOTON SENCILLAMENTE VA A ACTUALIZAR A LA PERSONA CON LO QUE SEA QUE HAYA EN EL CONTENIDO DE LAS CAJAS
-
-   DESPUES VISUALMENTE SE TENDRA QUE ELIMINAR EL DIV
 _____
 
 Como todo va a ser en una página, no vamos a necesitar la carpeta pages ni el pageLoader.js
@@ -24,7 +16,4 @@ El resto de funciones probablemente se pueda condensar en uno o dos archivos jav
 
 COSAS QUE QUEDAN POR HACER:
 
-1. Copiar del update las funciones de desplegar formulario y ponerlas en insert, salvo lo de rellenar los campos
-	(Hay que ponerle las clases en el HTML)
-
-2. Hacer que funcione el boton de actualizar (NO ENVÍA LA PETICIÓN)
+1. La API no procesa las peticiones POST, ni desde el Postman.

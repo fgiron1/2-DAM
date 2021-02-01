@@ -69,15 +69,18 @@ function updatePerson(person) {
 
     request.open("PUT", "https://api-crud-sge.azurewebsites.net/api/Personas/" + person.id, false);
 
+    request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
     request.onreadystatechange = function () {
 
         //TODO: Tengo que controlar codigos de estado de error
 
-        if (request.readyState == 4 && request.status == 200) {
+        if (request.readyState == 4 && request.status == 204) {
             succesful = true;
         }
     };
 
+    
     //Le pasamos al body el objeto JS de la persona transformado en JSON
     request.send(JSON.stringify(person));
 
@@ -96,8 +99,8 @@ function deletePerson(id) {
     request.onreadystatechange = function () {
 
         //TODO: Tengo que controlar codigos de estado de error
-
-        if (request.readyState == 4 && request.status == 200) {
+        //Código de estado 204 -> No content. Todo fue bien
+        if (request.readyState == 4 && request.status == 204) {
             succesful = true;
         }
     };
@@ -116,11 +119,14 @@ function insertPerson(person) {
     var request = new XMLHttpRequest();
     var succesful = false;
 
-    request.open("INSERT", "https://api-crud-sge.azurewebsites.net/api/Personas/");
+    request.open("POST", "https://api-crud-sge.azurewebsites.net/api/Personas/", false);
+
+    request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
     request.onreadystatechange = function () {
 
-        if (request.readyState == 4 && request.status == 200) {
+        //POST message returns no content (204) if everything went okay
+        if (request.readyState == 4 && request.status == 204) {
             succesful = true;
         }
     };
