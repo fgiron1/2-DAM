@@ -63,11 +63,11 @@ function getPersonCollection() {
 //Returns true on succesful result, otherwise returns false
 
 function updatePerson(person) {
-
-    var request = new XMLHttpRequest();
+    
     var succesful = false;
+    var request = new XMLHttpRequest();
 
-    request.open("PUT", "https://api-crud-sge.azurewebsites.net/api/Personas/" + person.id);
+    request.open("PUT", "https://api-crud-sge.azurewebsites.net/api/Personas/" + person.id, false);
 
     request.onreadystatechange = function () {
 

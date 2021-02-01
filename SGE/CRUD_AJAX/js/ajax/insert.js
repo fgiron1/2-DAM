@@ -1,12 +1,23 @@
-window.onLoad = assignEventListeners;
+window.onload = assignEventListeners;
 
-//TODO: Añadir listener al boton de insertar con la función de la API de insertar
-//con un wrapper que le añada un alert para avisar si todo fue bien
-//
-
-
-function assignEventListener() {
-
+function assignEventListeners() {
+    document.getElementById("btnDesplegarInsertar").addEventListener("click", showInsertPanel);
+    showPersonList();
 }
 
-function 
+
+function showInsertPanel() {
+
+    var request = new XMLHttpRequest();
+
+    request.open("GET", ".../htmlFragments/insert.html", false);
+
+    request.onreadystatechange = function () {
+        if (request.readyState == 4 && request.status == 200) {
+            document.getElementById("divInsertarPersona").innerHTML = request.responseText;
+        }
+    };
+
+    request.send();
+
+}

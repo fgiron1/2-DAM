@@ -1,10 +1,4 @@
-//VIEWMODEL FOR index.html
-window.onload = showPersonList;
 
-
-function initializeEvents() {
-    
-}
 
 //This function generates the rows and fills them with each person's information, along with update and delete icons
 //Los event listeners no están en un método de assignListeners porque se asignan a botones
@@ -28,6 +22,7 @@ function showPersonList() {
 
         
         let personID = person.id;
+        let personBlockScope = person;
 
         //Necesitamos una variable con scope de bloque
         //que almacene el valor de id en esta iteración.
@@ -65,7 +60,8 @@ function showPersonList() {
         newRow.cells[6].innerHTML = "<p>" + person.DepartmentID + "</p>";
 
         newRow.cells[7].innerHTML = "<input id=\"\" type=\"button\" value=\"Actualizame\"/>";
-        newRow.cells[7].addEventListener("click", function () {});
+        //Le pasamos el id de la fila en la que añadir el formulario
+        newRow.cells[7].addEventListener("click", function () { desplegarTodo(idBlockScope, personBlockScope) });
 
         newRow.cells[8].innerHTML = "<input id=\"\" type=\"button\" value=\"Eliminame\"/>";
         newRow.cells[8].addEventListener("click", function () { confirmDelete(personID, ("tr - " + idBlockScope)) });

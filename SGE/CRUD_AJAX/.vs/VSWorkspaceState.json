@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\css",
     "\\js",
     "\\js\\ajax",
-    "\\js\\entities",
-    "\\pages"
+    "\\js\\entities"
   ],
-  "SelectedNode": "\\TODO.txt",
+  "SelectedNode": "\\js\\ajax\\API.js",
   "PreviewInSolutionExplorer": false
 }
