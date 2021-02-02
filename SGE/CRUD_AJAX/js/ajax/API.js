@@ -5,56 +5,65 @@
 //Takes a valid person ID as a parameter
 //Returns a person object constructed from the JSON contained ni the API'S response
 
-function getPerson(id) {
+async function getPerson(id) {
 
-    var request = new XMLHttpRequest();
-    var person;
+    return new Promise((resolve, reject) => {
 
-    request.open("GET", "https://api-crud-sge.azurewebsites.net/api/Personas/" + id);
+        var request = new XMLHttpRequest();
+        var person;
 
-    request.onreadystatechange = function () {
+        request.open("GET", "https://api-crud-sge.azurewebsites.net/api/Personas/" + id);
 
-        //TODO: Tengo que controlar el codigo de estado 204 No content
-        if (request.readyState == 4 && request.status == 200) {
-            person = JSON.parse(request.response);
-        }
+        request.onreadystatechange = function () {
 
-    };
+            //TODO: Tengo que controlar el codigo de estado 204 No content
+            //Y los errores con reject aquí y en el metodo que lo llama con .catch(), al igual que con .then()
 
-    request.send();
+            if (request.readyState == 4 && request.status == 200) {
+                person = JSON.parse(request.response);
+                resolve(person);
+            }
 
-    return person;
+        };
+
+        request.send(null);
+
+    });
+
+   
 
 }
 
 //Returns a person object array constructed from the JSON contained in the API's response
-function getPersonCollection() {
+async function getPersonCollection() {
 
-    var request = new XMLHttpRequest();
-    var personCollection;
+    return new Promise((resolve, reject) => {
 
-    //La id nos la tiene que pasar el enlace que clicamos
-    request.open("GET", "https://api-crud-sge.azurewebsites.net/api/Personas", false);
+        var request = new XMLHttpRequest();
+        var personCollection;
 
-    request.onreadystatechange = function () {
+        //La id nos la tiene que pasar el enlace que clicamos
+        request.open("GET", "https://api-crud-sge.azurewebsites.net/api/Personas", true);
 
-        //TODO: Tengo que controlar el codigo de estado 204 No content
-        if (request.readyState < 4) {
+        request.onreadystatechange = function () {
 
-            //AQUI TENGO QUE PONER VISIBILITY DEL BODY HIDDEN PARA MIENTRAS TANTO.
-            //EN SU LUGAR LO SUYO ES QUE TENGA TODO EN UN DIV Y LE PONGA LA VISIBILIITY A HIDDEN A ESE DIV
-            //Y CREAR OTRO DIV CON LA ANIMACIÓN DE UN RELOJ O ALGO ASÍ
+            //TODO: Tengo que controlar el codigo de estado 204 No content
+            if (request.readyState < 4) {
 
-        } else if (request.readyState == 4 && request.status == 200) {
+                //AQUI TENGO QUE PONER VISIBILITY DEL BODY HIDDEN PARA MIENTRAS TANTO.
+                //EN SU LUGAR LO SUYO ES QUE TENGA TODO EN UN DIV Y LE PONGA LA VISIBILIITY A HIDDEN A ESE DIV
+                //Y CREAR OTRO DIV CON LA ANIMACIÓN DE UN RELOJ O ALGO ASÍ
 
-            personCollection = JSON.parse(request.response);
+            } else if (request.readyState == 4 && request.status == 200) {
 
-        }
-    };
+                personCollection = JSON.parse(request.response);
 
-    request.send(null);
+                resolve(personCollection);
+            }
+        };
 
-    return personCollection;
+        request.send(null);
+    });
 
 }
 
@@ -62,77 +71,95 @@ function getPersonCollection() {
 //Takes a person object as a parameter to update the API with its attributes
 //Returns true on succesful result, otherwise returns false
 
-function updatePerson(person) {
-    
-    var succesful = false;
-    var request = new XMLHttpRequest();
+async function updatePerson(person) {
 
-    request.open("PUT", "https://api-crud-sge.azurewebsites.net/api/Personas/" + person.id, false);
+    return new Promise((resolve, reject) => {
 
-    request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        var succesful = false;
+        var request = new XMLHttpRequest();
 
-    request.onreadystatechange = function () {
+        request.open("PUT", "https://api-crud-sge.azurewebsites.net/api/Personas/" + person.id, true);
 
-        //TODO: Tengo que controlar codigos de estado de error
+        request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
-        if (request.readyState == 4 && request.status == 204) {
-            succesful = true;
-        }
-    };
+        request.onreadystatechange = function () {
 
-    
-    //Le pasamos al body el objeto JS de la persona transformado en JSON
-    request.send(JSON.stringify(person));
+            //TODO: Tengo que controlar codigos de estado de error
+
+            if (request.readyState == 4 && request.status == 204) {
+                succesful = true;
+                resolve(succesful);
+            }
+        };
+
+
+        //Le pasamos al body el objeto JS de la persona transformado en JSON
+        request.send(JSON.stringify(person));
+
+
+    });
+
+   
 
     return succesful;
 }
 
 //Takes a valid id and deletes the API's record that matches ID
 //Returns true on succesful result, otherwise returns false
-function deletePerson(id) {
+async function deletePerson(id) {
 
-    var request = new XMLHttpRequest();
-    var succesful = false;
+    return new Promise((resolve, reject) => {
 
-    request.open("DELETE", "https://api-crud-sge.azurewebsites.net/api/Personas/" + id, false);
+        var request = new XMLHttpRequest();
+        var succesful = false;
 
-    request.onreadystatechange = function () {
+        request.open("DELETE", "https://api-crud-sge.azurewebsites.net/api/Personas/" + id, true);
 
-        //TODO: Tengo que controlar codigos de estado de error
-        //Código de estado 204 -> No content. Todo fue bien
-        if (request.readyState == 4 && request.status == 204) {
-            succesful = true;
-        }
-    };
+        request.onreadystatechange = function () {
 
-    request.send();
+            //TODO: Tengo que controlar codigos de estado de error
+            //Código de estado 204 -> No content. Todo fue bien
+            if (request.readyState == 4 && request.status == 204) {
+                succesful = true;
+                resolve(succesful);
+            }
+        };
 
-    return succesful;
+        request.send();
+
+    });
+
+    
 
 }
 
 
 //Takes a person object as a parameter to insert into the API
 //Returns true on succesful result, otherwise returns false
-function insertPerson(person) {
+async function insertPerson(person) {
 
-    var request = new XMLHttpRequest();
-    var succesful = false;
+    return new Promise((resolve, reject) => {
 
-    request.open("POST", "https://api-crud-sge.azurewebsites.net/api/Personas/", false);
+        var request = new XMLHttpRequest();
+        var succesful = false;
 
-    request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        request.open("POST", "https://api-crud-sge.azurewebsites.net/api/Personas/", true);
 
-    request.onreadystatechange = function () {
+        request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
-        //POST message returns no content (204) if everything went okay
-        if (request.readyState == 4 && request.status == 204) {
-            succesful = true;
-        }
-    };
+        request.onreadystatechange = function () {
 
-    request.send(JSON.stringify(person));
+            //POST message returns no content (204) if everything went okay
+            if (request.readyState == 4 && request.status == 204) {
+                succesful = true;
+                resolve(succesful);
+            }
+        };
 
-    return succesful;
+        request.send(JSON.stringify(person));
+
+    });
+
+    
 
 }

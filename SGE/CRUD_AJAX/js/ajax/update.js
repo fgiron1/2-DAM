@@ -54,9 +54,11 @@ function btnActualizar() {
     var personaFinal = new PersonDepartment(document.getElementById("txtId").value, document.getElementById("txtFirstName").value, document.getElementById("txtLastName").value, document.getElementById("txtBirthdate").value, document.getElementById("txtPhoneNumber").value, document.getElementById("txtEmail").value, document.getElementById("txtDepartmentID").value);
 
     //Si se consigue actualizar, recargamos la lista para que se refleje visualmente
-    if (updatePerson(personaFinal)) {
-        showPersonList();
-    }
-    
+
+    updatePerson(personaFinal).then((exitoso) => {
+        if (exitoso) {
+            showPersonList();
+        }
+    });
 
 }

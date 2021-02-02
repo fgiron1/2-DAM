@@ -3,9 +3,8 @@
     "",
     "\\css",
     "\\js",
-    "\\js\\ajax",
-    "\\js\\entities"
+    "\\js\\ajax"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\js\\ajax\\API.js",
   "PreviewInSolutionExplorer": false
 }

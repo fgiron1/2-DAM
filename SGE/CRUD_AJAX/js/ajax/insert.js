@@ -55,9 +55,10 @@ function btnInsertar() {
     var personToInsert = new PersonDepartment(0, document.getElementById("insertFirstName").value, document.getElementById("insertLastName").value, document.getElementById("insertBirthdate").value, document.getElementById("insertPhoneNumber").value, document.getElementById("insertEmail").value, document.getElementById("insertDepartmentID").value);
 
     //Si se consigue actualizar, recargamos para que se refleje visualmente
-    if (insertPerson(personToInsert)) {
-        showPersonList();
-    }
-
+    insertPerson().then((exitoso) => {
+        if (exitoso) {
+            showPersonList();
+        }
+    });
 
 }

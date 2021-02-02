@@ -1,21 +1,38 @@
 
 
+
+
+//This function loads the list of people asynchronously, calling the API
+
+async function showPersonList() {
+
+    var personCollection;
+
+    //Todo lo que necesite hacer con personCollection lo tengo que hacer aquí
+    //No puedo devolver el valor
+    getPersonCollection().then((personCollectionAsync) => {
+        personCollection = personCollectionAsync;
+        rellenarTabla(personCollection);
+    });
+
+
+
+}
+
 //This function generates the rows and fills them with each person's information, along with update and delete icons
 //Los event listeners no están en un método de assignListeners porque se asignan a botones
 //creados dinámicamente
+    
+async function rellenarTabla(personCollection) {
 
-//This function loads the list of people, calling the API
-
-function showPersonList() {
-
-    var id = 0;
     var table = document.getElementById("listTable");
     var tbody = document.getElementsByTagName('tbody')[0];
 
-    var personCollection = getPersonCollection();
+    var id = 0;
 
     //Limpiamos la tabla por si ya está llena de previas iteraciones de esta función
     table.removeChild(tbody);
+
 
     //Por cada persona, creamos una nueva fila, 9 celdas, y las rellenamos con sus datos
     //y las últimas 2 celdas contendrán un botón de actualizar y otro de eliminar, respectivamente
@@ -88,15 +105,20 @@ function showPersonList() {
     }
 }
 
+
+
 //Wrapper alrededor de la función deletePerson de la API, para ponerle un alert
 //y para eliminar la fila visualmente
 function confirmDelete(id, rowID) {
     if (confirm("¿Está seguro de que desea borrar a la persona?") == true) {
 
         //Si la peticion fue exitosa en la API, se elimina visualmente
-        if (deletePerson(id)) {
-            document.getElementById(rowID).remove();
-        }
+
+        deletePerson(id).then((exitoso) => {
+            if (exitoso) {
+                document.getElementById(rowID).remove();
+            }
+        });
     } 
 }
 
