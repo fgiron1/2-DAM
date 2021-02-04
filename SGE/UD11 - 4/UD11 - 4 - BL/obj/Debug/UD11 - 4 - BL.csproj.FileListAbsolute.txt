@@ -20,3 +20,14 @@ C:\Users\fgiron\source\repos\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Debug\UD11 - 4
 C:\Users\fgiron\source\repos\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Debug\UD11 - 4 - BL.csproj.CopyComplete
 C:\Users\fgiron\source\repos\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Debug\UD11 - 4 - BL.dll
 C:\Users\fgiron\source\repos\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Debug\UD11 - 4 - BL.pdb
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Debug\UD11 - 4 - BL.dll
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Debug\UD11 - 4 - BL.pdb
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Debug\UD11 - 4 - DAL.dll
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Debug\UD11 - 4 - Entities.dll
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Debug\UD11 - 4 - DAL.pdb
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\bin\Debug\UD11 - 4 - Entities.pdb
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Debug\UD11 - 4 - BL.csprojAssemblyReference.cache
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Debug\UD11 - 4 - BL.csproj.CoreCompileInputs.cache
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Debug\UD11 - 4 - BL.csproj.CopyComplete
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Debug\UD11 - 4 - BL.dll
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\UD11 - 4\UD11 - 4 - BL\obj\Debug\UD11 - 4 - BL.pdb

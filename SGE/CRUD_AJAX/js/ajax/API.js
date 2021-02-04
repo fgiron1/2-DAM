@@ -160,6 +160,32 @@ async function insertPerson(person) {
 
     });
 
-    
+}
+
+async function getDepartmentCollection() {
+
+    return new Promise((resolve, reject) => {
+
+        var succesful;
+        var request = new XMLHttpRequest();
+
+        request.open("GET", "https://api-crud-sge.azurewebsites.net/api/Departments/", true);
+
+        request.onreadystatechange = function () {
+
+            //TODO: Tengo que controlar el codigo de estado 204 No content
+            if (request.readyState < 4) {
+
+            } else if (request.readyState == 4 && request.status == 200) {
+
+                departmentCollection = JSON.parse(request.response);
+                succesful = true;
+                resolve(departmentCollection, succesful);
+            }
+        };
+
+        request.send(null);
+
+    });
 
 }

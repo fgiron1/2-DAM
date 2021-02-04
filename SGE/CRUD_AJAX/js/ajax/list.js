@@ -1,29 +1,63 @@
 
 
 
+//COSAS A HACER:
+//
+//0. HACER ENDPOINT API LISTA PERSONA CON NOMBRE DPTO.
+//1. Los nombres de departamento
+//2. Que el menu de actualizar y de insertar se latcheen al principio de la página
+//3. Comentar y limpiar el código
+//4. Manejar las fechas
+
+
 
 //This function loads the list of people asynchronously, calling the API
 
 async function showPersonList() {
 
     var personCollection;
+    var departmentCollection;
 
     //Todo lo que necesite hacer con personCollection lo tengo que hacer aquí
     //No puedo devolver el valor
     getPersonCollection().then((personCollectionAsync) => {
+
         personCollection = personCollectionAsync;
-        rellenarTabla(personCollection);
+
+        getDepartmentCollection().then((departmentCollectionAsync) => {
+
+            departmentCollection = departmentCollectionAsync;
+
+
+            rellenarTabla(personCollection, departmentCollection);
+
+        });
+
     });
 
-
-
 }
+
+//Funcion auxiliar para transformar un array de departamentos en un array asociativo con la misma información
+
+
+function transformarDepartamentos(departmentCollection) {
+
+    var arrayDepartamentos = [];
+
+    for (let department of departmentCollection) {
+        arrayDepartamentos.DepartmentID = department.Name;
+    }
+
+    return arrayDepartamentos;
+}
+
+
 
 //This function generates the rows and fills them with each person's information, along with update and delete icons
 //Los event listeners no están en un método de assignListeners porque se asignan a botones
 //creados dinámicamente
     
-async function rellenarTabla(personCollection) {
+async function rellenarTabla(personCollection, departmentArray) {
 
     var table = document.getElementById("listTable");
     var tbody = document.getElementsByTagName('tbody')[0];
@@ -55,8 +89,6 @@ async function rellenarTabla(personCollection) {
 
         var newRow = table.insertRow(table.rows.length);
 
-        let newRowBlockScope = newRow;
-
         //Le asignamos un id a cada fila, diferente en cada iteración
         newRow.id = "tr - " + id;
 
@@ -84,7 +116,7 @@ async function rellenarTabla(personCollection) {
 
         newRow.cells[5].innerHTML = "<p>" + person.Email + "</p>";
 
-        newRow.cells[6].innerHTML = "<p>" + person.DepartmentID + "</p>";
+        newRow.cells[6].innerHTML = "<p>" + departmentArray[person.DepartmentID] + "</p>";
 
         //Añadimos al boton de actualizar del formulario la funcion a la que llamar, y le pasamos la fila actual
         //para poder alterarla visualmente.
@@ -109,7 +141,9 @@ async function rellenarTabla(personCollection) {
 
 //Wrapper alrededor de la función deletePerson de la API, para ponerle un alert
 //y para eliminar la fila visualmente
+
 function confirmDelete(id, rowID) {
+
     if (confirm("¿Está seguro de que desea borrar a la persona?") == true) {
 
         //Si la peticion fue exitosa en la API, se elimina visualmente
@@ -121,6 +155,4 @@ function confirmDelete(id, rowID) {
         });
     } 
 }
-
-//Lógica del botón de actualizar, asignada como callback para el boton del formulario
 
