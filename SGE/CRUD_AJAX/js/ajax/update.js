@@ -1,13 +1,17 @@
 
 
-// Se encarga de mostrar el formulario de actualización de la persona
+/*
+ * Cabecera: function desplegarTodo(person)
+ *
+ * Muestra visualmente el formulario de actualización. Los campos del formulario tienen
+ * por defecto escritos los valores del objeto persona pasado por parámetros
+ *
+ * @param  {Object}   Person     El objeto que representa los nuevos datos de la persona a actualizar (ID incluida)
+ *
+ */
 function desplegarTodo(person) {
 
     var formularioUpdate = document.getElementById("formularioUpdate");
-
-    
-
-    //Tengo que añadirle al boton
 
     //Comprobamos si el formulario ya está desplegado o no
 
@@ -31,7 +35,8 @@ function desplegarTodo(person) {
     }
 }
 
-//Función auxiliar empleada por desplegarTodo
+//Función auxiliar empleada por desplegarTodo para poner un valor por defecto
+//en los inputs
 function fillInputs(person) {
 
     document.getElementById("txtId").value = person.id
@@ -42,14 +47,20 @@ function fillInputs(person) {
     document.getElementById("txtEmail").value = person.Email;
     document.getElementById("txtDepartmentID").value = person.DepartmentID;
 
-
 }
 
+/*
+ *
+ *Función callback del botón que actualiza una persona con los datos introducidos
+ * 
+ * Se encarga de actualizar a una persona llamando a la API, usando para ello
+ * los valores en cada campo del formulario y reflejando el cambio visualmente,
+ * si la petición a la API es exitosa
+ * 
+ */
 function btnActualizar() {
 
-
-    //Construimos la persona y llamamos al método
-    //que actualiza a la api
+    //Construimos la persona y llamamos al método que actualiza a la api
 
     var personaFinal = new PersonDepartment(document.getElementById("txtId").value, document.getElementById("txtFirstName").value, document.getElementById("txtLastName").value, document.getElementById("txtBirthdate").value, document.getElementById("txtPhoneNumber").value, document.getElementById("txtEmail").value, document.getElementById("txtDepartmentID").value);
 

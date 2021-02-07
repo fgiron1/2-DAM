@@ -97,11 +97,12 @@ namespace UD11___4___DAL.Lists
                 //It also returns true if it's pointing to a record and there are more left
                 while (connection.myReader.Read())
                 {
+
                     Person readPerson = new Person();
                     readPerson.id = (int)connection.myReader["ID"];
                     readPerson.FirstName = (string)connection.myReader["FirstName"];
                     readPerson.LastName = (string)connection.myReader["LastName"];
-                    readPerson.Birthdate = (DateTime)connection.myReader["Birthdate"]; //I think this one's going to be problematic
+                    readPerson.Birthdate = (DateTime)connection.myReader["Birthdate"];
                     readPerson.Email = (string)connection.myReader["Email"];
                     readPerson.PhoneNumber = (string)connection.myReader["PhoneNumber"];
                     readPerson.DepartmentID = (int)connection.myReader["DepartmentID"];

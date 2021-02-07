@@ -13,3 +13,7 @@
 .visible {
     display: block;
 }
+
+.latch{
+    position: fixed;
+}

@@ -6,7 +6,7 @@ using System.Web;
 using UD11___4___BL.Lists;
 using UD11___4___Entities;
 
-namespace UD11___4.Models
+namespace UD11___4___API.Models
 {
     public class PersonDepartmentName : Person
     {

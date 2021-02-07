@@ -1,64 +1,39 @@
-//TODO: Controlar códigos de estado de error
-
-
-
-//Takes a valid person ID as a parameter
-//Returns a person object constructed from the JSON contained ni the API'S response
-
-async function getPerson(id) {
-
-    return new Promise((resolve, reject) => {
-
-        var request = new XMLHttpRequest();
-        var person;
-
-        request.open("GET", "https://api-crud-sge.azurewebsites.net/api/Personas/" + id);
-
-        request.onreadystatechange = function () {
-
-            //TODO: Tengo que controlar el codigo de estado 204 No content
-            //Y los errores con reject aquí y en el metodo que lo llama con .catch(), al igual que con .then()
-
-            if (request.readyState == 4 && request.status == 200) {
-                person = JSON.parse(request.response);
-                resolve(person);
-            }
-
-        };
-
-        request.send(null);
-
-    });
-
-   
-
-}
 
 //Returns a person object array constructed from the JSON contained in the API's response
+
+/*
+ * Cabecera: async function getPersonCollection(person)
+ *
+ * Hace una llamada a la API para obtener un listado de personas relacionadas
+ * con el nombre de departamento al que pertenecen y lo devuelve.
+ *
+ * @return {Array<Object>}  personCollection  El array que contiene el listado de personas con nombre de departamento
+ */
+
 async function getPersonCollection() {
 
     return new Promise((resolve, reject) => {
 
         var request = new XMLHttpRequest();
-        var personCollection;
+        var personCollection = null;
 
-        //La id nos la tiene que pasar el enlace que clicamos
-        request.open("GET", "https://api-crud-sge.azurewebsites.net/api/Personas", true);
+        request.open("GET", "https://api-crud-sge.azurewebsites.net/api/PersonasDepartmentName", true);
 
         request.onreadystatechange = function () {
 
-            //TODO: Tengo que controlar el codigo de estado 204 No content
-            if (request.readyState < 4) {
-
-                //AQUI TENGO QUE PONER VISIBILITY DEL BODY HIDDEN PARA MIENTRAS TANTO.
-                //EN SU LUGAR LO SUYO ES QUE TENGA TODO EN UN DIV Y LE PONGA LA VISIBILIITY A HIDDEN A ESE DIV
-                //Y CREAR OTRO DIV CON LA ANIMACIÓN DE UN RELOJ O ALGO ASÍ
-
-            } else if (request.readyState == 4 && request.status == 200) {
+            if (request.readyState == 4 && request.status == 200) {
 
                 personCollection = JSON.parse(request.response);
 
                 resolve(personCollection);
+
+                //Codigo de estado 204: No content
+            } else if (request.readyState == 4 && request.status == 204) {
+
+                resolve(personCollection);
+
+            } else if (request.readyState == 4 && request.status != 200) {
+                reject("Algo ha ido mal");
             }
         };
 
@@ -67,9 +42,16 @@ async function getPersonCollection() {
 
 }
 
-
-//Takes a person object as a parameter to update the API with its attributes
-//Returns true on succesful result, otherwise returns false
+/*
+ * Cabecera: async function updatePerson(person)
+ * 
+ * Toma un objeto persona como parámetro para actualizar, a través de una petición a la API, con el valor
+ * de sus atributos.
+ *
+ * @param  {Object}   Person     El objeto que representa los nuevos datos de la persona a actualizar (ID incluida)
+ * 
+ * @return {Boolean}  succesful  Indica si la API ha sido actualizada correctamente
+ */
 
 async function updatePerson(person) {
 
@@ -89,6 +71,8 @@ async function updatePerson(person) {
             if (request.readyState == 4 && request.status == 204) {
                 succesful = true;
                 resolve(succesful);
+            } else if (request.readyState == 4 && request.status != 204) {
+                reject("Algo ha ido mal");
             }
         };
 
@@ -99,13 +83,21 @@ async function updatePerson(person) {
 
     });
 
-   
-
-    return succesful;
 }
 
 //Takes a valid id and deletes the API's record that matches ID
 //Returns true on succesful result, otherwise returns false
+
+/*
+ * Cabecera: async function deletePerson(id)
+ *
+ * Toma una id de persona y envia una peticion a la API para eliminar a la persona
+ * cuya ID coincida en la base de datos
+ *
+ * @param  {Number}   id     La id de la persona a eliminar
+ *
+ * @return {Boolean}  succesful  Indica si la API ha sido actualizada correctamente
+ */
 async function deletePerson(id) {
 
     return new Promise((resolve, reject) => {
@@ -117,11 +109,12 @@ async function deletePerson(id) {
 
         request.onreadystatechange = function () {
 
-            //TODO: Tengo que controlar codigos de estado de error
             //Código de estado 204 -> No content. Todo fue bien
             if (request.readyState == 4 && request.status == 204) {
                 succesful = true;
                 resolve(succesful);
+            } else if (request.readyState == 4 && request.status != 204) {
+                reject("Algo ha ido mal");
             }
         };
 
@@ -134,8 +127,17 @@ async function deletePerson(id) {
 }
 
 
-//Takes a person object as a parameter to insert into the API
-//Returns true on succesful result, otherwise returns false
+/*
+ * Cabecera: async function insertPerson(person)
+ *
+ * Toma un objeto persona como parámetro para insertar, haciéndole una petición a la API, con el valor
+ * de sus atributos. La ID no está incluida, es autogenerada en la bbdd
+ *
+ * @param  {Object}   Person     El objeto que representa los nuevos datos de la persona a insertar
+ * 
+ * @return {Boolean}  succesful  Indica si la API ha sido actualizada correctamente
+ */
+
 async function insertPerson(person) {
 
     return new Promise((resolve, reject) => {
@@ -153,6 +155,8 @@ async function insertPerson(person) {
             if (request.readyState == 4 && request.status == 204) {
                 succesful = true;
                 resolve(succesful);
+            } else if (request.readyState == 4 && request.status != 204) {
+                reject("Algo ha ido mal");
             }
         };
 
@@ -162,30 +166,38 @@ async function insertPerson(person) {
 
 }
 
-async function getDepartmentCollection() {
+
+//Función no utilizada para este caso de uso
+/*
+ * async function getPerson(id) {
 
     return new Promise((resolve, reject) => {
 
-        var succesful;
         var request = new XMLHttpRequest();
+        var person;
 
-        request.open("GET", "https://api-crud-sge.azurewebsites.net/api/Departments/", true);
+        request.open("GET", "https://api-crud-sge.azurewebsites.net/api/PersonasDepartmentName/" + id);
 
         request.onreadystatechange = function () {
 
             //TODO: Tengo que controlar el codigo de estado 204 No content
-            if (request.readyState < 4) {
+            //Y los errores con reject aquí y en el metodo que lo llama con .catch(), al igual que con .then()
 
-            } else if (request.readyState == 4 && request.status == 200) {
-
-                departmentCollection = JSON.parse(request.response);
-                succesful = true;
-                resolve(departmentCollection, succesful);
+            if (request.readyState == 4 && request.status == 200) {
+                person = JSON.parse(request.response);
+                resolve(person);
             }
+
         };
 
         request.send(null);
 
     });
 
+
+
 }
+ *
+ *
+ *
+ */
