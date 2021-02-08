@@ -1,31 +1,37 @@
 package com.example.viewmodels;
 
+import android.content.Context;
+
+import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+import androidx.room.Room;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class SharedVM extends ViewModel {
+public class SharedVM extends AndroidViewModel {
 
 
     private MutableLiveData<ArrayList<Equipo>> equiposNBA = new MutableLiveData<ArrayList<Equipo>>(new ArrayList<Equipo>());
     private MutableLiveData<Equipo> seleccionado = new MutableLiveData<Equipo>(new Equipo());
 
-    /*añadirEquipo*/
-    /*eliminarEquipo*/
-
     public SharedVM(){
 
-        Equipo e2 = new Equipo("Real Madrid", 2);
-        Equipo e3 = new Equipo("Huesca F.C.", 3);
-        Equipo e4 = new Equipo("Recre", 4);
+        LiveData<ArrayList<Equipo>> equipos = new LiveData<ArrayList<Equipo>>(new ArrayList<Equipo>);
 
-        ArrayList<Equipo> equipos = new ArrayList<Equipo>();
-        equipos.add(e2);
-        equipos.add(e3);
-        equipos.add(e4);
+        //Instanciamos la base de datos
 
-        this.equiposNBA.setValue(equipos);
+        DB db = Room.databaseBuilder(
+                getApplication().getApplicationContext(),
+                DB.class,
+                "EquiposNBA")
+                .build();
+
+        equipos = db.daoEquipo().getAllEquiposLive();
+
+        this.equiposNBA = equipos;
     }
 
 

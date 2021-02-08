@@ -1,10 +1,19 @@
 package com.example.viewmodels;
 
-import java.io.Serializable;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
+@Entity(tableName = "Equipos")
 public class Equipo{
 
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+
+    @ColumnInfo(name = "nombre")
     private String nombre;
+
+    @ColumnInfo(name ="numero_titulos")
     private int numeroTitulos;
 
     public Equipo(){
