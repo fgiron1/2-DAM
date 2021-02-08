@@ -71,9 +71,9 @@ async function rellenarTabla(personCollection) {
             newRow.insertCell(i);
         }
 
-        //Rellenamos las celdas
+        newRow.cells[0].classList.add("negro");
 
-        newRow.cells[0].innerHTML = "<p>" + person.id + "</p>";
+        //Rellenamos las celdas
 
         newRow.cells[1].innerHTML = "<p>" + person.FirstName + "</p>";
 

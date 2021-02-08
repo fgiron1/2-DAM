@@ -167,25 +167,33 @@ async function insertPerson(person) {
 }
 
 
-//Función no utilizada para este caso de uso
 /*
- * async function getPerson(id) {
+ * Cabecera: async function getDepartments()
+ *
+ * Hace una llamada a la API para obtener un listado de departamentos
+ * y lo devuelve
+ *
+ * @return {Array<Object>}  departmentCollection  El array que contiene el listado de departamentos
+ */
+
+ async function getDepartments() {
 
     return new Promise((resolve, reject) => {
 
         var request = new XMLHttpRequest();
-        var person;
+        var departmentCollection;
 
-        request.open("GET", "https://api-crud-sge.azurewebsites.net/api/PersonasDepartmentName/" + id);
+        request.open("GET", "https://api-crud-sge.azurewebsites.net/api/Departments/");
 
         request.onreadystatechange = function () {
 
-            //TODO: Tengo que controlar el codigo de estado 204 No content
-            //Y los errores con reject aquí y en el metodo que lo llama con .catch(), al igual que con .then()
-
             if (request.readyState == 4 && request.status == 200) {
-                person = JSON.parse(request.response);
-                resolve(person);
+
+                departmentCollection = JSON.parse(request.response);
+                resolve(departmentCollection);
+
+            } else if (request.readyState == 4 && request.status != 200) {
+                reject("Algo ha ido mal");
             }
 
         };
@@ -194,10 +202,42 @@ async function insertPerson(person) {
 
     });
 
+}
 
+/*
+ * Cabecera: async function getDepartmentByID(int id)
+ *
+ * Hace una llamada a la API para obtener el departamento cuya id
+ * coincida con la suministrada por parámetros
+ *
+ * @return {Object}  department  El objeto que representa el departamento traido de la API
+ */
+
+async function getDepartmentByID(id) {
+
+    return new Promise((resolve, reject) => {
+
+        var request = new XMLHttpRequest();
+        var departmentCollection;
+
+        request.open("GET", "https://api-crud-sge.azurewebsites.net/api/Departments/" + id);
+
+        request.onreadystatechange = function () {
+
+            if (request.readyState == 4 && request.status == 200) {
+
+                departmentCollection = JSON.parse(request.response);
+                resolve(departmentCollection);
+
+            } else if (request.readyState == 4 && request.status != 200) {
+                reject("Algo ha ido mal");
+            }
+
+        };
+
+        request.send(null);
+
+    });
 
 }
- *
- *
- *
- */
+ 

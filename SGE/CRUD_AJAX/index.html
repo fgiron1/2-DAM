@@ -12,6 +12,14 @@
     <script src="js/ajax/update.js"></script>
     <script src="js/entities/PersonDepartment.js"></script>
     <link rel="stylesheet" href="css/style.css"/>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+    </style>
 
 </head>
 
@@ -26,7 +34,7 @@
 
     <div id="formularioUpdate" class="hidden">
         <!--Aquí no va el id porque el usuario no deberia de cambiarlo, ni siquiera lo deberia conocer
-        pero en el javascript, aunque no se enlace aquí, se le pasa a la función de llamar a la api--->
+    pero en el javascript, aunque no se enlace aquí, se le pasa a la función de llamar a la api--->
         <label for="txtId">ID</label><br />
         <input id="txtId" type="text" /><br />
 
@@ -45,15 +53,15 @@
         <label for="txtEmail">Email</label><br />
         <input id="txtEmail" type="text" /><br />
 
-        <label for="txtDepartmentID">Department ID</label><br />
-        <input id="txtDepartmentID" type="text" /><br />
+        <label for="updateDepartmentID">Department ID</label><br />
+        <select id="updateDepartmentID" /><br />
 
         <input id="btnActualizar" type="button" value="Guardar" />
     </div>
 
     <input id="btnDesplegarInsertar" type="button" value="Insertar..." />
 
-    <div id="formularioInsertar" class="hidden latch">
+    <div id="formularioInsertar" class="hidden">
 
         <label for="insertFirstName">First name</label><br />
         <input id="insertFirstName" type="text" /><br />
@@ -71,7 +79,7 @@
         <input id="insertEmail" type="email" /><br />
 
         <label for="insertDepartmentID">Department ID</label><br />
-        <input id="insertDepartmentID" type="text" /><br />
+        <select id="insertDepartmentID"/><br />
 
         <input id="btnInsertar" type="button" value="Insertar" />
 

@@ -5,6 +5,7 @@
  *
  * Muestra visualmente el formulario de actualización. Los campos del formulario tienen
  * por defecto escritos los valores del objeto persona pasado por parámetros
+ * 
  *
  * @param  {Object}   Person     El objeto que representa los nuevos datos de la persona a actualizar (ID incluida)
  *
@@ -17,10 +18,10 @@ function desplegarTodo(person) {
 
     if (formularioUpdate.classList.contains("hidden")) {
 
-        //Desactivamos la clase visible
+        //Activamos la clase visible
         formularioUpdate.classList.toggle("visible");
 
-        //Activamos la clase hidden
+        //Desactivamos la clase hidden
         formularioUpdate.classList.toggle("hidden");
 
         fillInputs(person);
@@ -39,13 +40,17 @@ function desplegarTodo(person) {
 //en los inputs
 function fillInputs(person) {
 
+    var departmentDropDown = document.getElementById("updateDepartmentID");
+
     document.getElementById("txtId").value = person.id
     document.getElementById("txtFirstName").value = person.FirstName;
     document.getElementById("txtLastName").value = person.LastName;
     document.getElementById("txtBirthdate").value = person.Birthdate;
     document.getElementById("txtPhoneNumber").value = person.PhoneNumber;
     document.getElementById("txtEmail").value = person.Email;
-    document.getElementById("txtDepartmentID").value = person.DepartmentID;
+
+    //La opción por defecto del select
+    departmentDropDown.value = person.DepartmentID;
 
 }
 
@@ -62,7 +67,7 @@ function btnActualizar() {
 
     //Construimos la persona y llamamos al método que actualiza a la api
 
-    var personaFinal = new PersonDepartment(document.getElementById("txtId").value, document.getElementById("txtFirstName").value, document.getElementById("txtLastName").value, document.getElementById("txtBirthdate").value, document.getElementById("txtPhoneNumber").value, document.getElementById("txtEmail").value, document.getElementById("txtDepartmentID").value);
+    var personaFinal = new PersonDepartment(document.getElementById("txtId").value, document.getElementById("txtFirstName").value, document.getElementById("txtLastName").value, document.getElementById("txtBirthdate").value, document.getElementById("txtPhoneNumber").value, document.getElementById("txtEmail").value, document.getElementById("updateDepartmentID").value);
 
     //Si se consigue actualizar, recargamos la lista para que se refleje visualmente
 
@@ -73,3 +78,40 @@ function btnActualizar() {
     });
 
 }
+
+
+/*
+ * Cabecera: function loadUpdateName(id)
+ * 
+ * Función auxiliar. Añade las opciones de selección de departamento en el
+ * formulario de actualización, llamando a la API para ello
+ * 
+ * @param  {Number}  id  La id de departamento
+ * 
+ 
+function loadUpdateName(id) {
+
+    getDepartments().then((dptCollection) => {
+
+        var departmentDropDown = document.getElementById("updateDepartmentID");
+        var defaultID;
+
+        //Añadimos las tres opciones de departamento
+        for (var i = 0; i < dptCollection.length; i++) {
+
+            let department;
+
+            if (dptCollection[i].ID == id) {
+                //La opción escogida por defecto es la que tiene un id que coincide con el parámetro de entrada
+                defaultID = dptCollection[i].ID;
+            }
+
+            department = new Option(dptCollection[i].Name, dptCollection[i].ID);
+            departmentDropDown.options.add(department);
+        }
+
+        
+
+    });
+    
+}*/
