@@ -7,7 +7,15 @@
  */
 import org.xml.sax.helpers.*;
 import org.xml.sax.*;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+
 public class GestionContenido extends DefaultHandler {
+
+    //El objeto "a" nos permite persistir la información para comunicarla entre los métodos
+    //endElement y characters. Se reusa con la información de la apuesta que el parser
+    //está leyendo en cada momento
 
     Apuesta a = new Apuesta();
 
@@ -52,17 +60,36 @@ public class GestionContenido extends DefaultHandler {
     }
     @Override
     public void endElement(String uri, String nombre, String nombreC){
-        System.out.println("\t[/ "+nombreC +"]");
+
+        //Aquí la sentencia SQL que usa el objeto
+
+        if(nombreC == "apuesta"){
+
+        }
+
+
+
     }
 
-    //Tengo que almacenar lo que haya dentro de las etiquetas en el objeto "a" para despues mandarlo
-    //a través del JDBC a la base de datos. Si la apuesta no es válida, se captura la excepción
 
 
     @Override
     public void characters (char[] ch, int inicio, int longitud) throws SAXException{
         String cad = new String(ch, inicio, longitud);
 
+        //Con la informacion parseada, le asignamos valores a un objeto Apuesta en listadoApuestas
+
+        //El formato de fecha aceptado es yyyy/MM/dd
+
+        if(flagUsuario){a.setUsuario(Integer.parseInt(cad));}
+        if(flagPartido){a.setPartido(Integer.parseInt(cad));}
+        if(flagCantidad){a.setCantidad(Float.parseFloat(cad));}
+        if(flagFecha){a.setFecha(new SimpleDateFormat("yyyy/MM/dd"));}
+        if(flagResultado){a.setResultado(cad);}
+
+        if(flagOverunder){a.setOverunder(Boolean.parseBoolean(cad));}
+        if(flagDiferencia){a.setDiferencia(Float.parseFloat(cad));}
+        if(flagHandicap){a.setHandicap(Integer.parseInt(cad));}
 
     }
 }
