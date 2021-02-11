@@ -1,4 +1,4 @@
-package com.example.viewmodels;
+package com.example.viewmodels.activities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,15 +6,24 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.viewmodels.Equipo;
+import com.example.viewmodels.R;
+import com.example.viewmodels.SharedVM;
+import com.example.viewmodels.fragments.detailsFragment;
+import com.example.viewmodels.fragments.formFragment;
+
 import java.util.ArrayList;
+
+//Flujo Master/Details para cambiar persistencia de API a BBDD
+
+//Añadir las librerias que puso el fran
+
+//Patrón repository
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 

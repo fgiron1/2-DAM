@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5677f393-12c2-4588-acb4-0ce8601afde6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.idea/modules/AsyncTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/src/main/java/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AsyncTest/src/main/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/java/com/example/viewmodels/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/java/com/example/viewmodels/EquipoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OAuthv2_demo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../OAuthv2_demo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OAuth2Demo/Server/Controllers/Authorize.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/OAuth2Demo/Server/Controllers/Authorize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/java/com/example/viewmodels/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/java/com/example/viewmodels/Equipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/java/com/example/viewmodels/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/java/com/example/viewmodels/activities/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/java/com/example/viewmodels/detailsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/java/com/example/viewmodels/fragments/detailsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/java/com/example/viewmodels/formFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/java/com/example/viewmodels/fragments/formFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/res/layout/fragment_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/res/layout/fragment_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/res/layout/fragment_form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ProgramacionMovil/ViewModels/app/src/main/res/layout/fragment_form.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../oauth2-server-php-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -41,6 +76,8 @@
       <workItem from="1611165002968" duration="5267000" />
       <workItem from="1611268830574" duration="694000" />
       <workItem from="1611333440734" duration="540000" />
+      <workItem from="1611651146625" duration="2533000" />
+      <workItem from="1612804642939" duration="14000" />
     </task>
     <servers />
   </component>

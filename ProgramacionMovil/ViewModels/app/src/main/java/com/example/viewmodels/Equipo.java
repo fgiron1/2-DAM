@@ -1,10 +1,21 @@
-package com.example.viewmodels;
+package com.example.viemodels.models;
+
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
+@Entity(tableName = "Equipos")
 public class Equipo{
 
+    @PrimaryKey
+    private int id;
+
+    @ColumnInfo(name = "nombre")
     private String nombre;
+
+    @ColumnInfo(name = "numero_titulos")
     private int numeroTitulos;
 
     public Equipo(){

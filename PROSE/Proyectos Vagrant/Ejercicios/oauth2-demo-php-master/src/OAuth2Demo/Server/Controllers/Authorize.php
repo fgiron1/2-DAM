@@ -26,7 +26,7 @@ class Authorize
          // get the oauth response (configured in src/OAuth2Demo/Server/Server.php)
         $response = $app['oauth_response'];
 
-        // validate the authorize request.  if it is invalid, redirect back to the client with the errors in tow
+        // validate the authorize request. if it is invalid, redirect back to the client with the errors in tow
         if (!$server->validateAuthorizeRequest($app['request'], $response)) {
             return $server->getResponse();
         }

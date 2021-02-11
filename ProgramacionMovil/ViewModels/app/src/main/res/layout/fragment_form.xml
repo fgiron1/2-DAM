@@ -4,7 +4,7 @@
     android:id="@+id/formFragmentContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".formFragment">
+    tools:context=".fragments.formFragment">
 
     <!-- TODO: Update blank fragment layout -->
 

@@ -1,4 +1,4 @@
-package com.example.viewmodels;
+package com.example.viewmodels.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,10 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+
+import com.example.viewmodels.Equipo;
+import com.example.viewmodels.R;
+import com.example.viewmodels.SharedVM;
 
 import java.util.ArrayList;
 

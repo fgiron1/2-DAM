@@ -15,6 +15,7 @@ class OfertaModelHandler
         $query = "SELECT * FROM Ofertas";
         $prep_query = $connection->prepare($query);
         $prep_query->execute();
+        //TODO: Devolver el recurso
 
     }
 
@@ -43,6 +44,8 @@ class OfertaModelHandler
             //Se añade a la lista a devolver
             $listaOfertas[] = $oferta;
         }
+
+        //TODO: Devolver el recurso
 
         $connection->close();
     }
@@ -113,7 +116,8 @@ class OfertaModelHandler
 
         $prep_query->bind_param($id);
 
-        $prep_query->execute();
+        return $prep_query->execute();
+
 
     }
 

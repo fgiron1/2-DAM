@@ -1,0 +1,12 @@
+COSAS HECHAS:
+        - Trabajando en la clase PersonajeHandlerModel (usado por LibroController para asociar un array de personajes a un libro
+                - Lo de no mostrar los libros que no tuvieran personajes hecho a través de una query (NO testada)
+
+COSAS POR HACER:
+
+        - Que LibroController maneje libros con personajes (PREGUNTA PRINCIPAL DEL ENUNCIADO)
+              - Acabar de añadir funcionalidad a PersonajeHandlerModel para devolver array de personajes
+
+        - Añadir nuevo endpoint /Libros/{string} -> Filtra los libros por su nombre (usa la función is_string())
+
+        -Hacer script BBDD y ppblarla, dándole a algunos libros personajes y a otros no

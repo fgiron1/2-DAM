@@ -1,4 +1,4 @@
-package com.example.viewmodels;
+package com.example.viewmodels.fragments;
 
 import android.os.Bundle;
 
@@ -11,6 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.viewmodels.R;
+import com.example.viewmodels.SharedVM;
 
 /**
  * A simple {@link Fragment} subclass.
