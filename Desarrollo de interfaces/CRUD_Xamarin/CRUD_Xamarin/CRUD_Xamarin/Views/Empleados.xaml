@@ -2,17 +2,32 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CRUD_Xamarin.Views.Empleados"
-             xmlns:VM="clr-namespace:CRUD_Xamarin.ViewModels.Utils">
+             xmlns:VM="clr-namespace:CRUD_Xamarin.ViewModels">
     <!--Un binding context, para darle datos al ListView. El ListView se hace con Binding Y DENTRO TAMBIÉN
     LISTVIEW -> LISTVIEW.ITEMTEMPLATE -> DATATEMPLATE -> VIEWCELL -> STACKLAYOUT -> LABELS-->
-    
-    
-    
+
+
+
+    <ContentPage.BindingContext>
+        <VM:VMEmpleados/>
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
+
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            
+                            <Label></Label>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
+
     </ContentPage.Content>
+
 </ContentPage>
