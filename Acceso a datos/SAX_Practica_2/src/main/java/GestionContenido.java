@@ -8,8 +8,14 @@
 import org.xml.sax.helpers.*;
 import org.xml.sax.*;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class GestionContenido extends DefaultHandler {
 
@@ -62,8 +68,12 @@ public class GestionContenido extends DefaultHandler {
     public void endElement(String uri, String nombre, String nombreC){
 
         //Aquí la sentencia SQL que usa el objeto
+        //Aqui empleamos un objeto que se encargue de conectar con la base de datos
+        //y ejecutar las sentencias
 
         if(nombreC == "apuesta"){
+
+
 
         }
 
@@ -84,7 +94,19 @@ public class GestionContenido extends DefaultHandler {
         if(flagUsuario){a.setUsuario(Integer.parseInt(cad));}
         if(flagPartido){a.setPartido(Integer.parseInt(cad));}
         if(flagCantidad){a.setCantidad(Float.parseFloat(cad));}
-        if(flagFecha){a.setFecha(new SimpleDateFormat("yyyy/MM/dd"));}
+
+        //Usamos un SimpleDateFormat para transformar un String en un Date
+
+        SimpleDateFormat formateo = new SimpleDateFormat("yyyy/MM/dd");
+
+        if(flagFecha){
+            try {
+                a.setFecha( formateo.parse(cad));
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+
         if(flagResultado){a.setResultado(cad);}
 
         if(flagOverunder){a.setOverunder(Boolean.parseBoolean(cad));}

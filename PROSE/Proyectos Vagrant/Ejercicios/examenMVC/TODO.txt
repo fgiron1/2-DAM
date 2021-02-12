@@ -1,0 +1,39 @@
+COSAS HECHAS:
+        - Trabajando en la clase PersonajeHandlerModel (usado por LibroController para asociar un array de personajes a un libro
+                - Lo de no mostrar los libros que no tuvieran personajes hecho a través de una query (NO testada)
+
+COSAS POR HACER:
+
+        - Añadir nuevo endpoint /Libros/{string} -> Filtra los libros por su nombre (usa la función is_string())
+
+        - Hacer script BBDD y ppblarla, dándole a algunos libros personajes y a otros no
+
+
+CUIDADO:
+
+1.  Error  Undefined array key "REQUEST_METHOD" al compilar index.php. El único uso que tenia la variable $verb era para construir
+    la frase manageGetVerb, managePostVerb, etc... Pero aquí solo hay GET y la he escrito a mano.
+
+2.  He cambiado los indices de getUrlElements[] quitandoles 1, porque según entiendo, el UrlElements es
+    {"Libros", "1"} o {"Libros"} o {"Libros", "titulo"} (el nuevo endpoint)
+
+
+CORRECCIÓN:
+
+- En el array de personajes asociados se debería de mostrar, en lugar de la información del personaje, un
+enlace con el endpoint que te daría esa información, con tal de que sea RESTful
+
+- Implementar en TODOS los modelos el jsonSerialize()
+
+- LO DE FILTRAR ES COGIENDO EL TITULO COMO QUERY STRING, NO COMO ELEMENTO DE LA URL
+
+ERROR GORDO: La query que solo te devuelve los libros que tienen personajes es erronea. Porque también
+necesitamos en el código diferenciar entre los libros que tengan y no, para devolver el status de error adecuado (codigo de estado)
+locked u otro
+
+SOLUCIÓN: SI EL ATRIBUTO DE PERSONAJES ES NULL EN EL LibroPersonajeModel, pues devolvemos el código de estado de locked,
+si no, otro
+
+
+LOS INDICES QUE VENIAN YA DEL GETURLELEMENTS ESTABAN BIEN, PORQUE SE CUENTA DESDE EL ARCHIVO AL QUE SE LE LLAMA,
+ENTONCES EL index.php YA LO CONTABA
