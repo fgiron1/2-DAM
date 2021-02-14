@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\CRUD_Xamarin_Entities.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\CRUD_Xamarin_Entities.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\CRUD_Xamarin_Entities.csproj",
-        "projectName": "CRUD_Xamarin_Entities",
-        "projectPath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\CRUD_Xamarin_Entities.csproj",
-        "packagesPath": "C:\\Users\\fgiron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\obj\\",
-=======
     "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\CRUD_Xamarin_Entities.csproj": {}
   },
   "projects": {
@@ -25,17 +12,12 @@
         "projectPath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\CRUD_Xamarin_Entities.csproj",
         "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\obj\\",
->>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-<<<<<<< Updated upstream
-          "C:\\Users\\fgiron\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
           "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -48,10 +30,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
-<<<<<<< Updated upstream
-=======
             "targetAlias": "netstandard2.0",
->>>>>>> Stashed changes
             "projectReferences": {}
           }
         },
@@ -63,10 +42,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-<<<<<<< Updated upstream
-=======
           "targetAlias": "netstandard2.0",
->>>>>>> Stashed changes
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -85,11 +61,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-<<<<<<< Updated upstream
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.405\\RuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
         }
       }
     }

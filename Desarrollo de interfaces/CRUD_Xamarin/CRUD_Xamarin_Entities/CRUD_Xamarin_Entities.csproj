@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-﻿<Project Sdk="Microsoft.NET.Sdk">
-=======
 <Project Sdk="Microsoft.NET.Sdk">
->>>>>>> Stashed changes
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>

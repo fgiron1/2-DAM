@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CRUD_Xamarin.Views.Empleados"
-             xmlns:VM="clr-namespace:CRUD_Xamarin.ViewModels">
+             xmlns:VM="clr-namespace:CRUD_Xamarin.ViewModels"
+             xmlns:models="clr-namespace:CRUD_Xamarin.Models">
     <!--Un binding context, para darle datos al ListView. El ListView se hace con Binding Y DENTRO TAMBIÉN
     LISTVIEW -> LISTVIEW.ITEMTEMPLATE -> DATATEMPLATE -> VIEWCELL -> STACKLAYOUT -> LABELS-->
 
@@ -15,17 +16,18 @@
     <ContentPage.Content>
 
         <StackLayout>
-            <ListView>
-                <ListView.ItemTemplate>
-                    <DataTemplate>
+            <ListView ItemsSource="{Binding listaPersonasDpto}">
+                <ListView.ItemTemplate >
+                    <DataTemplate x:DataType="models:PersonDepartmentName">
                         <ViewCell>
-                            
-                            <Label></Label>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding FirstName, Mode=OneWay}"></Label>
+                                <Label Text="{Binding LastName, Mode=OneWay}"></Label>
+                            </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
         </StackLayout>
 
     </ContentPage.Content>

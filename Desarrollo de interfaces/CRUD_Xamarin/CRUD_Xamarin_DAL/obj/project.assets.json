@@ -26,7 +26,6 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-<<<<<<< Updated upstream
       "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
@@ -36,8 +35,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-=======
->>>>>>> Stashed changes
       "CRUD_Xamarin_Entities/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -195,7 +192,6 @@
         "netstandard.library.nuspec"
       ]
     },
-<<<<<<< Updated upstream
     "Newtonsoft.Json/12.0.3": {
       "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
@@ -227,8 +223,6 @@
         "packageIcon.png"
       ]
     },
-=======
->>>>>>> Stashed changes
     "CRUD_Xamarin_Entities/1.0.0": {
       "type": "project",
       "path": "../CRUD_Xamarin_Entities/CRUD_Xamarin_Entities.csproj",
@@ -238,48 +232,28 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "CRUD_Xamarin_Entities >= 1.0.0",
-<<<<<<< Updated upstream
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fgiron\\.nuget\\packages\\": {},
-=======
-      "NETStandard.Library >= 2.0.3"
-    ]
-  },
-  "packageFolders": {
     "C:\\Users\\ferna\\.nuget\\packages\\": {},
->>>>>>> Stashed changes
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
-      "projectUniqueName": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_DAL\\CRUD_Xamarin_DAL.csproj",
-      "projectName": "CRUD_Xamarin_DAL",
-      "projectPath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_DAL\\CRUD_Xamarin_DAL.csproj",
-      "packagesPath": "C:\\Users\\fgiron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_DAL\\obj\\",
-=======
       "projectUniqueName": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_DAL\\CRUD_Xamarin_DAL.csproj",
       "projectName": "CRUD_Xamarin_DAL",
       "projectPath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_DAL\\CRUD_Xamarin_DAL.csproj",
       "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_DAL\\obj\\",
->>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-<<<<<<< Updated upstream
-        "C:\\Users\\fgiron\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
         "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -292,16 +266,10 @@
       },
       "frameworks": {
         "netstandard2.0": {
-<<<<<<< Updated upstream
-          "projectReferences": {
-            "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\CRUD_Xamarin_Entities.csproj": {
-              "projectPath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\CRUD_Xamarin_Entities.csproj"
-=======
           "targetAlias": "netstandard2.0",
           "projectReferences": {
             "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\CRUD_Xamarin_Entities.csproj": {
               "projectPath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin_Entities\\CRUD_Xamarin_Entities.csproj"
->>>>>>> Stashed changes
             }
           }
         }
@@ -314,23 +282,17 @@
     },
     "frameworks": {
       "netstandard2.0": {
-<<<<<<< Updated upstream
-=======
         "targetAlias": "netstandard2.0",
->>>>>>> Stashed changes
         "dependencies": {
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
-<<<<<<< Updated upstream
           },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.3, )"
-=======
->>>>>>> Stashed changes
           }
         },
         "imports": [
@@ -343,11 +305,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-<<<<<<< Updated upstream
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.405\\RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
       }
     }
   }

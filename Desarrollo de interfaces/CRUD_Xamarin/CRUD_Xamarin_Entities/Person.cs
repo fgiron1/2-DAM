@@ -13,5 +13,19 @@ namespace CRUD_Xamarin_Entities
         public string Email { get; set; }
         public DateTime Birthdate { get; set; }
         public int DepartmentID { get; set; }
+
+        public Person() { }
+
+        public Person(int id, string firstName, string lastName, string phoneNumber, string email, DateTime birthdate, int departmentID)
+        {
+            this.id = id;
+            FirstName = firstName;
+            LastName = lastName;
+            PhoneNumber = phoneNumber;
+            Email = email;
+            Birthdate = birthdate;
+            DepartmentID = departmentID;
+        }
+
     }
 }

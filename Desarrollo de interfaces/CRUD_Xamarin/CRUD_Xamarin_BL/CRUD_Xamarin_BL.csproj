@@ -4,12 +4,4 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
-<<<<<<< Updated upstream
-  <ItemGroup>
-    <ProjectReference Include="..\CRUD_Xamarin_DAL\CRUD_Xamarin_DAL.csproj" />
-    <ProjectReference Include="..\CRUD_Xamarin_Entities\CRUD_Xamarin_Entities.csproj" />
-  </ItemGroup>
-
-=======
->>>>>>> Stashed changes
 </Project>

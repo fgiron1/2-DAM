@@ -15,5 +15,7 @@ namespace CRUD_Xamarin.ViewModels.Utils
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+
     }
 }

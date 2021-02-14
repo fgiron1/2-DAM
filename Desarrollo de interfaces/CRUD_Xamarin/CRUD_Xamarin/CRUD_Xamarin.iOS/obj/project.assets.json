@@ -179,12 +179,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-<<<<<<< Updated upstream
           "CRUD_Xamarin_Entities": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
-=======
-          "CRUD_Xamarin_Entities": "1.0.0"
->>>>>>> Stashed changes
         },
         "compile": {
           "bin/placeholder/CRUD_Xamarin_DAL.dll": {}
@@ -382,12 +378,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-<<<<<<< Updated upstream
           "CRUD_Xamarin_Entities": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
-=======
-          "CRUD_Xamarin_Entities": "1.0.0"
->>>>>>> Stashed changes
         },
         "compile": {
           "bin/placeholder/CRUD_Xamarin_DAL.dll": {}
@@ -585,12 +577,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-<<<<<<< Updated upstream
           "CRUD_Xamarin_Entities": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
-=======
-          "CRUD_Xamarin_Entities": "1.0.0"
->>>>>>> Stashed changes
         },
         "compile": {
           "bin/placeholder/CRUD_Xamarin_DAL.dll": {}
@@ -788,12 +776,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-<<<<<<< Updated upstream
           "CRUD_Xamarin_Entities": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
-=======
-          "CRUD_Xamarin_Entities": "1.0.0"
->>>>>>> Stashed changes
         },
         "compile": {
           "bin/placeholder/CRUD_Xamarin_DAL.dll": {}
@@ -1236,24 +1220,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fgiron\\.nuget\\packages\\": {},
+    "C:\\Users\\ferna\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.iOS\\CRUD_Xamarin.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.iOS\\CRUD_Xamarin.iOS.csproj",
       "projectName": "CRUD_Xamarin.iOS",
-      "projectPath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.iOS\\CRUD_Xamarin.iOS.csproj",
-      "packagesPath": "C:\\Users\\fgiron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.iOS\\obj\\",
+      "projectPath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.iOS\\CRUD_Xamarin.iOS.csproj",
+      "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\fgiron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1267,8 +1251,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.csproj": {
-              "projectPath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.csproj"
+            "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.csproj": {
+              "projectPath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.csproj"
             }
           }
         }

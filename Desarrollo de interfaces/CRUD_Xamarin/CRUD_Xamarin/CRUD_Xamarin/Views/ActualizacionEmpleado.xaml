@@ -5,11 +5,23 @@
              xmlns:VM="clr-namespace:CRUD_Xamarin.ViewModels">
     <!--Esta pagina es para mostrar los datos de un empleado individual y es la misma página
     que la de actualización-->
+
+    <ContentPage.BindingContext>
+        <VM:VMActualizacionEmpleado />
+    </ContentPage.BindingContext>
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView ItemsSource="{Binding Path=VM.inputPerson}">
+                <Entry Text="{Binding Source=id}"
+                <Entry Text="{Binding}"
+                <Entry Text="{Binding}"
+                <Entry Text="{Binding}"
+                <Entry Text="{Binding}"
+                <Entry Text="{Binding}"
+                <Entry Text="{Binding}"
+                       
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

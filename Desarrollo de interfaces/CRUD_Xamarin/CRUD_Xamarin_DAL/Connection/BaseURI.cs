@@ -6,6 +6,6 @@ namespace CRUD_Xamarin_DAL.Connection
 {
     public class BaseURI
     {
-        public static string API = "https://api-crud-sge.azurewebsites.net/api/";
+        public static string API { get; } = "https://api-crud-sge.azurewebsites.net/api/";
     }
 }
