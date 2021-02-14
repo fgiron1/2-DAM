@@ -827,8 +827,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+<<<<<<< Updated upstream
           "CRUD_Xamarin_Entities": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
+=======
+          "CRUD_Xamarin_Entities": "1.0.0"
+>>>>>>> Stashed changes
         },
         "compile": {
           "bin/placeholder/CRUD_Xamarin_DAL.dll": {}

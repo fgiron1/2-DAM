@@ -6,5 +6,9 @@
     "\\js\\ajax",
     "\\js\\entities"
   ],
+<<<<<<< Updated upstream
+=======
+  "SelectedNode": "\\index.html",
+>>>>>>> Stashed changes
   "PreviewInSolutionExplorer": false
 }
