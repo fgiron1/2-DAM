@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUD_Xamarin.Views.InsercionEmpleado"
+             xmlns:VM="clr-namespace:CRUD_Xamarin.ViewModels">
+
+    <ContentPage.BindingContext>
+        <VM:VMInsercionEmpleado/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="40">
+            <Label Text="Add new Employee"></Label>
+            
+            <Label Text="First name"></Label>
+            <Entry x:Name="FirstName" Text="{Binding InputPerson.FirstName, Mode=TwoWay}"></Entry>
+            
+            <Label Text="Last name"></Label>
+            <Entry x:Name="LastName" Text="{Binding InputPerson.LastName, Mode=TwoWay}"></Entry>
+
+            <Label Text="Birthdate"></Label>
+            <Entry x:Name="Birthdate" Text="{Binding InputPerson.Birthdate, Mode=TwoWay}"></Entry>
+
+            <Label Text="Email"></Label>
+            <Entry x:Name="Email" Text="{Binding InputPerson.Email, Mode=TwoWay}"></Entry>
+
+            <Label Text="PhoneNumber"></Label>
+            <Entry x:Name="PhoneNumber" Text="{Binding InputPerson.PhoneNumber, Mode=TwoWay}"></Entry>
+
+            <Picker ItemsSource="{Binding DepartmentList, Mode=OneWay}"
+                    ItemDisplayBinding="{Binding Name, Mode=OneWay}"
+                    SelectedItem="{Binding ChosenDepartment, Mode=TwoWay}">
+            </Picker>
+            
+            <Button Text="Submit" Command="{Binding InsertarCommand, Mode=OneWay}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

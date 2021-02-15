@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUD_Xamarin.Views.Empleados"
+             xmlns:VM="clr-namespace:CRUD_Xamarin.ViewModels">
+    
+    <ContentPage.BindingContext>
+        <VM:VMEmpleados/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+            
+            <ListView ItemsSource="{Binding ListaPersonasDpto, Mode=OneWay}"
+                      SelectedItem="{Binding PersonaSeleccionada, Mode=TwoWay}">
+                <ListView.ItemTemplate >
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding FirstName, Mode=OneWay}" FontSize="20" VerticalOptions="Center"></Label>
+                                <Label Text="{Binding LastName, Mode=OneWay}" FontSize="20" VerticalOptions="Center"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Insertar" Command="{Binding CargarInsertarCommand, Mode=OneWay}"></Button>
+                <Button Text="Actualizar" Command="{Binding CargarActualizarCommand, Mode=OneWay}"></Button>
+                <Button Text="Eliminar" Command="{Binding EliminarCommand, Mode=OneWay}"></Button>
+            </StackLayout>
+            
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
+
+

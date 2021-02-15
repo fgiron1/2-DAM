@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUD_Xamarin.Views.MaestroDetalle"
+             xmlns:pages="clr-namespace:CRUD_Xamarin.Views"
+             xmlns:VM="clr-namespace:CRUD_Xamarin.ViewModels"
+             xmlns:models="clr-namespace:CRUD_Xamarin.Models">
+  <!--<MasterDetailPage.Master>
+    <pages:MaestroDetalleMaster x:Name="MasterPage" />
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <pages:MaestroDetalleDetail />
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>-->
+  
+    <MasterDetailPage.BindingContext>
+        <VM:VMMaestroDetalleMaster/>
+    </MasterDetailPage.BindingContext>
+
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" BackgroundColor="Gray" Title="Master">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Master page Menu"></Label>
+                    <Button Text="Lista Empleados" BackgroundColor="Yellow" Command="{Binding PaginaEmpleadosCommand, Mode=OneWay}"></Button>
+                    <Button Text="Lista Departamentos" BackgroundColor="Yellow" Command="{Binding PaginaDepartamentosCommand, Mode=OneWay}"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    
+    <MasterDetailPage.Detail>
+        <ContentPage Padding="10">
+        </ContentPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>

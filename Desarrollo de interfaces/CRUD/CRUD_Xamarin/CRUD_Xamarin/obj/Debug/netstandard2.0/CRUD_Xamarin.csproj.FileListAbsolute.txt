@@ -1,0 +1,36 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\CRUD_Xamarin.csprojAssemblyReference.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\Views\ActualizacionEmpleado.xaml.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\Views\Empleados.xaml.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\Views\InsercionEmpleado.xaml.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\CRUD_Xamarin.AssemblyInfoInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\CRUD_Xamarin.AssemblyInfo.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\CRUD_Xamarin.csproj.CoreCompileInputs.cache
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\bin\Debug\netstandard2.0\CRUD_Xamarin.deps.json
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\bin\Debug\netstandard2.0\CRUD_Xamarin.dll
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\bin\Debug\netstandard2.0\ref\CRUD_Xamarin.dll
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\bin\Debug\netstandard2.0\CRUD_Xamarin.pdb
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\bin\Debug\netstandard2.0\CRUD_Xamarin_BL.dll
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\bin\Debug\netstandard2.0\CRUD_Xamarin_DAL.dll
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.dll
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\bin\Debug\netstandard2.0\CRUD_Xamarin_BL.pdb
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.pdb
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\bin\Debug\netstandard2.0\CRUD_Xamarin_DAL.pdb
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\CRUD_Xamarin.csprojAssemblyReference.cache
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\Views\ActualizacionEmpleado.xaml.g.cs
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\Views\Departamentos.xaml.g.cs
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\Views\Empleados.xaml.g.cs
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\Views\InsercionEmpleado.xaml.g.cs
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\Views\MaestroDetalle.xaml.g.cs
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\Views\MaestroDetalleDetail.xaml.g.cs
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\Views\MaestroDetalleMaster.xaml.g.cs
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\CRUD_Xamarin.AssemblyInfoInputs.cache
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\CRUD_Xamarin.AssemblyInfo.cs
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\CRUD_Xamarin.csproj.CoreCompileInputs.cache
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\CRUD_Xamarin.csproj.CopyComplete
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\CRUD_Xamarin.dll
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\ref\CRUD_Xamarin.dll
+C:\CRUD\CRUD_Xamarin\CRUD_Xamarin\obj\Debug\netstandard2.0\CRUD_Xamarin.pdb

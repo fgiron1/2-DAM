@@ -1,0 +1,14 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\bin\Debug\netstandard2.0\Xamarin-CRUD-BL.deps.json
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\bin\Debug\netstandard2.0\Xamarin-CRUD-BL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\bin\Debug\netstandard2.0\Xamarin-CRUD-BL.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\bin\Debug\netstandard2.0\Xamarin-CRUD-DAL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\bin\Debug\netstandard2.0\Xamarin-CRUD-Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\bin\Debug\netstandard2.0\Xamarin-CRUD-DAL.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\bin\Debug\netstandard2.0\Xamarin-CRUD-Entities.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\obj\Debug\netstandard2.0\Xamarin-CRUD-BL.csprojAssemblyReference.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\obj\Debug\netstandard2.0\Xamarin-CRUD-BL.AssemblyInfoInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\obj\Debug\netstandard2.0\Xamarin-CRUD-BL.AssemblyInfo.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\obj\Debug\netstandard2.0\Xamarin-CRUD-BL.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\obj\Debug\netstandard2.0\Xamarin-CRUD-BL.csproj.CopyComplete
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\obj\Debug\netstandard2.0\Xamarin-CRUD-BL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-BL\obj\Debug\netstandard2.0\Xamarin-CRUD-BL.pdb
