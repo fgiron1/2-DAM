@@ -12,9 +12,9 @@
 
         <StackLayout Orientation="Vertical">
             
-            <ListView ItemsSource="{Binding ListaPersonasDpto, Mode=OneWay}"
+            <ListView ItemsSource="{Binding ListaPersonasDpto, Mode=TwoWay}"
                       SelectedItem="{Binding PersonaSeleccionada, Mode=TwoWay}">
-                <ListView.ItemTemplate >
+                <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
@@ -28,7 +28,7 @@
 
             <StackLayout Orientation="Horizontal">
                 <Button Text="Insertar" Command="{Binding CargarInsertarCommand, Mode=OneWay}"></Button>
-                <Button Text="Actualizar" Command="{Binding CargarActualizarCommand, Mode=OneWay}"></Button>
+                <Button Text="Detalles" Command="{Binding CargarActualizarCommand, Mode=OneWay}"></Button>
                 <Button Text="Eliminar" Command="{Binding EliminarCommand, Mode=OneWay}"></Button>
             </StackLayout>
             

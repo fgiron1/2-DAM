@@ -30,13 +30,27 @@ namespace CRUD_Xamarin.ViewModels
             //el DepartmentID de inputPerson
             set
             {
-                ChosenDepartment = value;
+                chosenDepartment = value;
                 inputPerson.DepartmentID = chosenDepartment.ID;
                 //Creo que no es necesario
                 NotifyPropertyChanged("ChosenDepartment");
             }
         }
-        public List<Department> DepartmentList { get; set; }
+        private List<Department> departmentList;
+        public List<Department> DepartmentList
+        {
+            get
+            {
+                return departmentList;
+            }
+
+            set
+            {
+                departmentList = value;
+                NotifyPropertyChanged("DepartmentList");
+            }
+
+        }
 
         #region Commands
 

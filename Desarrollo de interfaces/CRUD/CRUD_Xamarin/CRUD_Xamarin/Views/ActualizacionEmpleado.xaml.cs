@@ -14,11 +14,12 @@ namespace CRUD_Xamarin.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ActualizacionEmpleado : ContentPage
     {
-        public VMActualizacionEmpleado VM { get; }
+        
         public ActualizacionEmpleado(PersonDepartmentName person)
         {
             InitializeComponent();
-            VM = new VMActualizacionEmpleado(person);
+            VMActualizacionEmpleado VM =  (VMActualizacionEmpleado) BindingContext;
+            VM.InputPerson = person;
         }
     }
 }

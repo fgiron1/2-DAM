@@ -19,7 +19,7 @@
             <Entry x:Name="LastName" Text="{Binding InputPerson.LastName, Mode=TwoWay}"></Entry>
 
             <Label Text="Birthdate"></Label>
-            <Entry x:Name="Birthdate" Text="{Binding InputPerson.Birthdate, Mode=TwoWay}"></Entry>
+            <DatePicker Date="{Binding InputPerson.Birthdate, Mode=TwoWay}"/>
 
             <Label Text="Email"></Label>
             <Entry x:Name="Email" Text="{Binding InputPerson.Email, Mode=TwoWay}"></Entry>
@@ -27,7 +27,8 @@
             <Label Text="PhoneNumber"></Label>
             <Entry x:Name="PhoneNumber" Text="{Binding InputPerson.PhoneNumber, Mode=TwoWay}"></Entry>
 
-            <Picker ItemsSource="{Binding DepartmentList, Mode=OneWay}"
+            <Picker Title="Departamento"
+                    ItemsSource="{Binding DepartmentList, Mode=OneWay}"
                     ItemDisplayBinding="{Binding Name, Mode=OneWay}"
                     SelectedItem="{Binding ChosenDepartment, Mode=TwoWay}">
             </Picker>

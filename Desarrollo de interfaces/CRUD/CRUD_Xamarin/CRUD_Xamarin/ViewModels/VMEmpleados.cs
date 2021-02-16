@@ -18,7 +18,7 @@ namespace CRUD_Xamarin.ViewModels
         {
             get { return listaPersonasDpto; }
 
-            set { listaPersonasDpto = value; }
+            set { listaPersonasDpto = value; NotifyPropertyChanged("ListaPersonasDpto"); }
         }
 
         #region personaSeleccionada
@@ -31,6 +31,8 @@ namespace CRUD_Xamarin.ViewModels
             set
             {
                 personaSeleccionada = value;
+                cargarActualizarCommand.RaiseCanExecuteChanged();
+                eliminarCommand.RaiseCanExecuteChanged();
                 NotifyPropertyChanged("PersonaSeleccionada");
             }
         }

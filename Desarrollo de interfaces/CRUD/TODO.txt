@@ -55,3 +55,13 @@ PROBLEMAS:
 
 	- Las vistas de actualizar e insertar tienen en sus viewmodels un inputPersona. Mi idea era que a medida
 	  que se va escribiendo en los inputs, esos objetos se van actualizando.  Pero son PersonDepartmentName, entonces
+
+Cosas a hacer:
+
+	- Que se vea el icono hamburguesa en todos lados
+	- Alertas después de actualizar e insertar y eliminar avisando de si se ha hecho o no
+	- Botones de ir hacia atrás
+	- Averiguar como poner el departamento  de la persona seleccionada a la hora de actualizar
+	- Hacer el listado de departamento
+	- Documentar y limpiar todo el código
+	- Que se actualice visualmente después de actualizar/eliminar/insertar

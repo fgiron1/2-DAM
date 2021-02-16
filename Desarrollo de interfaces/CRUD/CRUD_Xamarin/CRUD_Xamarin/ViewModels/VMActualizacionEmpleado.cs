@@ -37,13 +37,29 @@ namespace CRUD_Xamarin.ViewModels
             //el DepartmentID de inputPerson
             set
             {
-                ChosenDepartment = value;
+                chosenDepartment = value;
                 inputPerson.DepartmentID = chosenDepartment.ID;
                 //Creo que no es necesario
                 NotifyPropertyChanged("ChosenDepartment");
             }
         }
-        public List<Department> DepartmentList { get; set; }
+
+        
+
+        private List<Department> departmentList;
+        public List<Department> DepartmentList
+        {
+            get
+            {
+                return departmentList;
+            }
+
+            set
+            {
+                departmentList = value;
+                NotifyPropertyChanged("DepartmentList");
+            }
+        }
 
         #region Commands
 
@@ -89,16 +105,17 @@ namespace CRUD_Xamarin.ViewModels
         
 
         #endregion
-        public VMActualizacionEmpleado() { }
-        public VMActualizacionEmpleado(PersonDepartmentName persona)
+        public VMActualizacionEmpleado() { cargarListaDpto(); }
+
+       /* public VMActualizacionEmpleado(PersonDepartmentName persona)
         {
             //Se ponen los valores por defecto en los inputs de la vista y se carga el listado de departamentos
             //del Picker
 
             InputPerson = persona;
-            cargarListaDpto();
+            
                 
-        }
+        }*/
 
         private async void cargarListaDpto()
         {

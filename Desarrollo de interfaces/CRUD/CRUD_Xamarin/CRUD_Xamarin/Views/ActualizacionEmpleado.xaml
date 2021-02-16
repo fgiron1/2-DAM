@@ -21,7 +21,7 @@
             <Entry Text="{Binding InputPerson.LastName, Mode=TwoWay}"></Entry>
 
             <Label Text="Birthdate name"></Label>
-            <Entry Text="{Binding InputPerson.Birthdate, Mode=TwoWay}"></Entry>
+            <DatePicker Date="{Binding InputPerson.Birthdate}"/>
 
             <Label Text="Email"></Label>
             <Entry Text="{Binding InputPerson.Email, Mode=TwoWay}"></Entry>
@@ -34,6 +34,8 @@
                     ItemDisplayBinding="{Binding Name, Mode=OneWay}"
                     SelectedItem="{Binding ChosenDepartment, Mode=TwoWay}">
             </Picker>
+
+            <Button Text="Submit" Command="{Binding ActualizarCommand, Mode=OneWay}"></Button>
 
         </StackLayout>
 
