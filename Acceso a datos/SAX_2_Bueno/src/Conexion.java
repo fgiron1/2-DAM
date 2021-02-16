@@ -6,7 +6,7 @@ public class Conexion {
 	private String usuario = "prueba3";
 	private String password = "123";
 
-	private static Connection conexionBaseDatos;
+	private Connection conexionBaseDatos;
 
 	public Conexion(){
 
@@ -19,7 +19,7 @@ public class Conexion {
 	}
 	//Nombre procedimiento en SQL: GrabarApuestaGanadoresPartidos
 
-	public static void insertarApuesta(Apuesta apuesta){
+	public void insertarApuesta(Apuesta apuesta){
 
 		//int IDUsuario, int Partido, float Cantidad, LocalDate fecha, String resultado
 
@@ -52,7 +52,7 @@ public class Conexion {
 
 	}
 
-	public static void insertarApuestaOverUnder(Apuesta apuesta){
+	public void insertarApuestaOverUnder(Apuesta apuesta){
 
 		String sql = "EXECUTE GrabarApuestaOverUnder ?, ?, ?, ?, ?, ?";
 
@@ -83,7 +83,7 @@ public class Conexion {
 
 	}
 
-	public static void insertarApuestaDiferencia(Apuesta apuesta){
+	public void insertarApuestaDiferencia(Apuesta apuesta){
 
 		String sql = "EXECUTE GrabarApuestasHandicap ?, ?, ?, ?, ?";
 

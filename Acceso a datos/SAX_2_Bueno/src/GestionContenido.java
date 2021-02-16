@@ -14,6 +14,7 @@ public class GestionContenido extends DefaultHandler {
     //está leyendo en cada momento
 
     Apuesta a = new Apuesta();
+    Conexion conexion = new Conexion();
 
     //Estos flags nos ayudan a comunicarnos con el metodo characters
     //Avisando de la etiqueta que se está leyendo actualmente
@@ -64,18 +65,18 @@ public class GestionContenido extends DefaultHandler {
         //Identificamos el tipo de apuesta
         //Si resultado tiene valor, no puede tenerlo ni handicap ni overunder
 
-        if(nombreC == "apuesta"){
+        if(nombreC.equals("apuesta")){
 
 
             if(!isNull(a.getResultado())){
                 //Apuesta resultado
-                Conexion.insertarApuesta(a);
+                conexion.insertarApuesta(a);
             } else if(!isNull(a.getOverunder())){
                 //Apuesta overunder
-                Conexion.insertarApuestaOverUnder(a);
+                conexion.insertarApuestaOverUnder(a);
             } else{
                 //Apuesta diferencia
-                Conexion.insertarApuestaDiferencia(a);
+                conexion.insertarApuestaDiferencia(a);
             }
 
         }
@@ -92,32 +93,33 @@ public class GestionContenido extends DefaultHandler {
         String cad = new String(ch, inicio, longitud);
 
         //Con la informacion parseada, le asignamos valores a un objeto Apuesta en listadoApuestas
-
         //El formato de fecha aceptado es yyyy/MM/dd
 
-        //HAY QUE PONER LAS FLAGS A FALSE DE VUELTA, DESPUÉS DE QUE HAGA LO QUE TENGA QUE HACER
+        //Después de realizar la asignación, volvemos a asignar false a cada flag
+        //para próximas iteraciones de este método
 
-        if(flagUsuario){a.setUsuario(Integer.parseInt(cad));}
-        if(flagPartido){a.setPartido(Integer.parseInt(cad));}
-        if(flagCantidad){a.setCantidad(Float.parseFloat(cad));}
+        if(flagUsuario){a.setUsuario(Integer.parseInt(cad)); flagUsuario = false;}
+        if(flagPartido){a.setPartido(Integer.parseInt(cad)); flagPartido = false;}
+        if(flagCantidad){a.setCantidad(Float.parseFloat(cad)); flagCantidad = false;}
 
         //Usamos un SimpleDateFormat para transformar un String en un Date
 
-        SimpleDateFormat formateo = new SimpleDateFormat("yyyy/MM/dd");
+        SimpleDateFormat formateo = new SimpleDateFormat("yyyy-MM-dd");
 
         if(flagFecha){
             try {
-                a.setFecha( formateo.parse(cad));
+                a.setFecha(formateo.parse(cad));
             } catch (ParseException e) {
                 e.printStackTrace();
+            } finally{
+                flagFecha = false;
             }
         }
 
-        if(flagResultado){a.setResultado(cad);}
-
-        if(flagOverunder){a.setOverunder(cad);}
-        if(flagDiferencia){a.setDiferencia(Float.parseFloat(cad));}
-        if(flagHandicap){a.setHandicap(Integer.parseInt(cad));}
+        if(flagResultado){a.setResultado(cad); flagResultado = false;}
+        if(flagOverunder){a.setOverunder(cad); flagOverunder = false;}
+        if(flagDiferencia){a.setDiferencia(Float.parseFloat(cad)); flagDiferencia = false;}
+        if(flagHandicap){a.setHandicap(Integer.parseInt(cad)); flagHandicap = false;}
 
     }
 }
