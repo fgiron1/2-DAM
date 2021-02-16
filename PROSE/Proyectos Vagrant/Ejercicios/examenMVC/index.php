@@ -73,7 +73,7 @@ $req = new Request("get", $url_elements, $query_string, $body, $content_type, $a
 
 
 // route the request to the right place
-$controller_name = ucfirst($url_elements[0]) . 'Controller';
+$controller_name = ucfirst($url_elements[1]) . 'Controller';
 if (class_exists($controller_name)) {
     $controller = new $controller_name();
 

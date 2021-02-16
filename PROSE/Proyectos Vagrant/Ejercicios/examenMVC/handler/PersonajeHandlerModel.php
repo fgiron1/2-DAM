@@ -6,6 +6,7 @@ require_once "../constants/ConsLibrosModel.php";
 class PersonajeHandlerModel
 {
     //This function returns the characters of a book using its id
+    //Can return an empty array
     public static function getPersonajeByLibro($LibroId){
 
         $personajesList = Array();
@@ -27,12 +28,12 @@ class PersonajeHandlerModel
             //Libros AS L INNER JOIN Personajes AS P
             //ON L.IDPersonaje = P.ID AND
             //   L.IDPersonaje IS NOT NULL
+            //WHERE codigo = $LibroID
 
             $query = "SELECT " . ConsPersonajeModel::COD . ","
                 . ConsPersonajeModel::NOMBRE . ","
                 . ConsPersonajeModel::EDAD . " FROM " . ConsPersonajeModel::TABLE_NAME
-                . " INNER JOIN IN " . ConsLibrosModel::TABLE_NAME . "." . ConsPersonajeModel::COD . " = " . ConsPersonajeModel::COD . " AND "
-                . ConsLibrosModel::TABLE_NAME . "." . ConsPersonajeModel::COD . " IS NOT NULL"
+                . " INNER JOIN IN " . ConsLibrosModel::TABLE_NAME . "." . ConsPersonajeModel::COD . " = " . ConsPersonajeModel::COD
                 . " WHERE " . ConsLibrosModel::TABLE_NAME . "." . ConsLibrosModel::COD . " = ?";
 
             $prep_query = $db_connection->prepare($query);
@@ -53,9 +54,15 @@ class PersonajeHandlerModel
                     //A new PersonajeModel is instantiated and added to the list
                     //using previously binded variables
 
-                    $personaje = new PersonajeModel($id, $nombre, $edad);
+                    //If the $id is null, it means that the character doesn't exist
+                    //Therefore, we add nothing to the array
 
-                    $personajesList[] = $personaje;
+                    if($id != null){
+                        $personaje = new PersonajeModel($id, $nombre, $edad);
+                        $personajesList[] = $personaje;
+                    }
+
+
                 }
 
             }catch(Exception $e){
@@ -82,10 +89,6 @@ class PersonajeHandlerModel
             $res = true;
         }
         return $res;
-    }
-
-    public static function getAllPersonajes(){
-
     }
 
 }

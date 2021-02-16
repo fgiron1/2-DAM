@@ -37,3 +37,8 @@ si no, otro
 
 LOS INDICES QUE VENIAN YA DEL GETURLELEMENTS ESTABAN BIEN, PORQUE SE CUENTA DESDE EL ARCHIVO AL QUE SE LE LLAMA,
 ENTONCES EL index.php YA LO CONTABA
+
+MEJORAS:
+
+- Añadir en LibroController una función para transformar los LibroModel en LibroPersonajeModel con el array de personajes.
+  porque tengo un montón de código repetido por no tenerla

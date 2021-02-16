@@ -6,6 +6,8 @@ require_once "../constants/ConsLibrosModel.php";
 class LibroHandlerModel
 {
 
+    //PersonajeModel array added on LibroController
+
     public static function getLibro($id)
     {
         $listaLibros = null;
@@ -68,6 +70,8 @@ class LibroHandlerModel
         return $listaLibros;
     }
 
+    //PersonajeModel array added on LibroController
+
     public static function getLibrosByName($name)
     {
 
@@ -120,6 +124,50 @@ class LibroHandlerModel
 
     }
 
+    public static function getAllLibros()
+    {
+        $listaLibros = Array();
+
+        $db = DatabaseModel::getInstance();
+        $db_connection = $db->getConnection();
+
+        //SELECT codigo, titulo, paginas
+        //FROM libros
+
+        $query = "SELECT " . ConsLibrosModel::COD . ","
+            . ConsLibrosModel::TITULO . ","
+            . ConsLibrosModel::PAGS . " FROM " . ConsLibrosModel::TABLE_NAME;
+
+        $prep_query = $db_connection->prepare($query);
+
+        //We use $codigo, $titulo and $numpag to store the retrieved data from each row.
+        $prep_query->bind_result( $codigo, $titulo, $numpag);
+
+        try{
+
+            $prep_query->execute();
+
+            while($prep_query->fetch()){
+
+                //A new LibroModel is instantiated and added to the list
+                //using previously binded variables
+
+                $libro = new LibroModel($codigo, $titulo, $numpag);
+                $listaLibros[] = $libro;
+
+            }
+
+        } catch(Exception $e){
+
+            print($e->getTraceAsString());
+
+        }
+
+        return $listaLibros;
+
+    }
+
+
     //returns true if $id is a valid id for a book
     //In this case, it will be valid if it only contains
     //numeric characters, even if this $id does not exist in
@@ -133,5 +181,7 @@ class LibroHandlerModel
         }
         return $res;
     }
+
+
 
 }

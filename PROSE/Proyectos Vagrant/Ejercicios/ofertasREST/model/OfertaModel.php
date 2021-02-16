@@ -15,7 +15,6 @@ class OfertaModel
 
     public function jsonSerialize()
     {
-        //This is an associative array
         return array(
             'id' => $this->id,
             'ofertante' => $this->ofertante,

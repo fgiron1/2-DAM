@@ -15,6 +15,16 @@ class PersonajeModel
         $this->edad = $inputEdad;
     }
 
+    public function jsonSerialize(){
+        return Array(
+
+            "id" => $this->id,
+            "nombre" => $this->nombre,
+            "edad" => $this->edad,
+
+        );
+    }
+
     /**
      * @return mixed
      */

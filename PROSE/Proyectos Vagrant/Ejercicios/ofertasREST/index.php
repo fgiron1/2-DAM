@@ -5,7 +5,7 @@ require_once 'Response.php';
 
 //Autoload rules
 spl_autoload_register('apiAutoload');
-function apiAutoload($classname)
+function apiAutoload()
 {
     $res = false;
     require_once("controller/Controller.php");

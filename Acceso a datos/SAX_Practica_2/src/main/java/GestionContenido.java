@@ -1,21 +1,12 @@
 
-
-
-/**
- * @description ssfdsfds
- * @author Leo
- */
 import org.xml.sax.helpers.*;
 import org.xml.sax.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Date;
+
+
+import static java.util.Objects.isNull;
 
 public class GestionContenido extends DefaultHandler {
 
@@ -71,9 +62,22 @@ public class GestionContenido extends DefaultHandler {
         //Aqui empleamos un objeto que se encargue de conectar con la base de datos
         //y ejecutar las sentencias
 
+        //Identificamos el tipo de apuesta
+        //Si resultado tiene valor, no puede tenerlo ni handicap ni overunder
+
         if(nombreC == "apuesta"){
 
 
+            if(!isNull(a.getResultado())){
+                //Apuesta resultado
+                Conexion.insertarApuesta(a);
+            } else if(!isNull(a.getOverunder())){
+                //Apuesta overunder
+                Conexion.insertarApuestaOverUnder(a);
+            } else{
+                //Apuesta diferencia
+                Conexion.insertarApuestaDiferencia(a);
+            }
 
         }
 
@@ -85,6 +89,7 @@ public class GestionContenido extends DefaultHandler {
 
     @Override
     public void characters (char[] ch, int inicio, int longitud) throws SAXException{
+
         String cad = new String(ch, inicio, longitud);
 
         //Con la informacion parseada, le asignamos valores a un objeto Apuesta en listadoApuestas
@@ -109,7 +114,7 @@ public class GestionContenido extends DefaultHandler {
 
         if(flagResultado){a.setResultado(cad);}
 
-        if(flagOverunder){a.setOverunder(Boolean.parseBoolean(cad));}
+        if(flagOverunder){a.setOverunder(cad);}
         if(flagDiferencia){a.setDiferencia(Float.parseFloat(cad));}
         if(flagHandicap){a.setHandicap(Integer.parseInt(cad));}
 
