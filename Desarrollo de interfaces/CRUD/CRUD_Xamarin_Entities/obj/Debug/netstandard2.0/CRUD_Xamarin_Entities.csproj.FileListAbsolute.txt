@@ -1,0 +1,17 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_Entities\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.deps.json
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_Entities\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_Entities\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_Entities\obj\Debug\netstandard2.0\CRUD_Xamarin_Entities.AssemblyInfoInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_Entities\obj\Debug\netstandard2.0\CRUD_Xamarin_Entities.AssemblyInfo.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_Entities\obj\Debug\netstandard2.0\CRUD_Xamarin_Entities.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_Entities\obj\Debug\netstandard2.0\CRUD_Xamarin_Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_Entities\obj\Debug\netstandard2.0\CRUD_Xamarin_Entities.pdb
+C:\CRUD\CRUD_Xamarin_Entities\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.deps.json
+C:\CRUD\CRUD_Xamarin_Entities\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.dll
+C:\CRUD\CRUD_Xamarin_Entities\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.pdb
+C:\CRUD\CRUD_Xamarin_Entities\obj\Debug\netstandard2.0\CRUD_Xamarin_Entities.AssemblyInfoInputs.cache
+C:\CRUD\CRUD_Xamarin_Entities\obj\Debug\netstandard2.0\CRUD_Xamarin_Entities.AssemblyInfo.cs
+C:\CRUD\CRUD_Xamarin_Entities\obj\Debug\netstandard2.0\CRUD_Xamarin_Entities.csproj.CoreCompileInputs.cache
+C:\CRUD\CRUD_Xamarin_Entities\obj\Debug\netstandard2.0\CRUD_Xamarin_Entities.dll
+C:\CRUD\CRUD_Xamarin_Entities\obj\Debug\netstandard2.0\CRUD_Xamarin_Entities.pdb
+C:\CRUD\CRUD_Xamarin_Entities\obj\Debug\netstandard2.0\CRUD_Xamarin_Entities.csprojAssemblyReference.cache

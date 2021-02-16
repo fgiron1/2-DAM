@@ -1,0 +1,24 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_DAL.deps.json
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_DAL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_DAL.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.csprojAssemblyReference.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.AssemblyInfoInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.AssemblyInfo.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.csproj.CopyComplete
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.pdb
+C:\CRUD\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_DAL.deps.json
+C:\CRUD\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_DAL.dll
+C:\CRUD\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_DAL.pdb
+C:\CRUD\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.dll
+C:\CRUD\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.pdb
+C:\CRUD\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.csprojAssemblyReference.cache
+C:\CRUD\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.AssemblyInfoInputs.cache
+C:\CRUD\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.AssemblyInfo.cs
+C:\CRUD\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.csproj.CoreCompileInputs.cache
+C:\CRUD\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.csproj.CopyComplete
+C:\CRUD\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.dll
+C:\CRUD\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.pdb

@@ -1,0 +1,57 @@
+NOTAS:
+
+No voy a usar el endpoint que me devuelve lista de personas con departamento, porque tengo que añadir
+demasiados mecanismos para transformar persona + departamento en personaNombreDpto y en la vuelta también
+de personaNombreDpto a persona + departamento
+
+Las peticiones post a la API deberían de contener solamente personas que no tengan un id. Sin embargo, si lo contiene
+en la petición del cuerpo, junto al resto de atributos, sencillamente lo ignora y registra a la nueva persona con el
+id autogenerado, por lo que no pasa nada por manejar objetos Person a los que les "sobra" el campo id para insertar
+(para actualizar es necesario)
+
+COSAS HECHAS Y POR HACER:
+
+1. Vista principal, que no MainPage.xaml, sino la lista de personas
+
+	HECHO:
+		- Bindear el VM a la vista
+		- Carga inicial del listado de personas con nombre de departamento
+		- VM -> Funcionalidad boton cargar pagina actualización/detalles y pasarle una
+		  persona con nombre dpto (la de los valores por defecto del input) hecho (NO TESTADO)
+		- VM -> Funcionalidad botón eliminar persona (NO TESTADO)
+		- VM -> Funcionalidad cargar página inserción (NO TESTADO)
+		- Layout -> La estructura creo que está ya hecha
+
+	FALTA: 
+
+		- Layout -> Entender y poner el binding
+	
+2. Vista actualización/detalles:
+
+	HECHO:
+		- VM -> Command para guardar los cambios
+		- VM -> Constructor que reciba una PersonaNombreDepartamento para mostrarla al cargar la página
+		
+
+	FALTA:
+		- Layout -> Entender y poner el binding
+		- Layout -> Textboxes y 1 botón
+
+3. Vista insertar empleados:
+
+	FALTA: 
+		- VM -> Command para enviar la persona a la API
+
+
+MEJORAS:
+
+	- Añadir foto en las personas
+	- Limpiar y documentar todo el código
+	- VMMaestroDetalleMaster tiene pocas cosas, se podria prescindir de él haciendo la carga de las páginas a través de event handlers en el code-behind
+	- VMInsercionEmpleado y VMActualizacionEmpleado repiten mucho código (chosenDepartment y departmentList), se podría
+	  evitar también compartiendo viewmodels
+
+PROBLEMAS:
+
+	- Las vistas de actualizar e insertar tienen en sus viewmodels un inputPersona. Mi idea era que a medida
+	  que se va escribiendo en los inputs, esos objetos se van actualizando.  Pero son PersonDepartmentName, entonces

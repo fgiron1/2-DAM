@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "MLlJvtdZiPbjYuYHV/9nRc0bD+czIHl1f4miafnHqTkLXeb9PS9uiA8vTgoYBkOjwuFXwMdxOrwYmyolBAjZmA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD\\CRUD_Xamarin_DAL\\CRUD_Xamarin_DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ferna\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

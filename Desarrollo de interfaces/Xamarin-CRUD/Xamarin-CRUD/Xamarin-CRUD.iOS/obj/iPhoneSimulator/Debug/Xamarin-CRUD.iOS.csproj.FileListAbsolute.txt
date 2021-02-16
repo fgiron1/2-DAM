@@ -1,0 +1,8 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD\Xamarin-CRUD.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD\Xamarin-CRUD.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD\Xamarin-CRUD.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD\Xamarin-CRUD.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD\Xamarin-CRUD.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD\Xamarin-CRUD.iOS\obj\iPhoneSimulator\Debug\optimized\
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD\Xamarin-CRUD.iOS\obj\iPhoneSimulator\Debug\Xamarin-CRUD.iOS.csprojAssemblyReference.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD\Xamarin-CRUD.iOS\obj\iPhoneSimulator\Debug\Xamarin-CRUD.iOS.csproj.CoreCompileInputs.cache
