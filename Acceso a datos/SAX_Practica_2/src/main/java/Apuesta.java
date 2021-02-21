@@ -1,4 +1,5 @@
-import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Apuesta {
 
@@ -6,10 +7,12 @@ public class Apuesta {
 
     int partido;
     float cantidad;
-    SimpleDateFormat fecha;
+    Date fecha;
     //Puede ser 1, X o 2
     String resultado;
-    boolean overunder;
+    //boolean no nos permite diferenciar que el campo este vacío
+    //porque tanto false como true tienen significados. Usamos String
+    String overunder;
     float diferencia;
     int handicap;
 
@@ -38,11 +41,11 @@ public class Apuesta {
         this.cantidad = cantidad;
     }
 
-    public SimpleDateFormat getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(SimpleDateFormat fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 
@@ -54,11 +57,11 @@ public class Apuesta {
         this.resultado = resultado;
     }
 
-    public boolean isOverunder() {
+    public String getOverunder() {
         return overunder;
     }
 
-    public void setOverunder(boolean overunder) {
+    public void setOverunder(String overunder) {
         this.overunder = overunder;
     }
 

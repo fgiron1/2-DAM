@@ -1,0 +1,8 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-Entities\bin\Debug\netstandard2.0\Xamarin-CRUD-Entities.deps.json
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-Entities\bin\Debug\netstandard2.0\Xamarin-CRUD-Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-Entities\bin\Debug\netstandard2.0\Xamarin-CRUD-Entities.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-Entities\obj\Debug\netstandard2.0\Xamarin-CRUD-Entities.AssemblyInfoInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-Entities\obj\Debug\netstandard2.0\Xamarin-CRUD-Entities.AssemblyInfo.cs
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-Entities\obj\Debug\netstandard2.0\Xamarin-CRUD-Entities.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-Entities\obj\Debug\netstandard2.0\Xamarin-CRUD-Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Xamarin-CRUD\Xamarin-CRUD-Entities\obj\Debug\netstandard2.0\Xamarin-CRUD-Entities.pdb

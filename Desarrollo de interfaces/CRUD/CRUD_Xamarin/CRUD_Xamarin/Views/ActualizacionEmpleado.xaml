@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:VM="clr-namespace:CRUD_Xamarin.ViewModels"
+             x:Class="CRUD_Xamarin.Views.ActualizacionEmpleado">
+    <!--Esta pagina es para mostrar los datos de un empleado individual y es la misma página
+    que la de actualización-->
+
+    <ContentPage.BindingContext>
+        <VM:VMActualizacionEmpleado />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+
+        <StackLayout>
+            
+            <Label Text="First name"></Label>
+            <Entry Text="{Binding InputPerson.FirstName, Mode=TwoWay}"></Entry>
+
+            <Label Text="Last name"></Label>
+            <Entry Text="{Binding InputPerson.LastName, Mode=TwoWay}"></Entry>
+
+            <Label Text="Birthdate name"></Label>
+            <DatePicker Date="{Binding InputPerson.Birthdate}"/>
+
+            <Label Text="Email"></Label>
+            <Entry Text="{Binding InputPerson.Email, Mode=TwoWay}"></Entry>
+
+            <Label Text="PhoneNumber"></Label>
+            <Entry Text="{Binding InputPerson.PhoneNumber, Mode=TwoWay}"></Entry>
+
+            <Picker Title="Departamento"
+                    ItemsSource="{Binding DepartmentList, Mode=OneWay}"
+                    ItemDisplayBinding="{Binding Name, Mode=OneWay}"
+                    SelectedItem="{Binding ChosenDepartment, Mode=TwoWay}">
+            </Picker>
+
+            <Button Text="Submit" Command="{Binding ActualizarCommand, Mode=OneWay}"></Button>
+
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

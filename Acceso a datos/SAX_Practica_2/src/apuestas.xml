@@ -1,0 +1,44 @@
+<apuestas>
+	<apuesta>
+		<usuario> 8</usuario>
+		<partido> 1</partido>
+		<cantidad> 2750.0 </cantidad>
+		<fecha> 2020-10-13 </fecha>
+		<resultado> 2 </resultado>
+	</apuesta>
+		<usuario> 45</usuario>
+		<partido> 2</partido>
+		<cantidad> 250.0</cantidad>
+		<fecha> 2021-07-12 </fecha>
+		<resultado> 2</resultado>
+	<apuesta>
+		<usuario> 7</usuario>
+		<partido> 3</partido>
+		<cantidad> 50.0</cantidad>
+		<fecha> 2021-01-10 </fecha>
+		<overunder> 1 </overunder>
+		<diferencia> 5.5 </diferencia>
+	</apuesta>
+	<apuesta>
+		<usuario> 1</usuario>
+		<partido> 4</partido>
+		<cantidad> 1500.0</cantidad>
+		<fecha> 2020-12-21</fecha>
+		<overunder> 0</overunder>
+		<diferencia> 0.5</diferencia>
+	</apuesta>
+	<apuesta>
+		<usuario> 13</usuario>
+		<partido> 5 </partido>
+		<cantidad> 150.0</cantidad>
+		<fecha> 2020-12-22</fecha>
+		<handicap> -3 </handicap>
+	</apuesta>
+	<apuesta>
+		<usuario> 98</usuario>
+		<partido> 6 </partido>
+		<cantidad> 50.0 </cantidad>
+		<fecha> 2022-03-09</fecha> <!-- Esta apuesta lanza una excepción -->
+		<handicap> 1 </handicap>
+	</apuesta>
+</apuestas>
