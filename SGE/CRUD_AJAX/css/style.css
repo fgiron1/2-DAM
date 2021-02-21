@@ -13,3 +13,11 @@
 .visible {
     display: block;
 }
+
+.latch{
+    position: fixed;
+}
+
+.negro{
+    background-color: black;
+}

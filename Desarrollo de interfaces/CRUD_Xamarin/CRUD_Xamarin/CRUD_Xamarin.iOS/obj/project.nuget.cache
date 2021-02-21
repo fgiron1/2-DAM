@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "OpgaGlCnjW1SiVW6vIdmgjzbWeKwf/E7Auyp69i0UZgXs/eQ/mvBLEai/hpgTA6fqpU+rbr8lofylNOd6N+MHg==",
+  "dgSpecHash": "QIsbXTt0/7impdYs2zFNoDlTdd8WXQlviJuRVP1AUsrPYfPta9aN1ItjOk5jg/7feXdHXOeWUNmwI+fl7Mpvbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.iOS\\CRUD_Xamarin.iOS.csproj",
+  "projectFilePath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\CRUD_Xamarin\\CRUD_Xamarin\\CRUD_Xamarin.iOS\\CRUD_Xamarin.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\fgiron\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": []
 }

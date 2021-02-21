@@ -33,7 +33,7 @@ public class Main {
 
         //Se le añade un callBack para cuando acabe (la función lambda).
         //El parámetro listaPersonasFutura de la función lambda está lleno porque getPersonData ya ha acabado de traer la lista
-        //getPersonata puede lanzar una excepcion en su ejecucion y se delega la responsabilidad de manejarla a la funcion callback
+        //getPersonData puede lanzar una excepcion en su ejecucion y se delega la responsabilidad de manejarla a la funcion callback
         futureList.whenComplete((listaPersonasFutura, e) -> {
             if (e != null) {
                 System.out.println("exception occurs");

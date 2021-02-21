@@ -1,0 +1,5 @@
+IDEA PARA LA APP:
+
+
+Con RETROFIT tengo que atacar a la API, osea que tengo que usar la información de empleados por narices
+Por lo que voy a hacer esa parte de la implementación

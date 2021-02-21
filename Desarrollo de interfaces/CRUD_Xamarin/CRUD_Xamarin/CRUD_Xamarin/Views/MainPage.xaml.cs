@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace CRUD_Xamarin.Views
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MainPage : MasterDetailPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            //Se instancia, al cargar la app, una página de contenido de Empleados
+            Detail = new NavigationPage(new Empleados());
+            MasterPage.ListView.ItemSelected += ListView_ItemSelected;
+        }
+
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as MainPageMasterMenuItem;
+            if (item == null)
+                return;
+
+            var page = (Page)Activator.CreateInstance(item.TargetType);
+            page.Title = item.Title;
+
+            Detail = new NavigationPage(page);
+            IsPresented = false;
+
+            MasterPage.ListView.SelectedItem = null;
+        }
+    }
+}

@@ -147,17 +147,17 @@ namespace UD11___4___DAL.Handlers
             connection.myCommand.CommandText = "INSERT INTO Persons (FirstName, LastName, Birthdate, Email, PhoneNumber, DepartmentID)" +
                                                " VALUES (@FirstName, " +
                                                " @LastName, " +
-                                               " @PhoneNumber, " +
+                                               " CONVERT(date, @Birthdate, 103), " +
                                                " @Email, " +
-                                               " CAST(@Birthdate AS date), " +
+                                               " @PhoneNumber, " +
                                                " @DepartmentID)";
                                                 //DepartmentID should be verified
 
             connection.myCommand.Parameters.Add("@FirstName", System.Data.SqlDbType.NVarChar).Value = newPerson.FirstName;
             connection.myCommand.Parameters.Add("@LastName", System.Data.SqlDbType.NVarChar).Value = newPerson.LastName;
-            connection.myCommand.Parameters.Add("@PhoneNumber", System.Data.SqlDbType.NVarChar).Value = newPerson.PhoneNumber;
+            connection.myCommand.Parameters.Add("@Birthdate", System.Data.SqlDbType.Date).Value = newPerson.Birthdate;
             connection.myCommand.Parameters.Add("@Email", System.Data.SqlDbType.NVarChar).Value = newPerson.Email;
-            connection.myCommand.Parameters.Add("@Birthdate", System.Data.SqlDbType.DateTime).Value = newPerson.Birthdate;
+            connection.myCommand.Parameters.Add("@PhoneNumber", System.Data.SqlDbType.NVarChar).Value = newPerson.PhoneNumber;
             connection.myCommand.Parameters.Add("@DepartmentID", System.Data.SqlDbType.Int).Value = newPerson.DepartmentID;
 
             //Executing non-query statement andPassing the value of rows affected to our handler's property

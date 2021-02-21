@@ -38,7 +38,14 @@ function apiAutoload($classname)
 
 
 //Let's retrieve all the information from the request
-$verb = $_SERVER['REQUEST_METHOD'];
+
+//Commented out because we're only handling GET verb. Hardcoding it in order to avoid compilation error
+//Undefined array key "REQUEST_METHOD"
+
+//$verb = $_SERVER["REQUEST_METHOD"];
+
+
+
 //IMPORTANT: WITH CGI OR FASTCGI, PATH_INFO WILL NOT BE AVAILABLE!!!
 //SO WE NEED FPM OR PHP AS APACHE MODULE (UNSECURE, DEPRECATED) INSTEAD OF CGI OR FASTCGI
 $path_info = !empty($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : (!empty($_SERVER['ORIG_PATH_INFO']) ? $_SERVER['ORIG_PATH_INFO'] : '');
@@ -62,14 +69,17 @@ if (isset($_SERVER['HTTP_ACCEPT'])) {
 }
 
 
-$req = new Request($verb, $url_elements, $query_string, $body, $content_type, $accept);
+$req = new Request("get", $url_elements, $query_string, $body, $content_type, $accept);
 
 
 // route the request to the right place
 $controller_name = ucfirst($url_elements[1]) . 'Controller';
 if (class_exists($controller_name)) {
     $controller = new $controller_name();
-    $action_name = 'manage' . ucfirst(strtolower($verb)) . 'Verb';
+
+    //$action_name = 'manage' . ucfirst(strtolower($verb)) . 'Verb';
+    $action_name = 'manageGetVerb';
+
     $controller->$action_name($req);
     //$result = $controller->$action_name($req);
     //print_r($result);

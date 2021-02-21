@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRUD_Xamarin.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

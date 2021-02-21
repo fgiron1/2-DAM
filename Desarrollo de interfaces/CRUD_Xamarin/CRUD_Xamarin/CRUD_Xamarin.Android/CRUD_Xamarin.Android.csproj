@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7809625D-6F4B-4677-9A10-95F9EAE6A872}</ProjectGuid>
+    <ProjectGuid>{446E6BB4-16E4-48B2-BCF2-7EF16A9C2A21}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -54,7 +54,7 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
   <ItemGroup>
@@ -90,7 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CRUD_Xamarin\CRUD_Xamarin.csproj">
-      <Project>{F274F1CD-FEB4-4BE1-BADB-C6B41FDA4696}</Project>
+      <Project>{85139A00-ACEC-4D62-9F9F-B69F9A43E4F5}</Project>
       <Name>CRUD_Xamarin</Name>
     </ProjectReference>
   </ItemGroup>

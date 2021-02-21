@@ -18,7 +18,8 @@ namespace UD11___4.Models
         {
 
         }
-    public PersonDepartmentName(Person Person, String departmentName)
+
+        public PersonDepartmentName(Person Person, String departmentName)
         {
             this.id = Person.id;
             this.FirstName = Person.FirstName;

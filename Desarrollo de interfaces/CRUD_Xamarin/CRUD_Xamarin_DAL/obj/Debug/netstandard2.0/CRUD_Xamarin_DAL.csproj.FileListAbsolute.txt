@@ -1,0 +1,12 @@
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.dll
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.csprojAssemblyReference.cache
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.AssemblyInfoInputs.cache
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.AssemblyInfo.cs
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_DAL.deps.json
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_DAL.dll
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_DAL.pdb
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\bin\Debug\netstandard2.0\CRUD_Xamarin_Entities.pdb
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.csproj.CoreCompileInputs.cache
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.csproj.CopyComplete
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.dll
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\CRUD_Xamarin\CRUD_Xamarin_DAL\obj\Debug\netstandard2.0\CRUD_Xamarin_DAL.pdb

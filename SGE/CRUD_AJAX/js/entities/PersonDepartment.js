@@ -9,8 +9,7 @@ class PersonDepartment {
         this.PhoneNumber = PhoneNumber;
         this.Email = Email;
         this.DepartmentID = DepartmentID;
-        //CONVERSIÓN DE DEPARTMENT ID A NOMBRE DEPARTAMENTO USANDO UNA FUNCIÓN QUE LO TRADUZCA
-        //LLAMANDO A api/Departments/id te devuelve toda la info, y coges el nombre
+
     }
 
 }

@@ -4,18 +4,28 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-import java.io.Serializable;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 @Entity(tableName = "Equipos")
 public class Equipo{
 
+<<<<<<< HEAD
     @PrimaryKey
+=======
+    @PrimaryKey(autoGenerate = true)
+>>>>>>> master
     private int id;
 
     @ColumnInfo(name = "nombre")
     private String nombre;
 
+<<<<<<< HEAD
     @ColumnInfo(name = "numero_titulos")
+=======
+    @ColumnInfo(name ="numero_titulos")
+>>>>>>> master
     private int numeroTitulos;
 
     public Equipo(){
