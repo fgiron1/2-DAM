@@ -1,0 +1,8 @@
+Management app
+
+Features:
+   · Follows Material design guidelines
+   · Tablet and phone layout
+   · API connection with Retrofit
+   · DB persistence with Room
+   · Makes use of SharedPreferences
