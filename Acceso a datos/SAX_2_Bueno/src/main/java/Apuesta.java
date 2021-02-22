@@ -14,7 +14,12 @@ public class Apuesta {
     String overunder;
     float diferencia;
     int handicap;
+    int output;
 
+
+    public int getOutput() { return output; }
+
+    public void setOutput(int output) { this.output = output; }
 
     public int getUsuario() {
         return usuario;

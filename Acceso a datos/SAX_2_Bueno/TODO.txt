@@ -1,0 +1,2 @@
+Los metodos de insertar deberian de llamar a lo de grabar incidencia si no funciona,
+no desde GestionContenido

@@ -2,6 +2,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
@@ -44,39 +45,49 @@ public class GestionContenido extends DefaultHandler {
 
         //Específicas del tipo de apuesta
         switch (nombreC) {
-            case "usuario" -> flagUsuario = true;
-            case "partido" -> flagPartido = true;
-            case "cantidad" -> flagCantidad = true;
-            case "fecha" -> flagFecha = true;
-            case "resultado" -> flagResultado = true;
-            case "overunder" -> flagOverunder = true;
-            case "diferencia" -> flagDiferencia = true;
-            case "handicap" -> flagHandicap = true;
+            case "usuario": flagUsuario = true; break;
+            case "partido": flagPartido = true; break;
+            case "cantidad": flagCantidad = true; break;
+            case "fecha": flagFecha = true; break;
+            case "resultado": flagResultado = true; break;
+            case "overunder": flagOverunder = true; break;
+            case "diferencia": flagDiferencia = true; break;
+            case "handicap": flagHandicap = true; break;
         }
 
     }
     @Override
     public void endElement(String uri, String nombre, String nombreC){
 
-        //Aquí la sentencia SQL que usa el objeto
-        //Aqui empleamos un objeto que se encargue de conectar con la base de datos
-        //y ejecutar las sentencias
+        //Intentamos grabar la apuesta en la etiqueta de cierre de cada
+        //elemento "apuesta", en el XML
 
         //Identificamos el tipo de apuesta
-        //Si resultado tiene valor, no puede tenerlo ni handicap ni overunder
+        //Si "resultado" tiene valor, no puede tenerlo ni "handicap" ni "overunder"
+        //porque solo puede ser un tipo de apuesta a la vez
 
         if(nombreC.equals("apuesta")){
 
+            try {
+                if (!isNull(a.getResultado())) {
 
-            if(!isNull(a.getResultado())){
-                //Apuesta resultado
-                conexion.insertarApuesta(a);
-            } else if(!isNull(a.getOverunder())){
-                //Apuesta overunder
-                conexion.insertarApuestaOverUnder(a);
-            } else{
-                //Apuesta diferencia
-                conexion.insertarApuestaDiferencia(a);
+                    //Apuesta resultado
+                    conexion.insertarApuesta(a);
+
+                } else if (!isNull(a.getOverunder())) {
+
+                    //Apuesta overunder
+                    conexion.insertarApuestaOverUnder(a);
+
+                } else {
+
+                    //Apuesta diferencia
+                    conexion.insertarApuestaDiferencia(a);
+
+                }
+
+            } catch(SQLException e) {
+                e.printStackTrace();
             }
 
         }
@@ -84,16 +95,13 @@ public class GestionContenido extends DefaultHandler {
 
 
     }
-
-
-
     @Override
     public void characters (char[] ch, int inicio, int longitud) throws SAXException{
 
         String cad = new String(ch, inicio, longitud);
 
         //Con la informacion parseada, le asignamos valores a un objeto Apuesta en listadoApuestas
-        //El formato de fecha aceptado es yyyy/MM/dd
+        //El formato de fecha aceptado es yyyy-MM-dd
 
         //Después de realizar la asignación, volvemos a asignar false a cada flag
         //para próximas iteraciones de este método
