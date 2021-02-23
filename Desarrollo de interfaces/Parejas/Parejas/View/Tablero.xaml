@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Parejas.Tablero"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Parejas"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <Style TargetType="Line" x:Key="">
+
+        </Style>
+        <!--Cartas: Diseño por delante y por detrás y animación de girar la carta
+            Las vidas: Diseño y animación de perder una vida
+            El reloj: Diseño y animación para ponerlo que parpadee en rojo o algo cuando quede poco tiempo
+            El botón de recargar: Diseño y animación para cuando se le hace click que de una vuelta sobre sí mismo
+            El fondo: Diseño-->
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            
+        </Grid.RowDefinitions>
+        <Button ><!--Deberia de wrappear su altura y anchura con la de su hijo-->
+            <Canvas>
+                <Line></Line>
+                <Line></Line>
+                <Line></Line>
+                <Line></Line>
+                <Line></Line>
+                <Line></Line>
+                <Line></Line>
+            </Canvas>
+        </Button>
+        
+        
+
+    </Grid>
+</Page>

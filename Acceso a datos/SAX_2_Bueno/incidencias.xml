@@ -1,2 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<incidencias/>
+<incidencias>
+    <incidencia>
+        <usuario>7</usuario>
+        <fecha>2021-01-10</fecha>
+        <evento>3</evento>
+        <importe>50.0</importe>
+        <motivoRechazo>Las apuestas para este partido no están disponibles</motivoRechazo>
+    </incidencia>
+    <incidencia>
+        <usuario>1</usuario>
+        <fecha>2020-12-21</fecha>
+        <evento>4</evento>
+        <importe>1500.0</importe>
+        <motivoRechazo>Las apuestas para este partido no están disponibles</motivoRechazo>
+    </incidencia>
+    <incidencia>
+        <usuario>13</usuario>
+        <fecha>2020-12-22</fecha>
+        <evento>5</evento>
+        <importe>150.0</importe>
+        <motivoRechazo>Las apuestas para este partido no están disponibles</motivoRechazo>
+    </incidencia>
+</incidencias>
