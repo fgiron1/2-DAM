@@ -8,10 +8,11 @@ import java.text.SimpleDateFormat;
 
 public class Conexion {
 
-	private String sourceURL = "jdbc:sqlserver://localhost";
+	private String sourceURL = "jdbc:sqlserver://localhost:1433";
 	private String usuario = "prueba123";
 	private String password = "prueba123";
 	private Incidencias incidencias;
+
 	private ObjectFactory factory = new ObjectFactory();
 
 	private Connection conexionBaseDatos;
@@ -28,6 +29,21 @@ public class Conexion {
 		}
 
 	}
+
+	public Incidencias getIncidencias() {
+		return incidencias;
+	}
+
+	public void setIncidencias(Incidencias incidencias) { this.incidencias = incidencias; }
+
+	public ObjectFactory getFactory() {
+		return factory;
+	}
+
+	public void setFactory(ObjectFactory factory) {
+		this.factory = factory;
+	}
+
 	//Nombre procedimiento en SQL: GrabarApuestaGanadoresPartidos
 
 	public void insertarApuesta(Apuesta apuesta) throws SQLServerException {
@@ -70,7 +86,7 @@ public class Conexion {
 
 	public void insertarApuestaOverUnder(Apuesta apuesta) throws SQLServerException{
 
-		String sql = "EXECUTE GrabarApuestaOverUnder ?, ?, ?, ?, ?, ?";
+		String sql = "EXECUTE GrabarApuestaOverUnder ?, ?, ?, ?, ?, ?, ?";
 
 		try{
 
@@ -88,12 +104,12 @@ public class Conexion {
 			statement.setDate(4, fechaSql);
 			statement.setString(5, apuesta.getOverunder());
 			statement.setFloat(6, apuesta.getDiferencia());
-			statement.registerOutParameter(6, Types.INTEGER);
+			statement.registerOutParameter(7, Types.INTEGER);
 
 			statement.executeUpdate();
 
 			//Asignamos el resultado del procedimiento al objeto apuesta
-			apuesta.setOutput(statement.getInt(6));
+			apuesta.setOutput(statement.getInt(7));
 
 			statement.close();
 
@@ -107,7 +123,7 @@ public class Conexion {
 
 	public void insertarApuestaDiferencia(Apuesta apuesta) throws SQLServerException{
 
-		String sql = "EXECUTE GrabarApuestasHandicap ?, ?, ?, ?, ?";
+		String sql = "EXECUTE GrabarApuestaHandicap ?, ?, ?, ?, ?, ?";
 
 		try{
 

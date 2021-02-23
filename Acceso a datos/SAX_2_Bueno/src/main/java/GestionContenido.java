@@ -1,7 +1,13 @@
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+import practica.Incidencias;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import java.io.File;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -38,6 +44,22 @@ public class GestionContenido extends DefaultHandler {
     }
     @Override
     public void endDocument(){
+
+        JAXBElement<Incidencias> incidencias = conexion.getFactory().createIncidencias(conexion.getIncidencias());
+
+        File file = new File("C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Acceso a datos\\SAX_2_Bueno\\incidencias.xml");
+        JAXBContext jaxbContext = null;
+        try {
+            jaxbContext = JAXBContext.newInstance(Incidencias.class);
+            Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            jaxbMarshaller.marshal(incidencias, file);
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+
+
+
         System.out.println("Fin del documento XML");
     }
     @Override
@@ -89,6 +111,10 @@ public class GestionContenido extends DefaultHandler {
             } catch(SQLException e) {
                 e.printStackTrace();
             }
+
+            //Reseteamos el objeto para no tener información
+            //de apuestas anteriores
+            a = new Apuesta();
 
         }
 

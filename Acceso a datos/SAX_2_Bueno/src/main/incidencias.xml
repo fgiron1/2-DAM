@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<incidencias>
+    <incidencia>
+        <usuario>1</usuario>
+        <fecha>2020-12-21</fecha>
+        <evento>4</evento>
+        <importe>1500.0</importe>
+        <motivoRechazo>El parámetro formal '@Numero' no se declaró como parámetro OUTPUT, pero es el parámetro real pasado en el resultado solicitado.</motivoRechazo>
+    </incidencia>
+    <incidencia>
+        <usuario>13</usuario>
+        <fecha>2020-12-22</fecha>
+        <evento>5</evento>
+        <importe>150.0</importe>
+        <motivoRechazo>El índice 6 está fuera de intervalo.</motivoRechazo>
+    </incidencia>
+    <incidencia>
+        <usuario>98</usuario>
+        <fecha>2022-03-09</fecha>
+        <evento>6</evento>
+        <importe>50.0</importe>
+        <motivoRechazo>El índice 6 está fuera de intervalo.</motivoRechazo>
+    </incidencia>
+</incidencias>
