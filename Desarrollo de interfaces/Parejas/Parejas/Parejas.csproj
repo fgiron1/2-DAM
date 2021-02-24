@@ -126,6 +126,9 @@
     <Compile Include="Viewmodel\TableroVM.cs" />
     <Compile Include="Viewmodel\Utils\DelegateCommand.cs" />
     <Compile Include="Viewmodel\Utils\VMBase.cs" />
+    <Compile Include="View\Tablero.xaml.cs">
+      <DependentUpon>Tablero.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -133,6 +136,15 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Amarillo.png" />
+    <Content Include="Assets\Azul.png" />
+    <Content Include="Assets\Marrón.png" />
+    <Content Include="Assets\Naranja.png" />
+    <Content Include="Assets\Negro.png" />
+    <Content Include="Assets\Púrpura.png" />
+    <Content Include="Assets\Rojo.png" />
+    <Content Include="Assets\Rosa.png" />
+    <Content Include="Assets\Verde.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

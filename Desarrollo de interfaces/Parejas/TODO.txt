@@ -4,6 +4,9 @@ TAREAS:
 	- Averiguar como será la carta en el XAML es clave. (Creo que lo mejor va a ser Button -> Canvas -> Lineas)
 	- Crear estilo para las cartas
 
+	- Ahora que está hecho el diseño más o menos, hay que coger todas las propiedades que se repitan 
+	  y ponerlas en un estilo
+
 ACLARACIONES:
 
 	- El XAML de tablero: Un grid con una celda para cada carta. Las celdas tienen ya el tamaño de la carta.

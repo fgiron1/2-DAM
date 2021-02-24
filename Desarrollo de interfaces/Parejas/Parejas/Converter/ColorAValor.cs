@@ -12,15 +12,15 @@ namespace Parejas.Converter
         //Inicializamos el diccionario con el código de color que hemos establecido 
         private Dictionary<int, string> codigoColor = new Dictionary<int, string>()
         {
-            {1, "Blue" },
-            {2, "Red" },
-            {3, "Green" },
-            {4, "Yellow" },
-            {5, "Purple" },
-            {6, "Orange" },
-            {7, "Brown" },
-            {8, "Pink" },
-            {9, "Black" }
+            {1, "/Assets/Azul.png" },
+            {2, "/Assets/Rojo.png" },
+            {3, "/Assets/Verde.png" },
+            {4, "/Assets/Amarillo.png" },
+            {5, "/Assets/Púrpura.png" },
+            {6, "/Assets/Naranja.png" },
+            {7, "/Assets/Marrón.png" },
+            {8, "/Assets/Rosa.png" },
+            {9, "/Assets/Negro.png" }
         };
 
         //De valor a color
