@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,10 +30,12 @@ namespace Parejas.Viewmodel
          * 
          * int parejas (El número de parejas hechas. Siempre <=9) (Después de cada jugada se comprueba si el jugador ha ganado)
          * 
-         * int vidas = 5 (expresa el numero de fallos) (Después de cada jugada se c)
+         * int vidas = 5 (expresa el numero de fallos)
          * Timer temporizador (por defecto 1 min y 30 s, comienza después de la selección de la primera carta de la partida)
          *                      (ver si tickea de forma asíncrona)
          * 
+         * Carta Seleccionado actua como un intermediario entre la UI y las propiedades primeraSeleccion y segundaSeleccion
+         * Seleccionado es el SelectedItem
          * 
          * Hay que bindear el valor de una carta a un estilo concreto (converter?)
          * 
@@ -40,12 +43,7 @@ namespace Parejas.Viewmodel
          * 
          * recargarCommand ->    Pregunta al usuario si está seguro. De ser así, llama a reiniciarPartida()
          * seleccionarCommand -> Bindeado a cada carta en el XAML
-         *                       Si el timer está a 1:30, iniciarlo. Luego:
-         *                       Si primeraSeleccion es null, la asigna a primeraSeleccion
-         *                       Si segundaSeleccion es null, la asigna a segundaSeleccion.
-         *                       CASO QUE NUNCA SE PODRÍA DAR: Que primeraSeleccion sea null y segundaSeleccion no.
-         *                       Lo controlamos reseteandolas en ejecutarJugada()
-         *                       Si ninguna son null, llamamos a ejecutarJugada()
+         *                       
          *                       
          * --------------  METODOS  ----------------
          * 
@@ -59,9 +57,10 @@ namespace Parejas.Viewmodel
 
         #region Propiedades privadas y autoimplementadas
 
-        private List<Carta> cartasTablero;
-        public Carta PrimeraSeleccion { get; set; }
-        public Carta SegundaSeleccion { get; set; }
+        private ObservableCollection<Carta> cartasTablero;
+        private Carta seleccion;
+        private Carta primeraSeleccion;
+        private Carta segundaSeleccion;
         public int Vidas { get; set; } = 5;
 
         public int Parejas { get; set; } = 0;
@@ -71,13 +70,13 @@ namespace Parejas.Viewmodel
 
         #region Propiedades públicas
 
-        public List<Carta> CartasTablero
+        public ObservableCollection<Carta> CartasTablero
         {
             get
             {
                 if(cartasTablero == null)
                 {
-                    cartasTablero = new List<Carta>();
+                    cartasTablero = new ObservableCollection<Carta>();
 
                     for (int i = 0; i < 9; i++)
                     {
@@ -95,6 +94,33 @@ namespace Parejas.Viewmodel
                 cartasTablero = value;
             }
         }
+        public Carta Seleccion
+        {
+            get
+            {
+                return seleccion;
+            }
+
+            set
+            {
+                //TODO
+                // Si el timer está a 1:30, iniciarlo.
+
+                seleccion = value;
+
+                   //Hemos clicado en la primera carta
+                if (primeraSeleccion == null)
+                {
+                    primeraSeleccion = seleccion;
+
+                    //Hemos clicado en la segunda carta y ejecutamos la jugada
+                } else if(segundaSeleccion == null)
+                {
+                    segundaSeleccion = seleccion;
+                    //ejecutarJugada();
+                }
+            }
+        }
 
         #endregion
 
@@ -103,6 +129,8 @@ namespace Parejas.Viewmodel
 
 
         #endregion
+
+        public TableroVM() { }
 
     }
 }

@@ -43,6 +43,8 @@ namespace Parejas.Model
         //que aunque sea una solución más chustera, necesito practicarlo
         public bool Seleccionada { get; set; }
 
+        public string Atras { get; set; }
+
         public Carta() { }
 
         public Carta(int inValor, bool inSeleccionada)
