@@ -1,0 +1,91 @@
+﻿<html>
+<head id="idHead">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <title>Lista</title>
+    <!--Como esta pagina no se va a recargar nunca, necesita todos los scripts cargados ya
+     o bien, que con cada cambio ficticio de página, se les añada los que necesite-->
+    <script src="js/ajax/API.js"></script>
+    <script src="js/ajax/list.js"></script>
+    <script src="js/ajax/insert.js"></script>
+    <script src="js/ajax/update.js"></script>
+    <script src="js/entities/PersonDepartment.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body id="bodyIndex">
+
+    <table id="listTable" class="left">
+        <tbody>
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="formularioUpdate" class="hidden">
+        <!--Aquí no va el id porque el usuario no deberia de cambiarlo, ni siquiera lo deberia conocer
+    pero en el javascript, aunque no se enlace aquí, se le pasa a la función de llamar a la api--->
+        <label for="txtId">ID</label><br />
+        <input id="txtId" type="text" /><br />
+
+        <label for="txtFirstName">First name</label><br />
+        <input id="txtFirstName" type="text" /><br />
+
+        <label for="txtLastName">Last name</label><br />
+        <input id="txtLastName" type="text" /><br />
+
+        <label for="txtBirthdate">Birthdate</label><br />
+        <input id="txtBirthdate" type="text" /><br />
+
+        <label for="txtPhoneNumber">Phone number</label><br />
+        <input id="txtPhoneNumber" type="text" /><br />
+
+        <label for="txtEmail">Email</label><br />
+        <input id="txtEmail" type="text" /><br />
+
+        <label for="updateDepartmentID">Department ID</label><br />
+        <select id="updateDepartmentID" /><br />
+
+        <input id="btnActualizar" type="button" value="Guardar" />
+    </div>
+
+    <input id="btnDesplegarInsertar" type="button" value="Insertar..." />
+
+    <div id="formularioInsertar" class="hidden">
+
+        <label for="insertFirstName">First name</label><br />
+        <input id="insertFirstName" type="text" /><br />
+
+        <label for="insertLastName">Last name</label><br />
+        <input id="insertLastName" type="text" /><br />
+
+        <label for="insertBirthdate">Birthdate</label><br />
+        <input id="insertBirthdate" type="date" /><br />
+
+        <label for="insertPhoneNumber">Phone number</label><br />
+        <input id="insertPhoneNumber" type="text" /><br />
+
+        <label for="insertEmail">Email</label><br />
+        <input id="insertEmail" type="email" /><br />
+
+        <label for="insertDepartmentID">Department ID</label><br />
+        <select id="insertDepartmentID"/><br />
+
+        <input id="btnInsertar" type="button" value="Insertar" />
+
+    </div>
+
+
+</body>
+
+</html>

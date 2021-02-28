@@ -1,0 +1,6 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - Entities\bin\Debug\FernandoGironDominguez - Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - Entities\bin\Debug\FernandoGironDominguez - Entities.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - Entities\obj\Debug\FernandoGironDominguez - Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - Entities\obj\Debug\FernandoGironDominguez - Entities.pdb
