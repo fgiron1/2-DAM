@@ -1,0 +1,5 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\FernandoGironDominguezDIN\BL\BL.csproj;x86
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\FernandoGironDominguezDIN\DAL\DAL.csproj;x86
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\FernandoGironDominguezDIN\Entities\Entities.csproj;x86
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\FernandoGironDominguezDIN\Entities\Entities.csproj;x86
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\FernandoGironDominguezDIN\FernandoGironDominguezDIN\FernandoGironDominguezDIN.csproj;x86

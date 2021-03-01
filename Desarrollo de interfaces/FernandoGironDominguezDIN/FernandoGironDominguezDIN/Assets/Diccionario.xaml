@@ -1,0 +1,32 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--Propiedades más importantes de la clase Style:
+    
+        Setters: los Setter definen una propiedad y su valor.
+        También se pueden definir EventSetter que es una definición
+        de un evento y el procedimiento asociado (handler).
+
+        BasedOn: mediante esta propiedad podemos definir si un
+        estilo hereda de otro.
+
+        TargetType : en UWP es obligatorio y sirve para aplicar los
+        estilos de manera implícita o explícita:
+    
+            Si no ponemos un x:key al style, éste se aplicará a todos
+            los elementos del tipo definido en el TargetType.
+
+            Si ponemos un x:key, deberemos definir la propiedad
+            Style en el elemento en el que queremos que se aplique
+            dicho estilo.
+    
+
+    <Style TargetType="Button" x:Key="BigFontButtonStyle">
+        <Setter Property="Control.FontFamily" Value="Times New Roman" />
+        <Setter Property="Control.FontSize" Value="18" />
+        <Setter Property="Control.FontWeight" Value="Bold" />
+
+    </Style>-->
+
+</ResourceDictionary>
