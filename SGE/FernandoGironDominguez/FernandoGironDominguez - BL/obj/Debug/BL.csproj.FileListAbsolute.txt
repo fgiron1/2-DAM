@@ -1,0 +1,11 @@
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - BL\bin\Debug\FernandoGironDominguez - BL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - BL\bin\Debug\FernandoGironDominguez - BL.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - BL\bin\Debug\FernandoGironDominguez - DAL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - BL\bin\Debug\FernandoGironDominguez - Entities.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - BL\bin\Debug\FernandoGironDominguez - DAL.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - BL\bin\Debug\FernandoGironDominguez - Entities.pdb
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - BL\obj\Debug\FernandoGironDominguez - BL.dll
+C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - BL\obj\Debug\FernandoGironDominguez - BL.pdb

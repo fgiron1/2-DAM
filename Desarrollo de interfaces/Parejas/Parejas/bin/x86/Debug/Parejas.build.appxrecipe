@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>107-03</Machine>
-    <WindowsUser>fgiron</WindowsUser>
+    <Machine>LAPTOP-76FHN2D2</Machine>
+    <WindowsUser>ferna</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>90e2e702-2a42-46aa-900e-dbda6c473186</PackageIdentityName>
     <PackageIdentityPublisher>CN=ferna</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\Parejas.exe">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\Parejas.exe">
       <PackagePath>entrypoint\Parejas.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
@@ -34,82 +34,82 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Amarillo.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Amarillo.png">
       <PackagePath>Assets\Amarillo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Azul.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Azul.png">
       <PackagePath>Assets\Azul.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Marrón.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Marrón.png">
       <PackagePath>Assets\Marrón.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Naranja.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Naranja.png">
       <PackagePath>Assets\Naranja.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Negro.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Negro.png">
       <PackagePath>Assets\Negro.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Púrpura.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Púrpura.png">
       <PackagePath>Assets\Púrpura.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Rojo.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Rojo.png">
       <PackagePath>Assets\Rojo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Rosa.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Rosa.png">
       <PackagePath>Assets\Rosa.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Verde.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Verde.png">
       <PackagePath>Assets\Verde.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\Parejas.xr.xml">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\Parejas.xr.xml">
       <PackagePath>Parejas.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\View\Home.xbf">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\View\Home.xbf">
       <PackagePath>View\Home.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\View\Tablero.xbf">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\View\Tablero.xbf">
       <PackagePath>View\Tablero.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\Core\Parejas.exe">
+    <AppxPackagedFile Include="C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\bin\x86\Debug\Core\Parejas.exe">
       <PackagePath>Parejas.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

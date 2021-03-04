@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Tp1NEzcS35qKoipRUNCEvC0ayaV0JsiWx6Ja0Rn6wuDazI2kgOVM9LTvigb7tAJR/wYjhzQVYgznWaZuhj1jdQ==",
+  "dgSpecHash": "MzBCt4Lwr7vNvQrgktst8CVOfZinRRBcw0/6qLGSk+fkjhejGS7+BANBlanxIba88Md7nDTgl+X+cUEQl7XtAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fgiron\\Desktop\\2-DAM\\2-DAM\\Desarrollo de interfaces\\Parejas\\Parejas_Entities\\Parejas_Entities.csproj",
+  "projectFilePath": "C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Desarrollo de interfaces\\Parejas\\Parejas_Entities\\Parejas_Entities.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\fgiron\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\fgiron\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\ferna\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

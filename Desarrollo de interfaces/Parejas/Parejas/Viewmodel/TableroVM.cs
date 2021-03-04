@@ -24,7 +24,7 @@ namespace Parejas.Viewmodel
          * 
          * 
          * --------------   PROPIEDADES   -----------
-         * List<Carta> conjuntoCartas (Poner en el getter que si es null, cree una lista con 18 cartas, las 9 repetidas dos veces)
+         * List<Carta> conjuntoCartas
          * Carta primeraSeleccion
          * Carta segundaSeleccion
          * 

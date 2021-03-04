@@ -1,1 +1,1 @@
-C:\Users\fgiron\Desktop\2-DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Parejas.csproj;x86
+C:\Users\ferna\Desktop\DAM\2-DAM\Desarrollo de interfaces\Parejas\Parejas\Parejas.csproj;x86
