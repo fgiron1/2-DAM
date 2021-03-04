@@ -19,12 +19,6 @@ import com.example.viewmodels.fragments.formFragment;
 
 import java.util.ArrayList;
 
-//Flujo Master/Details para cambiar persistencia de API a BBDD
-
-//Añadir las librerias que puso el fran
-
-//Patrón repository
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     private SharedVM vm;

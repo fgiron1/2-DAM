@@ -3,3 +3,30 @@ IDEA PARA LA APP:
 
 Con RETROFIT tengo que atacar a la API, osea que tengo que usar la información de empleados por narices
 Por lo que voy a hacer esa parte de la implementación
+
+
+
+COSAS QUE HACE LA APP:
+
+  · Login mock. Manejo de estado de sesión iniciada y sesión cerrada
+  · Buscador
+  · Mostrar un listado de personas, con la posibilidad de inserción, actualización y eliminación
+  · Animación de carga para antes de llenar el listado
+
+
+IMPLEMENTACIÓN
+
+    INTERFAZ:
+
+        · La implementación de los fragments y viewmodels está detallada en el diseño visual de la interfaz
+          (MIRA TUS PAPELES)
+        · Material design
+
+    OBTENCIÓN DE DATOS:
+
+        BBDD
+        · Room: Con la API me traigo la lista de empleados en un JSON, cuando llegue, la persisto en la base de datos
+                y la muestro desde la base de datos. Si la tabla contiene filas, no llamar a la api en futuros inicios
+                de la aplicación (PORQUE YA TENEMOS LA BBDD POBLADA)
+        API
+        · Retrofit: La API ya implementa la funcionalidad del CRUD. Retrofit me lo pone fácil para contactarlas (SENCILLO)

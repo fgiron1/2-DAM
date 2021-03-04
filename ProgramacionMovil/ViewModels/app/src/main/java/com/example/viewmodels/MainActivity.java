@@ -6,24 +6,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.viewmodels.fragments.formFragment;
+
 import java.util.ArrayList;
-
-//TODO
-//1. Restructurar la aplicación para que maneje LiveData, en lugar del MutableLiveData
-//   porque los cambios de valores no los vamos a hacer sobre la lista, sino que los hacemos
-//   en la base de datos y Room actualiza la lista trayendo un LiveData en función del estado
-//   de la BBDD
-//
-//2. Hacerlo con el repository para cambiar entre Retrofit y Room
-
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 

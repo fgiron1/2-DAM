@@ -109,8 +109,6 @@ public class MyAdapter extends RecyclerView.Adapter {
         return dataset.size();
     }
 
-    public int getViewTypeCount(){
-        return 2;
-    }
+    public int getViewTypeCount(){ return 2; }
 
 }

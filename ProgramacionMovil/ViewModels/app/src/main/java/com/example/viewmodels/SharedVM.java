@@ -1,15 +1,11 @@
 package com.example.viewmodels;
 
-import android.content.Context;
+import android.app.Application;
 
 import androidx.lifecycle.AndroidViewModel;
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
-import androidx.room.Room;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class SharedVM extends AndroidViewModel {
 
@@ -17,19 +13,12 @@ public class SharedVM extends AndroidViewModel {
     private MutableLiveData<ArrayList<Equipo>> equiposNBA = new MutableLiveData<ArrayList<Equipo>>(new ArrayList<Equipo>());
     private MutableLiveData<Equipo> seleccionado = new MutableLiveData<Equipo>(new Equipo());
 
-    public SharedVM(){
+    public SharedVM(Application application){
 
-        LiveData<ArrayList<Equipo>> equipos = new LiveData<ArrayList<Equipo>>(new ArrayList<Equipo>);
+        super(application);
 
-        //Instanciamos la base de datos
+        MutableLiveData<ArrayList<Equipo>> equipos = new MutableLiveData<ArrayList<Equipo>>(new ArrayList<Equipo>());
 
-        DB db = Room.databaseBuilder(
-                getApplication().getApplicationContext(),
-                DB.class,
-                "EquiposNBA")
-                .build();
-
-        equipos = db.daoEquipo().getAllEquiposLive();
 
         this.equiposNBA = equipos;
     }
