@@ -36,13 +36,12 @@ namespace FernandoGironDominguez___DAL.Connection
 
         public MyConnection()
         {
-            
-            this.server = "fgiron1.database.windows.net";
-            this.dataBase = "SGE";
-            this.user = "usuario";            
-            this.pass = "Mitesoro123";
-
+            this.server = "localhost";
+            this.dataBase = "Mandalorian";
+            this.user = "prueba1";            
+            this.pass = "prueba123";
         }
+
         //Con parámetros por si quisiera cambiar las conexiones
         public MyConnection(String server, String database, String user, String pass)
         {

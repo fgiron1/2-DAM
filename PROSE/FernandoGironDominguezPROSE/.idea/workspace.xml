@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04513d1d-800a-4678-816c-b27b4e8bd239" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoGironDominguezPROSE.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestWallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Wallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/.vs/FernandoGironDominguezDIN/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/.vs/FernandoGironDominguezDIN/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/BL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/BL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/Handlers/DepartmentHandlerBL.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/Handlers/PersonHandlerBL.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/Lists/DepartmentListBL.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/Lists/PersonListBL.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/bin/x86/Debug/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/BL.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/BL.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/BL.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/BL.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/BL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/BL.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/BL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/BL.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/BL.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/BL.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/BL/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/Connection/MyConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/Connection/MyConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/DAL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/Handlers/DepartmentHandlerDAL.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/Handlers/PersonHandlerDAL.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/Lists/DepartmentListDAL.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/Lists/PersonListDAL.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/bin/x86/Debug/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/bin/x86/Debug/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/bin/x86/Debug/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/bin/x86/Debug/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/bin/x86/Debug/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/bin/x86/Debug/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/bin/x86/Debug/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/bin/x86/Debug/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/DAL.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/DAL.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/DAL.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/DAL.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DAL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DAL.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DAL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DAL.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DAL.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DAL.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/DAL/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/Department.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/Entities.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/Entities.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/Person.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/bin/x86/Debug/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/bin/x86/Debug/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/bin/x86/Debug/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/bin/x86/Debug/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/Entities.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/Entities.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/Entities.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/Entities.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/Entities.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/Entities.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/Entities.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/Entities.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/Entities.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/Entities.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/Entities/obj/x86/Debug/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/App.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/Assets/Diccionario.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/Assets/Diccionario.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/Converters/converterEjemplo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/FernandoGironDominguezDIN.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/FernandoGironDominguezDIN.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/MainPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/Viewmodels/Utils/DelegateCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/Viewmodels/Utils/DelegateCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/Viewmodels/VMEjemplo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/App.xbf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/App.xbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/App.xbf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/App.xbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/AppxManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/AppxManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/Assets/Diccionario.xbf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/Assets/Diccionario.xbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/FernandoGironDominguezDIN.xr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/FernandoGironDominguezDIN.xr.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/MainPage.xbf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/MainPage.xbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/entrypoint/FernandoGironDominguezDIN.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/entrypoint/FernandoGironDominguezDIN.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/resources.pri" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/resources.pri" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/vs.appxrecipe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppX/vs.appxrecipe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppxManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/AppxManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/Assets/Diccionario.xbf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/Assets/Diccionario.xbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/Core/AppxManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/Core/AppxManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/FernandoGironDominguezDIN.build.appxrecipe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/FernandoGironDominguezDIN.build.appxrecipe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/FernandoGironDominguezDIN.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/FernandoGironDominguezDIN.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/FernandoGironDominguezDIN.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/FernandoGironDominguezDIN.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/FernandoGironDominguezDIN.xr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/FernandoGironDominguezDIN.xr.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/MainPage.xbf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/MainPage.xbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/resources.pri" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/bin/x86/Debug/resources.pri" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/FernandoGironDominguezDIN.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/FernandoGironDominguezDIN.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/FernandoGironDominguezDIN.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/FernandoGironDominguezDIN.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/.winmd_cache/$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/App.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/App.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/App.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/App.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/App.xbf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/App.xbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/Assets/Diccionario.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/Assets/Diccionario.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/Assets/Diccionario.xbf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/Assets/Diccionario.xbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.xr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/FernandoGironDominguezDIN.xr.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/MainPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/MainPage.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/MainPage.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/MainPage.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/MainPage.xbf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/MainPage.xbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/ProjectArchitectures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/ProjectArchitectures.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/ResourceHandlingTask.state" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/ResourceHandlingTask.state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/XamlSaveStateFile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/XamlSaveStateFile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/filtered.layout.resfiles" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/filtered.layout.resfiles" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/filtered.layout.resfiles.intermediate" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/filtered.layout.resfiles.intermediate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/intermediatexaml/FernandoGironDominguezDIN.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/intermediatexaml/FernandoGironDominguezDIN.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/intermediatexaml/FernandoGironDominguezDIN.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/intermediatexaml/FernandoGironDominguezDIN.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/pri.resfiles" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/pri.resfiles" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/pri.resfiles.intermediate" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/pri.resfiles.intermediate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/unfiltered.layout.resfiles" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/unfiltered.layout.resfiles" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/unfiltered.layout.resfiles.intermediate" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/FernandoGironDominguezDIN/FernandoGironDominguezDIN/obj/x86/Debug/unfiltered.layout.resfiles.intermediate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/.vs/Parejas/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/.vs/Parejas/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/.vs/Parejas/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/.vs/Parejas/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/Parejas.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/Parejas.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/Parejas.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/Parejas.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/App.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/App.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/App.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/Parejas.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/Parejas.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/View/Home.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/View/Home.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/View/Home.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/View/Tablero.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/View/Tablero.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/View/Tablero.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/XamlSaveStateFile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas/obj/x86/Debug/XamlSaveStateFile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/Debug/netstandard2.0/Parejas_Entities.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/Debug/netstandard2.0/Parejas_Entities.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/Debug/netstandard2.0/Parejas_Entities.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/Debug/netstandard2.0/Parejas_Entities.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/Parejas_Entities.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/Parejas_Entities.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/Parejas_Entities.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/Parejas_Entities.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Desarrollo de interfaces/Parejas/Parejas_Entities/obj/project.nuget.cache" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1pEnyZxmHxmqKRWo2SsD4885NNv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.TestWallet">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="FernandoGironDominguezPROSE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestWallet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestWallet" />
+      <module name="FernandoGironDominguezPROSE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestWallet" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04513d1d-800a-4678-816c-b27b4e8bd239" name="Default Changelist" comment="" />
+      <created>1614757374075</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614757374075</updated>
+      <workItem from="1614757375755" duration="9182000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalMonitorStateException" package="java.lang" />
+          <option name="timeStamp" value="11" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

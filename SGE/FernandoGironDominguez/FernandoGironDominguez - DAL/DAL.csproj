@@ -42,10 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection\MyConnection.cs" />
-    <Compile Include="Handlers\DepartmentHandlerDAL.cs" />
-    <Compile Include="Handlers\PersonHandlerDAL.cs" />
-    <Compile Include="Lists\DepartmentListDAL.cs" />
-    <Compile Include="Lists\PersonListDAL.cs" />
+    <Compile Include="Handlers\MisionHandlerDAL.cs" />
+    <Compile Include="Lists\MisionListDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

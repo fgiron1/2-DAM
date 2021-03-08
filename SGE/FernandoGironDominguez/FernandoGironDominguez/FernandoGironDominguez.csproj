@@ -81,23 +81,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Pages\css\style.css" />
     <Content Include="Pages\index.html" />
     <Content Include="Pages\js\ajax\API.js" />
-    <Content Include="Pages\js\ajax\insert.js" />
     <Content Include="Pages\js\ajax\list.js" />
-    <Content Include="Pages\js\ajax\update.js" />
-    <Content Include="Pages\js\entities\PersonDepartment.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\DepartmentsController.cs" />
-    <Compile Include="Controllers\PersonasController.cs" />
-    <Compile Include="Controllers\PersonasDepartmentNameController.cs" />
+    <Compile Include="Controllers\MisionesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\PersonDepartmentName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

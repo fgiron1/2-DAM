@@ -3,12 +3,8 @@
     "",
     "\\css",
     "\\js",
-    "\\js\\ajax",
-    "\\js\\entities"
+    "\\js\\ajax"
   ],
-<<<<<<< Updated upstream
-=======
   "SelectedNode": "\\index.html",
->>>>>>> Stashed changes
   "PreviewInSolutionExplorer": false
 }

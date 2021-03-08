@@ -1,3 +1,14 @@
+window.onload = assignEventListeners;
+
+/*
+ * Asigna los event listeners y carga contenido inicial
+ */
+function assignEventListeners() {
+
+    //Cargamos la lista de persona al empezar
+    showMisionList();
+}
+
 
 /*
  * Carga la lista de personas de forma asíncrona, llamando a la API
@@ -5,19 +16,17 @@
  * visualmente la tabla
  */
 
-async function showPersonList() {
-
-    var departmentCollection;
+async function showMisionList() {
 
     //Todo lo que necesite hacer con personCollection lo tengo que hacer aquí
     //No puedo devolver el valor
-    getPersonCollection().then((personCollectionAsync) => {
+    getMisionList().then((misionListAsync) => {
 
         //Código de estado 204: No content
-        if (personCollectionAsync === null) {
+        if (misionListAsync === null) {
             document.createElement(h1).innerHtml = "No content";
         } else {
-            rellenarTabla(personCollectionAsync);
+            rellenarTabla(misionListAsync);
         }
         
     });
@@ -27,17 +36,17 @@ async function showPersonList() {
 
 
 /*
- * Esta función se encarga de generar las filas en la tabla y rellenarlas con la información de cada persona,
- * pasada por parámetros, además de iconos para actualizar y eliminar
+ * Esta función se encarga de generar las filas en la tabla y rellenarlas con la información de cada mision,
+ * pasada por parámetros
  * 
- * Los event listeners no están en el método assignListeners (En insert.js) porque se asignan a botones
- * creados dinámicamente
+ * El event listener del boton de guardado se asigna en el cuerpo de esta funcion por la necesidad
+ * de pasarle la lista de misiones sin realizar una llamada adicional a la API (innecesaria)
 
  *
- * @param  {Array<Object>} personCollection   Un array de objetos persona. Cada objeto representa a una persona, con toda su información relevante
+ * @param  {Array<Object>} misionCollection   Un array de misiones. Con la información de cada objeto rellenaremos una fila
  */
     
-async function rellenarTabla(personCollection) {
+async function rellenarTabla(misionCollection) {
 
     var table = document.getElementById("listTable");
     var tbody = document.getElementsByTagName('tbody')[0];
@@ -51,11 +60,11 @@ async function rellenarTabla(personCollection) {
     //un botón de actualizar y otro de eliminar, respectivamente
 
     var id = 0;
-    for (var person of personCollection) {
+    for (var mision of misionCollection) {
 
         
-        let personID = person.id;
-        let personBlockScope = person;
+        let misionID = mision.id;
+        let misionBlockScope = mision;
         let idBlockScope = id;
 
         var newRow = table.insertRow(table.rows.length);
@@ -66,8 +75,8 @@ async function rellenarTabla(personCollection) {
         //Aumentamos el contador para la proxima fila
         id++;
 
-        //Insertamos 9 celdas en la nueva fila
-        for (var i = 0; i < 9; i++) {
+        //Insertamos 8 celdas en la nueva fila
+        for (var i = 0; i < 6; i++) {
             newRow.insertCell(i);
         }
 
@@ -75,64 +84,94 @@ async function rellenarTabla(personCollection) {
 
         //Rellenamos las celdas
 
-        newRow.cells[1].innerHTML = "<p>" + person.FirstName + "</p>";
+        newRow.cells[1].innerHTML = "<p>" + mision.id + "</p>";
 
-        newRow.cells[2].innerHTML = "<p>" + person.LastName + "</p>";
+        newRow.cells[2].innerHTML = "<p>" + mision.nombre + "</p>";
 
-        newRow.cells[3].innerHTML = "<p>" + person.Birthdate.substring(0,9) + "</p>";
+        newRow.cells[3].innerHTML = "<p>" + mision.descripcion + "</p>";
 
-        newRow.cells[4].innerHTML = "<p>" + person.PhoneNumber + "</p>";
-
-        newRow.cells[5].innerHTML = "<p>" + person.Email + "</p>";
-
-        newRow.cells[6].innerHTML = "<p>" + person.departmentName + "</p>";
-
-        //Añadimos al boton de actualizar del formulario la función a la que llamar
-
-        newRow.cells[7].innerHTML = "<input id=\"\" type=\"button\" value=\"Actualizame\"/>";
-
-        //Al hacer clic, le pasamos el objeto persona cuya información cargaremos en cada campo del formulario
-        //para que el usuario edite
-
-        newRow.cells[7].addEventListener("click", function () { desplegarTodo(personBlockScope) });
+        newRow.cells[4].innerHTML = "<p>" + booleanoLegible(mision.completada) + "</p>";
 
 
+        //Añadimos un campo para editar la cantidad de créditos de la misión
+        //cuyo valor por defecto es el almacenado en la bbdd
 
-        //Añadimos al boton de eliminar del formulario la funcion a la que llamar
+        var txtInput = document.createElement("input");
+        txtInput.id = "inputCreditos - " + id;
+        txtInput.type = "text";
+        txtInput.value = mision.creditos;
 
-        newRow.cells[8].innerHTML = "<input id=\"\" type=\"button\" value=\"Eliminame\"/>";
-
-        //Al hacer clic, Le pasamos el id de la persona para eliminarla de la API y el id de la fila
-        //para eliminarla visualmente
-
-        newRow.cells[8].addEventListener("click", function () { confirmDelete(personID, ("tr - " + idBlockScope)) });
-
-        
-
+        newRow.cells[5].appendChild(txtInput);
     }
+
+    //Le asignamos al botón de guardado su función callback
+    document.getElementById("btnGuardar").addEventListener("click", function () { btnGuardar(misionCollection) });
+
+    //Añadimos una fila más al inicio para 
+    var nuevaFila = table.insertRow(0);
+
+    for(var i = 0; i < 6; i++) {
+        nuevaFila.insertCell(i);
+    }
+
+    nuevaFila.cells[0].classList.add("negro");
+    nuevaFila.cells[1].innerHTML = "<b>Id</b>";
+    nuevaFila.cells[2].innerHTML = "<b>Nombre</b>";
+    nuevaFila.cells[3].innerHTML = "<b>Descripcion</b>";
+    nuevaFila.cells[4].innerHTML = "<b>Completada</b>";
+    nuevaFila.cells[5].innerHTML = "<b>Creditos</b>";
+
 }
 
 
+function booleanoLegible(completada) {
+
+    if (completada) {
+        return "Completada";
+    } else {
+        return "No completada";
+    }
+
+}
+
 /*
- * Wrapper alrededor de la función deletePerson de la API. Se encarga
- * de pedir confirmación para eliminar a la persona, y refleja los cambios
- * visualmente, eliminando la fila en la tabla
+ * Función callback para el botón de guardado. Se encarga de comprobar si existen
+ * deferencias entre el valor introducido en el campo de texto (nuevo valor) y el valor
+ * original almacenado en la bbdd. De ser así, la actualiza con el nuevo valor y notifica
+ * al usuario.
  * 
- * @param  {Number} id     El valor del campo id de la persona a eliminar
- * @param  {String} rowID  El atributo id del nodo html de la fila a borrar
+ * @param  {Array<Object>} misionCollection    La colección de misiones 
  */
 
-function confirmDelete(id, rowID) {
+async function btnGuardar(misionCollection) {
 
-    if (confirm("¿Está seguro de que desea borrar a la persona?") == true) {
+    var tabla = document.getElementById("listTable");
 
-        //Si la peticion fue exitosa en la API, se elimina visualmente
+    //Habrá tantas celdas como misiones; podemos usar un contador
+    //junto con un foreach
+    var i = 0;
+    for (var mision of misionCollection) {
 
-        deletePerson(id).then((exitoso) => {
-            if (exitoso) {
-                document.getElementById(rowID).remove();
-            }
-        });
-    } 
+        var creditosIntroducidos = tabla.rows[i+1].cells[5].firstChild.value;
+
+        //Si el valor de créditos introducido y el que guarda la base de datos no coinciden,
+        //esta se actualiza con el nuevo valor.
+
+        if (creditosIntroducidos != mision.creditos) {
+
+            //Le asignamos al objeto mision correspondiente su nuevo valor de créditos
+            mision.creditos = creditosIntroducidos;
+            updateMision(mision).then((exitoso) => {
+                if (exitoso) {
+                    alert("Cambios guardados");
+                }
+            })
+        }
+
+        i++;
+
+    }
+    
+
 }
 

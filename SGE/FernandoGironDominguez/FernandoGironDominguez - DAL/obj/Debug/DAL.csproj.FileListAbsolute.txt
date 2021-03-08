@@ -7,3 +7,12 @@ C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDomingu
 C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\obj\Debug\FernandoGironDominguez - DAL.dll
 C:\Users\ferna\Desktop\DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\obj\Debug\FernandoGironDominguez - DAL.pdb
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\bin\Debug\FernandoGironDominguez - DAL.dll
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\bin\Debug\FernandoGironDominguez - DAL.pdb
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\bin\Debug\FernandoGironDominguez - Entities.dll
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\bin\Debug\FernandoGironDominguez - Entities.pdb
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\obj\Debug\FernandoGironDominguez - DAL.dll
+C:\Users\fgiron\Desktop\2-DAM\2-DAM\SGE\FernandoGironDominguez\FernandoGironDominguez - DAL\obj\Debug\FernandoGironDominguez - DAL.pdb

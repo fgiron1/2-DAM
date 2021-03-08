@@ -41,10 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Handlers\DepartmentHandlerBL.cs" />
-    <Compile Include="Handlers\PersonHandlerBL.cs" />
-    <Compile Include="Lists\DepartmentListBL.cs" />
-    <Compile Include="Lists\PersonListBL.cs" />
+    <Compile Include="Handlers\MisionHandlerBL.cs" />
+    <Compile Include="Lists\MisionListBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

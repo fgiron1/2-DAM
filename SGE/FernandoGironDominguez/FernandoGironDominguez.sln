@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FernandoGironDominguez", "FernandoGironDominguez\FernandoGironDominguez.csproj", "{C4A73B0C-E84C-4F3F-BBD8-9AF08B4A2802}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{977A7C16-4050-42DD-BD46-AFD1777595F1}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "FernandoGironDominguez - DAL\DAL.csproj", "{EC1BD01A-E765-4FA0-AC69-8619D9964C10}"
 EndProject
