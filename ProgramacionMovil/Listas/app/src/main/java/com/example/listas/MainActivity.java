@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MyAdapter(dataset);
         NBA = (RecyclerView) findViewById(R.id.NBA);
         NBA.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
 
     }
 }

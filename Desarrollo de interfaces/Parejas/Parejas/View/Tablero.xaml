@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="Parejas.View.Tablero"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Parejas.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converters="using:Parejas.Converter"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<!--NO BORRAR comentarios de animaciones, siguen siendo utiles-->
+    <Page.Resources>
+       <!-- <Storyboard x:Name="rotacion">
+            <DoubleAnimation
+                Storyboard.TargetName="carta"
+                Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)"
+                EnableDependentAnimation="True"
+                From="0" To="180" Duration="0:0:01"/>
+        </Storyboard>-->
+        <converters:ColorAValor x:Key="ColorAValor"/>
+        
+        <!--Cartas: Diseño por delante y por detrás y animación de girar la carta
+            Las vidas: Diseño y animación de perder una vida
+            El reloj: Diseño y animación para ponerlo que parpadee en rojo o algo cuando quede poco tiempo
+            El botón de recargar: Diseño y animación para cuando se le hace click que de una vuelta sobre sí mismo
+            El fondo: Diseño-->
+    </Page.Resources>
+
+    <RelativePanel>
+
+        <!--La animación cambia el SelectedItem-->
+        <GridView  
+                   ItemsSource="{x:Bind VM.CartasTablero, Mode=TwoWay}"
+                   SelectedItem="{x:Bind VM.Seleccion, Mode=OneWay}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+
+                        <Image x:Name="carta"
+                               Source="/Assets/Rojo.png"
+                               Stretch="Fill"
+                               Height="187"
+                               Width="134"
+                               Tapped="carta_Tapped">
+                        </Image>
+
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid MaximumRowsOrColumns="6"/>
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+
+        </GridView>
+
+
+    </RelativePanel>
+</Page>

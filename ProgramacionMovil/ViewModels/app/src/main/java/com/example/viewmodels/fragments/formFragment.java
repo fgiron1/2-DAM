@@ -69,6 +69,7 @@ public class formFragment extends Fragment implements View.OnClickListener {
         switch(v.getId()){
             case R.id.botonAñadirformFragment:
 
+                //FIXME INPUT DEL NUMERO TITULOS NO VALIDADO; INTRODUCIR UN STRING LO ROMPE
                 Equipo nuevoEquipo = new Equipo(nombreEquipoForm.getText().toString(), Integer.parseInt(numeroTitulosForm.getText().toString()));
 
                 //Lista auxiliar

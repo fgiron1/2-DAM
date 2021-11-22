@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FernandoGironDominguezAndroid</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="programador_id">Programador (ID)</string>
+    <string name="prioridad">Prioridad</string>
+    <string name="id_prioridad">ID Prioridad</string>
+    <string name="insertar">Insertar</string>
+</resources>

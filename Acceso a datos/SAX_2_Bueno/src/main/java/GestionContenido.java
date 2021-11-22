@@ -100,7 +100,7 @@ public class GestionContenido extends DefaultHandler {
 
                 } else {
 
-                    //Apuesta diferencia
+                    //Apuesta diferencia/handicap
                     conexion.insertarApuestaDiferencia(a);
 
                 }

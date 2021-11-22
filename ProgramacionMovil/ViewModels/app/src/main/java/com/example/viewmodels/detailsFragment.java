@@ -46,11 +46,9 @@ public class detailsFragment extends Fragment {
 
         vm = new ViewModelProvider(requireActivity()).get(SharedVM.class);
 
-        //Si quisiera usar el findviewbyid en el onCreate(), me daria null
-        //Porque las vistas no estan infladas todavia
-
         EditText numeroTitulos = (EditText) getView().findViewById(R.id.numeroTitulos);
         TextView nombre = (TextView) getView().findViewById(R.id.nombre);
+
 
         numeroTitulos.setText(Integer.toString(vm.getSeleccionado().getValue().getNumeroTitulos()));
         nombre.setText(vm.getSeleccionado().getValue().getNombre());

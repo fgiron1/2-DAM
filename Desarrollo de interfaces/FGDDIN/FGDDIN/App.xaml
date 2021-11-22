@@ -1,0 +1,24 @@
+﻿<Application
+    x:Class="FGDDIN.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FGDDIN">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Se mezclan el diccionario de aplicación con el específicado-->
+            <ResourceDictionary.MergedDictionaries>
+                <!--La ruta del archivo xaml a parte donde tenemos el diccionario-->
+                <ResourceDictionary Source="Assets/Diccionario1.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--Cosas adicionales del diccionario a nivel de aplicación-->
+            <!--<LinearGradientBrush x:Key="backgroundBoton">
+                <GradientStop Offset="0" Color="Silver"/>
+                <GradientStop Offset="1" Color="Orange"/>
+            </LinearGradientBrush>-->
+
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
