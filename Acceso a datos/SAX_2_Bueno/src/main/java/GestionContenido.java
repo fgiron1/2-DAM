@@ -40,14 +40,13 @@ public class GestionContenido extends DefaultHandler {
     }
     @Override
     public void startDocument(){
-        
     }
     @Override
     public void endDocument(){
 
         JAXBElement<Incidencias> incidencias = conexion.getFactory().createIncidencias(conexion.getIncidencias());
 
-        File file = new File("C:\\Users\\ferna\\Desktop\\DAM\\2-DAM\\Acceso a datos\\SAX_2_Bueno\\incidencias.xml");
+        File file = new File("./incidencias.xml"); //Ruta relativa
         JAXBContext jaxbContext = null;
         try {
             jaxbContext = JAXBContext.newInstance(Incidencias.class);
@@ -57,8 +56,6 @@ public class GestionContenido extends DefaultHandler {
         } catch (JAXBException e) {
             e.printStackTrace();
         }
-
-
 
         System.out.println("Fin del documento XML");
     }

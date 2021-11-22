@@ -1,4 +1,4 @@
-USE [azure-javier]
+USE Apuestas
 GO
 
 --Trigger que comprueba si una apuesta se ha realizado durante el tiempo permitido para apostar del partido

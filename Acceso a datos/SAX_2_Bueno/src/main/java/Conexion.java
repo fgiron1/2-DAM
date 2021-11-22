@@ -9,8 +9,8 @@ import java.text.SimpleDateFormat;
 public class Conexion {
 
 	private String sourceURL = "jdbc:sqlserver://localhost:1433";
-	private String usuario = "prueba123";
-	private String password = "prueba123";
+	private String usuario = "prueba1234";
+	private String password = "prueba1234";
 	private Incidencias incidencias;
 
 	private ObjectFactory factory = new ObjectFactory();
